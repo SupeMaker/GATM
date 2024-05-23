@@ -1,0 +1,43 @@
+2024-02-25 23:37:04,135 - train - INFO - NRMSNewsEncoderModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (mha_encoder): MultiHeadedAttention(
+    (linears): ModuleList(
+      (0-2): 3 x Linear(in_features=300, out_features=300, bias=True)
+    )
+    (final): Linear(in_features=300, out_features=300, bias=True)
+    (dropout): Dropout(p=0, inplace=False)
+  )
+  (news_att): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,024,772
+Freeze params: 0
+2024-02-25 23:39:53,150 - trainer - INFO -     epoch          : 1
+2024-02-25 23:39:53,166 - trainer - INFO -     loss           : 0.744589
+2024-02-25 23:39:53,166 - trainer - INFO -     accuracy       : 0.751608
+2024-02-25 23:39:53,166 - trainer - INFO -     macro_f        : 0.546834
+2024-02-25 23:39:53,166 - trainer - INFO -     val_loss       : 0.660304
+2024-02-25 23:39:53,166 - trainer - INFO -     val_accuracy   : 0.774505
+2024-02-25 23:39:53,166 - trainer - INFO -     val_macro_f    : 0.597392
+2024-02-25 23:42:53,304 - trainer - INFO -     epoch          : 2
+2024-02-25 23:42:53,304 - trainer - INFO -     loss           : 0.506701
+2024-02-25 23:42:53,304 - trainer - INFO -     accuracy       : 0.827074
+2024-02-25 23:42:53,304 - trainer - INFO -     macro_f        : 0.671365
+2024-02-25 23:42:53,304 - trainer - INFO -     val_loss       : 0.679684
+2024-02-25 23:42:53,304 - trainer - INFO -     val_accuracy   : 0.779337
+2024-02-25 23:42:53,304 - trainer - INFO -     val_macro_f    : 0.596652
+2024-02-25 23:46:07,989 - trainer - INFO -     epoch          : 3
+2024-02-25 23:46:08,005 - trainer - INFO -     loss           : 0.323701
+2024-02-25 23:46:08,005 - trainer - INFO -     accuracy       : 0.888311
+2024-02-25 23:46:08,005 - trainer - INFO -     macro_f        : 0.781846
+2024-02-25 23:46:08,005 - trainer - INFO -     val_loss       : 0.796167
+2024-02-25 23:46:08,005 - trainer - INFO -     val_accuracy   : 0.763767
+2024-02-25 23:46:08,005 - trainer - INFO -     val_macro_f    : 0.579922

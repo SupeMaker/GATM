@@ -1,0 +1,60 @@
+2024-02-25 23:58:31,117 - train - INFO - GRUAttClassifierModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (gru): GRU(300, 300, num_layers=2, batch_first=True)
+  (news_att): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,747,172
+Freeze params: 0
+2024-02-26 00:02:22,818 - trainer - INFO -     epoch          : 1
+2024-02-26 00:02:22,818 - trainer - INFO -     loss           : 0.750179
+2024-02-26 00:02:22,818 - trainer - INFO -     accuracy       : 0.750688
+2024-02-26 00:02:22,818 - trainer - INFO -     macro_f        : 0.537463
+2024-02-26 00:02:22,818 - trainer - INFO -     val_loss       : 0.638668
+2024-02-26 00:02:22,818 - trainer - INFO -     val_accuracy   : 0.782942
+2024-02-26 00:02:22,818 - trainer - INFO -     val_macro_f    : 0.606122
+2024-02-26 00:08:51,413 - train - INFO - GRUAttClassifierModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (gru): GRU(300, 300, num_layers=2, batch_first=True)
+  (news_att): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,747,172
+Freeze params: 0
+2024-02-26 00:13:27,887 - trainer - INFO -     epoch          : 1
+2024-02-26 00:13:27,903 - trainer - INFO -     loss           : 0.750179
+2024-02-26 00:13:27,903 - trainer - INFO -     accuracy       : 0.750688
+2024-02-26 00:13:27,903 - trainer - INFO -     macro_f        : 0.537463
+2024-02-26 00:13:27,903 - trainer - INFO -     val_loss       : 0.638668
+2024-02-26 00:13:27,903 - trainer - INFO -     val_accuracy   : 0.782942
+2024-02-26 00:13:27,903 - trainer - INFO -     val_macro_f    : 0.606122
+2024-02-26 00:18:15,331 - trainer - INFO -     epoch          : 2
+2024-02-26 00:18:15,331 - trainer - INFO -     loss           : 0.496157
+2024-02-26 00:18:15,331 - trainer - INFO -     accuracy       : 0.830401
+2024-02-26 00:18:15,331 - trainer - INFO -     macro_f        : 0.679646
+2024-02-26 00:18:15,331 - trainer - INFO -     val_loss       : 0.64671
+2024-02-26 00:18:15,331 - trainer - INFO -     val_accuracy   : 0.782022
+2024-02-26 00:18:15,331 - trainer - INFO -     val_macro_f    : 0.607624
+2024-02-26 00:22:48,445 - trainer - INFO -     epoch          : 3
+2024-02-26 00:22:48,445 - trainer - INFO -     loss           : 0.314485
+2024-02-26 00:22:48,445 - trainer - INFO -     accuracy       : 0.892607
+2024-02-26 00:22:48,445 - trainer - INFO -     macro_f        : 0.787422
+2024-02-26 00:22:48,445 - trainer - INFO -     val_loss       : 0.741908
+2024-02-26 00:22:48,445 - trainer - INFO -     val_accuracy   : 0.775886
+2024-02-26 00:22:48,445 - trainer - INFO -     val_macro_f    : 0.596216

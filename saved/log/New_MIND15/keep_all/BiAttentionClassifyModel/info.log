@@ -1,0 +1,1239 @@
+2024-04-23 00:26:08,418 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,568,512
+Freeze params: 0
+2024-04-23 00:31:44,484 - trainer - INFO -     epoch          : 1
+2024-04-23 00:31:44,484 - trainer - INFO -     loss           : 0.703777
+2024-04-23 00:31:44,484 - trainer - INFO -     accuracy       : 0.764964
+2024-04-23 00:31:44,484 - trainer - INFO -     macro_f        : 0.751594
+2024-04-23 00:31:44,484 - trainer - INFO -     precision      : 0.772984
+2024-04-23 00:31:44,484 - trainer - INFO -     recall         : 0.764964
+2024-04-23 00:31:44,484 - trainer - INFO -     doc_entropy    : 4.140601
+2024-04-23 00:31:44,484 - trainer - INFO -     val_loss       : 0.609763
+2024-04-23 00:31:44,484 - trainer - INFO -     val_accuracy   : 0.788388
+2024-04-23 00:31:44,484 - trainer - INFO -     val_macro_f    : 0.772481
+2024-04-23 00:31:44,484 - trainer - INFO -     val_precision  : 0.792536
+2024-04-23 00:31:44,484 - trainer - INFO -     val_recall     : 0.788388
+2024-04-23 00:31:44,484 - trainer - INFO -     val_doc_entropy: 3.540035
+2024-04-23 00:31:44,484 - trainer - INFO -     test_loss      : 0.597979
+2024-04-23 00:31:44,484 - trainer - INFO -     test_accuracy  : 0.795828
+2024-04-23 00:31:44,484 - trainer - INFO -     test_macro_f   : 0.779874
+2024-04-23 00:31:44,484 - trainer - INFO -     test_precision : 0.79819
+2024-04-23 00:31:44,484 - trainer - INFO -     test_recall    : 0.795828
+2024-04-23 00:31:44,484 - trainer - INFO -     test_doc_entropy: 3.540208
+2024-04-23 00:37:27,117 - trainer - INFO -     epoch          : 2
+2024-04-23 00:37:27,117 - trainer - INFO -     loss           : 0.495177
+2024-04-23 00:37:27,117 - trainer - INFO -     accuracy       : 0.829068
+2024-04-23 00:37:27,117 - trainer - INFO -     macro_f        : 0.823102
+2024-04-23 00:37:27,117 - trainer - INFO -     precision      : 0.844743
+2024-04-23 00:37:27,117 - trainer - INFO -     recall         : 0.829068
+2024-04-23 00:37:27,117 - trainer - INFO -     doc_entropy    : 3.358548
+2024-04-23 00:37:27,117 - trainer - INFO -     val_loss       : 0.598706
+2024-04-23 00:37:27,117 - trainer - INFO -     val_accuracy   : 0.796441
+2024-04-23 00:37:27,117 - trainer - INFO -     val_macro_f    : 0.787422
+2024-04-23 00:37:27,117 - trainer - INFO -     val_precision  : 0.80838
+2024-04-23 00:37:27,117 - trainer - INFO -     val_recall     : 0.796441
+2024-04-23 00:37:27,117 - trainer - INFO -     val_doc_entropy: 2.996952
+2024-04-23 00:37:27,117 - trainer - INFO -     test_loss      : 0.590595
+2024-04-23 00:37:27,117 - trainer - INFO -     test_accuracy  : 0.802194
+2024-04-23 00:37:27,117 - trainer - INFO -     test_macro_f   : 0.795035
+2024-04-23 00:37:27,117 - trainer - INFO -     test_precision : 0.818021
+2024-04-23 00:37:27,117 - trainer - INFO -     test_recall    : 0.802194
+2024-04-23 00:37:27,117 - trainer - INFO -     test_doc_entropy: 2.996323
+2024-04-23 00:43:07,393 - trainer - INFO -     epoch          : 3
+2024-04-23 00:43:07,393 - trainer - INFO -     loss           : 0.342961
+2024-04-23 00:43:07,393 - trainer - INFO -     accuracy       : 0.881523
+2024-04-23 00:43:07,393 - trainer - INFO -     macro_f        : 0.87838
+2024-04-23 00:43:07,393 - trainer - INFO -     precision      : 0.895779
+2024-04-23 00:43:07,393 - trainer - INFO -     recall         : 0.881523
+2024-04-23 00:43:07,393 - trainer - INFO -     doc_entropy    : 2.71839
+2024-04-23 00:43:07,393 - trainer - INFO -     val_loss       : 0.643517
+2024-04-23 00:43:07,393 - trainer - INFO -     val_accuracy   : 0.791532
+2024-04-23 00:43:07,393 - trainer - INFO -     val_macro_f    : 0.782308
+2024-04-23 00:43:07,393 - trainer - INFO -     val_precision  : 0.801869
+2024-04-23 00:43:07,393 - trainer - INFO -     val_recall     : 0.791532
+2024-04-23 00:43:07,393 - trainer - INFO -     val_doc_entropy: 2.855239
+2024-04-23 00:43:07,393 - trainer - INFO -     test_loss      : 0.642065
+2024-04-23 00:43:07,393 - trainer - INFO -     test_accuracy  : 0.798819
+2024-04-23 00:43:07,393 - trainer - INFO -     test_macro_f   : 0.791889
+2024-04-23 00:43:07,393 - trainer - INFO -     test_precision : 0.814692
+2024-04-23 00:43:07,393 - trainer - INFO -     test_recall    : 0.798819
+2024-04-23 00:43:07,393 - trainer - INFO -     test_doc_entropy: 2.857193
+2024-04-23 00:44:02,168 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,568,512
+Freeze params: 0
+2024-04-23 00:49:48,765 - trainer - INFO -     epoch          : 1
+2024-04-23 00:49:48,765 - trainer - INFO -     loss           : 0.700601
+2024-04-23 00:49:48,765 - trainer - INFO -     accuracy       : 0.765453
+2024-04-23 00:49:48,765 - trainer - INFO -     macro_f        : 0.7515
+2024-04-23 00:49:48,765 - trainer - INFO -     precision      : 0.771876
+2024-04-23 00:49:48,765 - trainer - INFO -     recall         : 0.765453
+2024-04-23 00:49:48,765 - trainer - INFO -     doc_entropy    : 4.045459
+2024-04-23 00:49:48,765 - trainer - INFO -     val_loss       : 0.595217
+2024-04-23 00:49:48,765 - trainer - INFO -     val_accuracy   : 0.792836
+2024-04-23 00:49:48,765 - trainer - INFO -     val_macro_f    : 0.78475
+2024-04-23 00:49:48,765 - trainer - INFO -     val_precision  : 0.808009
+2024-04-23 00:49:48,765 - trainer - INFO -     val_recall     : 0.792836
+2024-04-23 00:49:48,765 - trainer - INFO -     val_doc_entropy: 3.649036
+2024-04-23 00:49:48,765 - trainer - INFO -     test_loss      : 0.585631
+2024-04-23 00:49:48,765 - trainer - INFO -     test_accuracy  : 0.798129
+2024-04-23 00:49:48,765 - trainer - INFO -     test_macro_f   : 0.788891
+2024-04-23 00:49:48,765 - trainer - INFO -     test_precision : 0.806817
+2024-04-23 00:49:48,765 - trainer - INFO -     test_recall    : 0.798129
+2024-04-23 00:49:48,765 - trainer - INFO -     test_doc_entropy: 3.652661
+2024-04-23 00:55:25,022 - trainer - INFO -     epoch          : 2
+2024-04-23 00:55:25,022 - trainer - INFO -     loss           : 0.494673
+2024-04-23 00:55:25,022 - trainer - INFO -     accuracy       : 0.827832
+2024-04-23 00:55:25,022 - trainer - INFO -     macro_f        : 0.821799
+2024-04-23 00:55:25,022 - trainer - INFO -     precision      : 0.843261
+2024-04-23 00:55:25,022 - trainer - INFO -     recall         : 0.827832
+2024-04-23 00:55:25,022 - trainer - INFO -     doc_entropy    : 3.384821
+2024-04-23 00:55:25,022 - trainer - INFO -     val_loss       : 0.589568
+2024-04-23 00:55:25,022 - trainer - INFO -     val_accuracy   : 0.797055
+2024-04-23 00:55:25,022 - trainer - INFO -     val_macro_f    : 0.794752
+2024-04-23 00:55:25,022 - trainer - INFO -     val_precision  : 0.821375
+2024-04-23 00:55:25,022 - trainer - INFO -     val_recall     : 0.797055
+2024-04-23 00:55:25,022 - trainer - INFO -     val_doc_entropy: 3.240243
+2024-04-23 00:55:25,037 - trainer - INFO -     test_loss      : 0.579049
+2024-04-23 00:55:25,037 - trainer - INFO -     test_accuracy  : 0.804111
+2024-04-23 00:55:25,037 - trainer - INFO -     test_macro_f   : 0.80141
+2024-04-23 00:55:25,037 - trainer - INFO -     test_precision : 0.826778
+2024-04-23 00:55:25,037 - trainer - INFO -     test_recall    : 0.804111
+2024-04-23 00:55:25,037 - trainer - INFO -     test_doc_entropy: 3.243925
+2024-04-23 01:01:10,155 - trainer - INFO -     epoch          : 3
+2024-04-23 01:01:10,155 - trainer - INFO -     loss           : 0.342328
+2024-04-23 01:01:10,155 - trainer - INFO -     accuracy       : 0.880449
+2024-04-23 01:01:10,155 - trainer - INFO -     macro_f        : 0.87753
+2024-04-23 01:01:10,155 - trainer - INFO -     precision      : 0.895728
+2024-04-23 01:01:10,155 - trainer - INFO -     recall         : 0.880449
+2024-04-23 01:01:10,155 - trainer - INFO -     doc_entropy    : 2.927955
+2024-04-23 01:01:10,155 - trainer - INFO -     val_loss       : 0.667924
+2024-04-23 01:01:10,155 - trainer - INFO -     val_accuracy   : 0.789922
+2024-04-23 01:01:10,155 - trainer - INFO -     val_macro_f    : 0.780226
+2024-04-23 01:01:10,155 - trainer - INFO -     val_precision  : 0.803456
+2024-04-23 01:01:10,155 - trainer - INFO -     val_recall     : 0.789922
+2024-04-23 01:01:10,155 - trainer - INFO -     val_doc_entropy: 2.838234
+2024-04-23 01:01:10,155 - trainer - INFO -     test_loss      : 0.647552
+2024-04-23 01:01:10,155 - trainer - INFO -     test_accuracy  : 0.799509
+2024-04-23 01:01:10,155 - trainer - INFO -     test_macro_f   : 0.791973
+2024-04-23 01:01:10,155 - trainer - INFO -     test_precision : 0.814159
+2024-04-23 01:01:10,155 - trainer - INFO -     test_recall    : 0.799509
+2024-04-23 01:01:10,155 - trainer - INFO -     test_doc_entropy: 2.83921
+2024-04-23 01:02:06,976 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,568,512
+Freeze params: 0
+2024-04-23 01:07:49,500 - trainer - INFO -     epoch          : 1
+2024-04-23 01:07:49,500 - trainer - INFO -     loss           : 0.70293
+2024-04-23 01:07:49,500 - trainer - INFO -     accuracy       : 0.764446
+2024-04-23 01:07:49,500 - trainer - INFO -     macro_f        : 0.750772
+2024-04-23 01:07:49,500 - trainer - INFO -     precision      : 0.772059
+2024-04-23 01:07:49,500 - trainer - INFO -     recall         : 0.764446
+2024-04-23 01:07:49,500 - trainer - INFO -     doc_entropy    : 4.159126
+2024-04-23 01:07:49,500 - trainer - INFO -     val_loss       : 0.604418
+2024-04-23 01:07:49,500 - trainer - INFO -     val_accuracy   : 0.791916
+2024-04-23 01:07:49,500 - trainer - INFO -     val_macro_f    : 0.783204
+2024-04-23 01:07:49,500 - trainer - INFO -     val_precision  : 0.805671
+2024-04-23 01:07:49,500 - trainer - INFO -     val_recall     : 0.791916
+2024-04-23 01:07:49,500 - trainer - INFO -     val_doc_entropy: 3.704055
+2024-04-23 01:07:49,500 - trainer - INFO -     test_loss      : 0.597732
+2024-04-23 01:07:49,500 - trainer - INFO -     test_accuracy  : 0.795214
+2024-04-23 01:07:49,500 - trainer - INFO -     test_macro_f   : 0.788124
+2024-04-23 01:07:49,500 - trainer - INFO -     test_precision : 0.811291
+2024-04-23 01:07:49,500 - trainer - INFO -     test_recall    : 0.795214
+2024-04-23 01:07:49,500 - trainer - INFO -     test_doc_entropy: 3.704314
+2024-04-23 01:13:33,142 - trainer - INFO -     epoch          : 2
+2024-04-23 01:13:33,142 - trainer - INFO -     loss           : 0.492021
+2024-04-23 01:13:33,142 - trainer - INFO -     accuracy       : 0.830689
+2024-04-23 01:13:33,142 - trainer - INFO -     macro_f        : 0.82475
+2024-04-23 01:13:33,142 - trainer - INFO -     precision      : 0.846235
+2024-04-23 01:13:33,142 - trainer - INFO -     recall         : 0.830689
+2024-04-23 01:13:33,142 - trainer - INFO -     doc_entropy    : 3.322986
+2024-04-23 01:13:33,142 - trainer - INFO -     val_loss       : 0.620408
+2024-04-23 01:13:33,142 - trainer - INFO -     val_accuracy   : 0.794447
+2024-04-23 01:13:33,142 - trainer - INFO -     val_macro_f    : 0.782127
+2024-04-23 01:13:33,142 - trainer - INFO -     val_precision  : 0.802048
+2024-04-23 01:13:33,142 - trainer - INFO -     val_recall     : 0.794447
+2024-04-23 01:13:33,142 - trainer - INFO -     val_doc_entropy: 3.075207
+2024-04-23 01:13:33,142 - trainer - INFO -     test_loss      : 0.607485
+2024-04-23 01:13:33,158 - trainer - INFO -     test_accuracy  : 0.795597
+2024-04-23 01:13:33,158 - trainer - INFO -     test_macro_f   : 0.784272
+2024-04-23 01:13:33,158 - trainer - INFO -     test_precision : 0.803324
+2024-04-23 01:13:33,158 - trainer - INFO -     test_recall    : 0.795597
+2024-04-23 01:13:33,158 - trainer - INFO -     test_doc_entropy: 3.075504
+2024-04-23 01:19:12,345 - trainer - INFO -     epoch          : 3
+2024-04-23 01:19:12,345 - trainer - INFO -     loss           : 0.339903
+2024-04-23 01:19:12,345 - trainer - INFO -     accuracy       : 0.883335
+2024-04-23 01:19:12,345 - trainer - INFO -     macro_f        : 0.880496
+2024-04-23 01:19:12,345 - trainer - INFO -     precision      : 0.898068
+2024-04-23 01:19:12,345 - trainer - INFO -     recall         : 0.883335
+2024-04-23 01:19:12,345 - trainer - INFO -     doc_entropy    : 2.719728
+2024-04-23 01:19:12,345 - trainer - INFO -     val_loss       : 0.655774
+2024-04-23 01:19:12,345 - trainer - INFO -     val_accuracy   : 0.789768
+2024-04-23 01:19:12,345 - trainer - INFO -     val_macro_f    : 0.780725
+2024-04-23 01:19:12,345 - trainer - INFO -     val_precision  : 0.804022
+2024-04-23 01:19:12,345 - trainer - INFO -     val_recall     : 0.789768
+2024-04-23 01:19:12,345 - trainer - INFO -     val_doc_entropy: 2.764151
+2024-04-23 01:19:12,345 - trainer - INFO -     test_loss      : 0.640315
+2024-04-23 01:19:12,345 - trainer - INFO -     test_accuracy  : 0.795981
+2024-04-23 01:19:12,345 - trainer - INFO -     test_macro_f   : 0.789465
+2024-04-23 01:19:12,345 - trainer - INFO -     test_precision : 0.812501
+2024-04-23 01:19:12,345 - trainer - INFO -     test_recall    : 0.795981
+2024-04-23 01:19:12,345 - trainer - INFO -     test_doc_entropy: 2.767125
+2024-04-23 01:20:06,147 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,568,512
+Freeze params: 0
+2024-04-23 01:25:47,951 - trainer - INFO -     epoch          : 1
+2024-04-23 01:25:47,951 - trainer - INFO -     loss           : 0.699283
+2024-04-23 01:25:47,951 - trainer - INFO -     accuracy       : 0.765089
+2024-04-23 01:25:47,951 - trainer - INFO -     macro_f        : 0.751543
+2024-04-23 01:25:47,951 - trainer - INFO -     precision      : 0.772364
+2024-04-23 01:25:47,951 - trainer - INFO -     recall         : 0.765089
+2024-04-23 01:25:47,951 - trainer - INFO -     doc_entropy    : 4.026793
+2024-04-23 01:25:47,951 - trainer - INFO -     val_loss       : 0.612994
+2024-04-23 01:25:47,951 - trainer - INFO -     val_accuracy   : 0.782022
+2024-04-23 01:25:47,951 - trainer - INFO -     val_macro_f    : 0.775333
+2024-04-23 01:25:47,951 - trainer - INFO -     val_precision  : 0.800212
+2024-04-23 01:25:47,951 - trainer - INFO -     val_recall     : 0.782022
+2024-04-23 01:25:47,951 - trainer - INFO -     val_doc_entropy: 3.654219
+2024-04-23 01:25:47,951 - trainer - INFO -     test_loss      : 0.60994
+2024-04-23 01:25:47,951 - trainer - INFO -     test_accuracy  : 0.787774
+2024-04-23 01:25:47,951 - trainer - INFO -     test_macro_f   : 0.780586
+2024-04-23 01:25:47,951 - trainer - INFO -     test_precision : 0.803646
+2024-04-23 01:25:47,951 - trainer - INFO -     test_recall    : 0.787774
+2024-04-23 01:25:47,951 - trainer - INFO -     test_doc_entropy: 3.659813
+2024-04-23 01:31:31,921 - trainer - INFO -     epoch          : 2
+2024-04-23 01:31:31,921 - trainer - INFO -     loss           : 0.491516
+2024-04-23 01:31:31,921 - trainer - INFO -     accuracy       : 0.82997
+2024-04-23 01:31:31,921 - trainer - INFO -     macro_f        : 0.823995
+2024-04-23 01:31:31,921 - trainer - INFO -     precision      : 0.84588
+2024-04-23 01:31:31,921 - trainer - INFO -     recall         : 0.82997
+2024-04-23 01:31:31,921 - trainer - INFO -     doc_entropy    : 3.156651
+2024-04-23 01:31:31,921 - trainer - INFO -     val_loss       : 0.584652
+2024-04-23 01:31:31,921 - trainer - INFO -     val_accuracy   : 0.797668
+2024-04-23 01:31:31,921 - trainer - INFO -     val_macro_f    : 0.790179
+2024-04-23 01:31:31,921 - trainer - INFO -     val_precision  : 0.811377
+2024-04-23 01:31:31,921 - trainer - INFO -     val_recall     : 0.797668
+2024-04-23 01:31:31,921 - trainer - INFO -     val_doc_entropy: 3.17538
+2024-04-23 01:31:31,921 - trainer - INFO -     test_loss      : 0.579974
+2024-04-23 01:31:31,921 - trainer - INFO -     test_accuracy  : 0.807026
+2024-04-23 01:31:31,921 - trainer - INFO -     test_macro_f   : 0.801335
+2024-04-23 01:31:31,921 - trainer - INFO -     test_precision : 0.823345
+2024-04-23 01:31:31,921 - trainer - INFO -     test_recall    : 0.807026
+2024-04-23 01:31:31,921 - trainer - INFO -     test_doc_entropy: 3.177806
+2024-04-23 01:37:11,987 - trainer - INFO -     epoch          : 3
+2024-04-23 01:37:11,987 - trainer - INFO -     loss           : 0.337775
+2024-04-23 01:37:11,987 - trainer - INFO -     accuracy       : 0.882635
+2024-04-23 01:37:11,987 - trainer - INFO -     macro_f        : 0.879481
+2024-04-23 01:37:11,987 - trainer - INFO -     precision      : 0.896866
+2024-04-23 01:37:11,987 - trainer - INFO -     recall         : 0.882635
+2024-04-23 01:37:11,987 - trainer - INFO -     doc_entropy    : 2.653833
+2024-04-23 01:37:11,987 - trainer - INFO -     val_loss       : 0.67013
+2024-04-23 01:37:11,987 - trainer - INFO -     val_accuracy   : 0.789155
+2024-04-23 01:37:11,987 - trainer - INFO -     val_macro_f    : 0.782563
+2024-04-23 01:37:11,987 - trainer - INFO -     val_precision  : 0.806771
+2024-04-23 01:37:11,987 - trainer - INFO -     val_recall     : 0.789155
+2024-04-23 01:37:11,987 - trainer - INFO -     val_doc_entropy: 2.687643
+2024-04-23 01:37:11,987 - trainer - INFO -     test_loss      : 0.661671
+2024-04-23 01:37:11,987 - trainer - INFO -     test_accuracy  : 0.79276
+2024-04-23 01:37:11,987 - trainer - INFO -     test_macro_f   : 0.786982
+2024-04-23 01:37:11,987 - trainer - INFO -     test_precision : 0.811487
+2024-04-23 01:37:11,987 - trainer - INFO -     test_recall    : 0.79276
+2024-04-23 01:37:11,987 - trainer - INFO -     test_doc_entropy: 2.690931
+2024-04-23 01:38:07,465 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,568,512
+Freeze params: 0
+2024-04-23 01:43:49,227 - trainer - INFO -     epoch          : 1
+2024-04-23 01:43:49,227 - trainer - INFO -     loss           : 0.700825
+2024-04-23 01:43:49,227 - trainer - INFO -     accuracy       : 0.76598
+2024-04-23 01:43:49,227 - trainer - INFO -     macro_f        : 0.751835
+2024-04-23 01:43:49,227 - trainer - INFO -     precision      : 0.771648
+2024-04-23 01:43:49,227 - trainer - INFO -     recall         : 0.76598
+2024-04-23 01:43:49,227 - trainer - INFO -     doc_entropy    : 4.052107
+2024-04-23 01:43:49,227 - trainer - INFO -     val_loss       : 0.595734
+2024-04-23 01:43:49,227 - trainer - INFO -     val_accuracy   : 0.791149
+2024-04-23 01:43:49,227 - trainer - INFO -     val_macro_f    : 0.787539
+2024-04-23 01:43:49,227 - trainer - INFO -     val_precision  : 0.813379
+2024-04-23 01:43:49,227 - trainer - INFO -     val_recall     : 0.791149
+2024-04-23 01:43:49,227 - trainer - INFO -     val_doc_entropy: 3.507217
+2024-04-23 01:43:49,227 - trainer - INFO -     test_loss      : 0.591002
+2024-04-23 01:43:49,227 - trainer - INFO -     test_accuracy  : 0.796825
+2024-04-23 01:43:49,227 - trainer - INFO -     test_macro_f   : 0.793057
+2024-04-23 01:43:49,227 - trainer - INFO -     test_precision : 0.81836
+2024-04-23 01:43:49,227 - trainer - INFO -     test_recall    : 0.796825
+2024-04-23 01:43:49,227 - trainer - INFO -     test_doc_entropy: 3.510598
+2024-04-23 01:49:36,921 - trainer - INFO -     epoch          : 2
+2024-04-23 01:49:36,921 - trainer - INFO -     loss           : 0.488939
+2024-04-23 01:49:36,921 - trainer - INFO -     accuracy       : 0.831245
+2024-04-23 01:49:36,921 - trainer - INFO -     macro_f        : 0.825844
+2024-04-23 01:49:36,921 - trainer - INFO -     precision      : 0.847389
+2024-04-23 01:49:36,921 - trainer - INFO -     recall         : 0.831245
+2024-04-23 01:49:36,921 - trainer - INFO -     doc_entropy    : 3.16391
+2024-04-23 01:49:36,921 - trainer - INFO -     val_loss       : 0.600363
+2024-04-23 01:49:36,921 - trainer - INFO -     val_accuracy   : 0.793757
+2024-04-23 01:49:36,921 - trainer - INFO -     val_macro_f    : 0.79081
+2024-04-23 01:49:36,921 - trainer - INFO -     val_precision  : 0.817394
+2024-04-23 01:49:36,921 - trainer - INFO -     val_recall     : 0.793757
+2024-04-23 01:49:36,921 - trainer - INFO -     val_doc_entropy: 3.048477
+2024-04-23 01:49:36,921 - trainer - INFO -     test_loss      : 0.593933
+2024-04-23 01:49:36,921 - trainer - INFO -     test_accuracy  : 0.801733
+2024-04-23 01:49:36,921 - trainer - INFO -     test_macro_f   : 0.799711
+2024-04-23 01:49:36,921 - trainer - INFO -     test_precision : 0.826077
+2024-04-23 01:49:36,921 - trainer - INFO -     test_recall    : 0.801733
+2024-04-23 01:49:36,921 - trainer - INFO -     test_doc_entropy: 3.048589
+2024-04-23 01:55:21,831 - trainer - INFO -     epoch          : 3
+2024-04-23 01:55:21,831 - trainer - INFO -     loss           : 0.332727
+2024-04-23 01:55:21,847 - trainer - INFO -     accuracy       : 0.885157
+2024-04-23 01:55:21,847 - trainer - INFO -     macro_f        : 0.882508
+2024-04-23 01:55:21,847 - trainer - INFO -     precision      : 0.900118
+2024-04-23 01:55:21,847 - trainer - INFO -     recall         : 0.885157
+2024-04-23 01:55:21,847 - trainer - INFO -     doc_entropy    : 2.653166
+2024-04-23 01:55:21,847 - trainer - INFO -     val_loss       : 0.659159
+2024-04-23 01:55:21,847 - trainer - INFO -     val_accuracy   : 0.790535
+2024-04-23 01:55:21,847 - trainer - INFO -     val_macro_f    : 0.783255
+2024-04-23 01:55:21,847 - trainer - INFO -     val_precision  : 0.805278
+2024-04-23 01:55:21,847 - trainer - INFO -     val_recall     : 0.790535
+2024-04-23 01:55:21,847 - trainer - INFO -     val_doc_entropy: 2.867583
+2024-04-23 01:55:21,847 - trainer - INFO -     test_loss      : 0.647266
+2024-04-23 01:55:21,847 - trainer - INFO -     test_accuracy  : 0.79345
+2024-04-23 01:55:21,847 - trainer - INFO -     test_macro_f   : 0.787489
+2024-04-23 01:55:21,847 - trainer - INFO -     test_precision : 0.807659
+2024-04-23 01:55:21,847 - trainer - INFO -     test_recall    : 0.79345
+2024-04-23 01:55:21,847 - trainer - INFO -     test_doc_entropy: 2.868377
+2024-04-23 01:58:59,835 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,026,712
+Freeze params: 0
+2024-04-23 02:00:44,800 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,568,512
+Freeze params: 0
+2024-04-23 02:06:17,526 - trainer - INFO -     epoch          : 1
+2024-04-23 02:06:17,526 - trainer - INFO -     loss           : 0.703777
+2024-04-23 02:06:17,526 - trainer - INFO -     accuracy       : 0.764964
+2024-04-23 02:06:17,526 - trainer - INFO -     macro_f        : 0.751594
+2024-04-23 02:06:17,526 - trainer - INFO -     precision      : 0.772984
+2024-04-23 02:06:17,526 - trainer - INFO -     recall         : 0.764964
+2024-04-23 02:06:17,526 - trainer - INFO -     doc_entropy    : 4.140601
+2024-04-23 02:06:17,526 - trainer - INFO -     val_loss       : 0.609763
+2024-04-23 02:06:17,526 - trainer - INFO -     val_accuracy   : 0.788388
+2024-04-23 02:06:17,526 - trainer - INFO -     val_macro_f    : 0.772481
+2024-04-23 02:06:17,526 - trainer - INFO -     val_precision  : 0.792536
+2024-04-23 02:06:17,526 - trainer - INFO -     val_recall     : 0.788388
+2024-04-23 02:06:17,526 - trainer - INFO -     val_doc_entropy: 3.540035
+2024-04-23 02:06:17,526 - trainer - INFO -     test_loss      : 0.597979
+2024-04-23 02:06:17,526 - trainer - INFO -     test_accuracy  : 0.795828
+2024-04-23 02:06:17,526 - trainer - INFO -     test_macro_f   : 0.779874
+2024-04-23 02:06:17,526 - trainer - INFO -     test_precision : 0.79819
+2024-04-23 02:06:17,526 - trainer - INFO -     test_recall    : 0.795828
+2024-04-23 02:06:17,526 - trainer - INFO -     test_doc_entropy: 3.540208
+2024-04-23 02:09:15,747 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,026,712
+Freeze params: 0
+2024-04-23 02:12:58,163 - trainer - INFO -     epoch          : 1
+2024-04-23 02:12:58,163 - trainer - INFO -     loss           : 0.731451
+2024-04-23 02:12:58,163 - trainer - INFO -     accuracy       : 0.762136
+2024-04-23 02:12:58,163 - trainer - INFO -     macro_f        : 0.745215
+2024-04-23 02:12:58,163 - trainer - INFO -     precision      : 0.764084
+2024-04-23 02:12:58,163 - trainer - INFO -     recall         : 0.762136
+2024-04-23 02:12:58,163 - trainer - INFO -     doc_entropy    : 4.293742
+2024-04-23 02:12:58,163 - trainer - INFO -     val_loss       : 0.634572
+2024-04-23 02:12:58,163 - trainer - INFO -     val_accuracy   : 0.783096
+2024-04-23 02:12:58,163 - trainer - INFO -     val_macro_f    : 0.783091
+2024-04-23 02:12:58,163 - trainer - INFO -     val_precision  : 0.812238
+2024-04-23 02:12:58,163 - trainer - INFO -     val_recall     : 0.783096
+2024-04-23 02:12:58,163 - trainer - INFO -     val_doc_entropy: 4.145017
+2024-04-23 02:12:58,163 - trainer - INFO -     test_loss      : 0.632502
+2024-04-23 02:12:58,163 - trainer - INFO -     test_accuracy  : 0.789768
+2024-04-23 02:12:58,163 - trainer - INFO -     test_macro_f   : 0.789436
+2024-04-23 02:12:58,163 - trainer - INFO -     test_precision : 0.818051
+2024-04-23 02:12:58,163 - trainer - INFO -     test_recall    : 0.789768
+2024-04-23 02:12:58,163 - trainer - INFO -     test_doc_entropy: 4.151345
+2024-04-23 02:16:40,029 - trainer - INFO -     epoch          : 2
+2024-04-23 02:16:40,029 - trainer - INFO -     loss           : 0.531415
+2024-04-23 02:16:40,044 - trainer - INFO -     accuracy       : 0.818081
+2024-04-23 02:16:40,044 - trainer - INFO -     macro_f        : 0.810397
+2024-04-23 02:16:40,044 - trainer - INFO -     precision      : 0.831146
+2024-04-23 02:16:40,044 - trainer - INFO -     recall         : 0.818081
+2024-04-23 02:16:40,044 - trainer - INFO -     doc_entropy    : 4.106206
+2024-04-23 02:16:40,044 - trainer - INFO -     val_loss       : 0.627441
+2024-04-23 02:16:40,044 - trainer - INFO -     val_accuracy   : 0.791072
+2024-04-23 02:16:40,044 - trainer - INFO -     val_macro_f    : 0.788717
+2024-04-23 02:16:40,044 - trainer - INFO -     val_precision  : 0.814449
+2024-04-23 02:16:40,044 - trainer - INFO -     val_recall     : 0.791072
+2024-04-23 02:16:40,044 - trainer - INFO -     val_doc_entropy: 4.139321
+2024-04-23 02:16:40,044 - trainer - INFO -     test_loss      : 0.606866
+2024-04-23 02:16:40,044 - trainer - INFO -     test_accuracy  : 0.802194
+2024-04-23 02:16:40,044 - trainer - INFO -     test_macro_f   : 0.800019
+2024-04-23 02:16:40,044 - trainer - INFO -     test_precision : 0.82403
+2024-04-23 02:16:40,044 - trainer - INFO -     test_recall    : 0.802194
+2024-04-23 02:16:40,044 - trainer - INFO -     test_doc_entropy: 4.14506
+2024-04-23 02:20:23,170 - trainer - INFO -     epoch          : 3
+2024-04-23 02:20:23,170 - trainer - INFO -     loss           : 0.405351
+2024-04-23 02:20:23,170 - trainer - INFO -     accuracy       : 0.861015
+2024-04-23 02:20:23,170 - trainer - INFO -     macro_f        : 0.856394
+2024-04-23 02:20:23,170 - trainer - INFO -     precision      : 0.875292
+2024-04-23 02:20:23,170 - trainer - INFO -     recall         : 0.861015
+2024-04-23 02:20:23,170 - trainer - INFO -     doc_entropy    : 3.927548
+2024-04-23 02:20:23,170 - trainer - INFO -     val_loss       : 0.653897
+2024-04-23 02:20:23,170 - trainer - INFO -     val_accuracy   : 0.788695
+2024-04-23 02:20:23,170 - trainer - INFO -     val_macro_f    : 0.782882
+2024-04-23 02:20:23,170 - trainer - INFO -     val_precision  : 0.808333
+2024-04-23 02:20:23,170 - trainer - INFO -     val_recall     : 0.788695
+2024-04-23 02:20:23,170 - trainer - INFO -     val_doc_entropy: 3.807297
+2024-04-23 02:20:23,170 - trainer - INFO -     test_loss      : 0.632725
+2024-04-23 02:20:23,170 - trainer - INFO -     test_accuracy  : 0.800353
+2024-04-23 02:20:23,170 - trainer - INFO -     test_macro_f   : 0.797103
+2024-04-23 02:20:23,170 - trainer - INFO -     test_precision : 0.821233
+2024-04-23 02:20:23,170 - trainer - INFO -     test_recall    : 0.800353
+2024-04-23 02:20:23,170 - trainer - INFO -     test_doc_entropy: 3.810617
+2024-04-23 02:21:07,266 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,026,712
+Freeze params: 0
+2024-04-23 02:24:50,891 - trainer - INFO -     epoch          : 1
+2024-04-23 02:24:50,891 - trainer - INFO -     loss           : 0.731298
+2024-04-23 02:24:50,891 - trainer - INFO -     accuracy       : 0.760026
+2024-04-23 02:24:50,891 - trainer - INFO -     macro_f        : 0.742848
+2024-04-23 02:24:50,891 - trainer - INFO -     precision      : 0.760857
+2024-04-23 02:24:50,891 - trainer - INFO -     recall         : 0.760026
+2024-04-23 02:24:50,891 - trainer - INFO -     doc_entropy    : 4.22971
+2024-04-23 02:24:50,891 - trainer - INFO -     val_loss       : 0.627134
+2024-04-23 02:24:50,891 - trainer - INFO -     val_accuracy   : 0.784399
+2024-04-23 02:24:50,891 - trainer - INFO -     val_macro_f    : 0.778123
+2024-04-23 02:24:50,891 - trainer - INFO -     val_precision  : 0.801945
+2024-04-23 02:24:50,891 - trainer - INFO -     val_recall     : 0.784399
+2024-04-23 02:24:50,891 - trainer - INFO -     val_doc_entropy: 4.125676
+2024-04-23 02:24:50,891 - trainer - INFO -     test_loss      : 0.611162
+2024-04-23 02:24:50,891 - trainer - INFO -     test_accuracy  : 0.795828
+2024-04-23 02:24:50,891 - trainer - INFO -     test_macro_f   : 0.788771
+2024-04-23 02:24:50,891 - trainer - INFO -     test_precision : 0.809058
+2024-04-23 02:24:50,891 - trainer - INFO -     test_recall    : 0.795828
+2024-04-23 02:24:50,891 - trainer - INFO -     test_doc_entropy: 4.13129
+2024-04-23 02:28:36,420 - trainer - INFO -     epoch          : 2
+2024-04-23 02:28:36,420 - trainer - INFO -     loss           : 0.532184
+2024-04-23 02:28:36,420 - trainer - INFO -     accuracy       : 0.818656
+2024-04-23 02:28:36,420 - trainer - INFO -     macro_f        : 0.811271
+2024-04-23 02:28:36,420 - trainer - INFO -     precision      : 0.832251
+2024-04-23 02:28:36,420 - trainer - INFO -     recall         : 0.818656
+2024-04-23 02:28:36,420 - trainer - INFO -     doc_entropy    : 4.079026
+2024-04-23 02:28:36,420 - trainer - INFO -     val_loss       : 0.60804
+2024-04-23 02:28:36,420 - trainer - INFO -     val_accuracy   : 0.793987
+2024-04-23 02:28:36,420 - trainer - INFO -     val_macro_f    : 0.789057
+2024-04-23 02:28:36,420 - trainer - INFO -     val_precision  : 0.813697
+2024-04-23 02:28:36,420 - trainer - INFO -     val_recall     : 0.793987
+2024-04-23 02:28:36,420 - trainer - INFO -     val_doc_entropy: 4.049106
+2024-04-23 02:28:36,420 - trainer - INFO -     test_loss      : 0.606819
+2024-04-23 02:28:36,420 - trainer - INFO -     test_accuracy  : 0.798896
+2024-04-23 02:28:36,420 - trainer - INFO -     test_macro_f   : 0.793583
+2024-04-23 02:28:36,420 - trainer - INFO -     test_precision : 0.816239
+2024-04-23 02:28:36,436 - trainer - INFO -     test_recall    : 0.798896
+2024-04-23 02:28:36,436 - trainer - INFO -     test_doc_entropy: 4.055317
+2024-04-23 02:32:22,706 - trainer - INFO -     epoch          : 3
+2024-04-23 02:32:22,706 - trainer - INFO -     loss           : 0.408432
+2024-04-23 02:32:22,706 - trainer - INFO -     accuracy       : 0.858934
+2024-04-23 02:32:22,706 - trainer - INFO -     macro_f        : 0.854163
+2024-04-23 02:32:22,706 - trainer - INFO -     precision      : 0.873455
+2024-04-23 02:32:22,706 - trainer - INFO -     recall         : 0.858934
+2024-04-23 02:32:22,706 - trainer - INFO -     doc_entropy    : 4.005207
+2024-04-23 02:32:22,706 - trainer - INFO -     val_loss       : 0.65702
+2024-04-23 02:32:22,706 - trainer - INFO -     val_accuracy   : 0.786164
+2024-04-23 02:32:22,706 - trainer - INFO -     val_macro_f    : 0.77616
+2024-04-23 02:32:22,706 - trainer - INFO -     val_precision  : 0.798249
+2024-04-23 02:32:22,706 - trainer - INFO -     val_recall     : 0.786164
+2024-04-23 02:32:22,706 - trainer - INFO -     val_doc_entropy: 4.098372
+2024-04-23 02:32:22,706 - trainer - INFO -     test_loss      : 0.638602
+2024-04-23 02:32:22,706 - trainer - INFO -     test_accuracy  : 0.794907
+2024-04-23 02:32:22,706 - trainer - INFO -     test_macro_f   : 0.784849
+2024-04-23 02:32:22,722 - trainer - INFO -     test_precision : 0.803342
+2024-04-23 02:32:22,722 - trainer - INFO -     test_recall    : 0.794907
+2024-04-23 02:32:22,722 - trainer - INFO -     test_doc_entropy: 4.103425
+2024-04-23 02:33:06,660 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,026,712
+Freeze params: 0
+2024-04-23 02:36:49,512 - trainer - INFO -     epoch          : 1
+2024-04-23 02:36:49,512 - trainer - INFO -     loss           : 0.73143
+2024-04-23 02:36:49,512 - trainer - INFO -     accuracy       : 0.760909
+2024-04-23 02:36:49,512 - trainer - INFO -     macro_f        : 0.743219
+2024-04-23 02:36:49,512 - trainer - INFO -     precision      : 0.760529
+2024-04-23 02:36:49,512 - trainer - INFO -     recall         : 0.760909
+2024-04-23 02:36:49,512 - trainer - INFO -     doc_entropy    : 4.18494
+2024-04-23 02:36:49,512 - trainer - INFO -     val_loss       : 0.635211
+2024-04-23 02:36:49,512 - trainer - INFO -     val_accuracy   : 0.782635
+2024-04-23 02:36:49,512 - trainer - INFO -     val_macro_f    : 0.772377
+2024-04-23 02:36:49,512 - trainer - INFO -     val_precision  : 0.794775
+2024-04-23 02:36:49,512 - trainer - INFO -     val_recall     : 0.782635
+2024-04-23 02:36:49,512 - trainer - INFO -     val_doc_entropy: 4.04508
+2024-04-23 02:36:49,512 - trainer - INFO -     test_loss      : 0.6338
+2024-04-23 02:36:49,512 - trainer - INFO -     test_accuracy  : 0.789308
+2024-04-23 02:36:49,512 - trainer - INFO -     test_macro_f   : 0.781719
+2024-04-23 02:36:49,512 - trainer - INFO -     test_precision : 0.807334
+2024-04-23 02:36:49,512 - trainer - INFO -     test_recall    : 0.789308
+2024-04-23 02:36:49,512 - trainer - INFO -     test_doc_entropy: 4.049956
+2024-04-23 02:40:34,176 - trainer - INFO -     epoch          : 2
+2024-04-23 02:40:34,176 - trainer - INFO -     loss           : 0.533526
+2024-04-23 02:40:34,176 - trainer - INFO -     accuracy       : 0.818052
+2024-04-23 02:40:34,176 - trainer - INFO -     macro_f        : 0.810523
+2024-04-23 02:40:34,176 - trainer - INFO -     precision      : 0.831847
+2024-04-23 02:40:34,176 - trainer - INFO -     recall         : 0.818052
+2024-04-23 02:40:34,176 - trainer - INFO -     doc_entropy    : 3.808211
+2024-04-23 02:40:34,176 - trainer - INFO -     val_loss       : 0.601246
+2024-04-23 02:40:34,176 - trainer - INFO -     val_accuracy   : 0.795137
+2024-04-23 02:40:34,176 - trainer - INFO -     val_macro_f    : 0.791764
+2024-04-23 02:40:34,176 - trainer - INFO -     val_precision  : 0.817808
+2024-04-23 02:40:34,176 - trainer - INFO -     val_recall     : 0.795137
+2024-04-23 02:40:34,176 - trainer - INFO -     val_doc_entropy: 3.713695
+2024-04-23 02:40:34,176 - trainer - INFO -     test_loss      : 0.59483
+2024-04-23 02:40:34,176 - trainer - INFO -     test_accuracy  : 0.80204
+2024-04-23 02:40:34,176 - trainer - INFO -     test_macro_f   : 0.799528
+2024-04-23 02:40:34,176 - trainer - INFO -     test_precision : 0.824737
+2024-04-23 02:40:34,176 - trainer - INFO -     test_recall    : 0.80204
+2024-04-23 02:40:34,176 - trainer - INFO -     test_doc_entropy: 3.71736
+2024-04-23 02:44:17,275 - trainer - INFO -     epoch          : 3
+2024-04-23 02:44:17,291 - trainer - INFO -     loss           : 0.41071
+2024-04-23 02:44:17,291 - trainer - INFO -     accuracy       : 0.858072
+2024-04-23 02:44:17,291 - trainer - INFO -     macro_f        : 0.85365
+2024-04-23 02:44:17,291 - trainer - INFO -     precision      : 0.872983
+2024-04-23 02:44:17,291 - trainer - INFO -     recall         : 0.858072
+2024-04-23 02:44:17,291 - trainer - INFO -     doc_entropy    : 3.514022
+2024-04-23 02:44:17,291 - trainer - INFO -     val_loss       : 0.657064
+2024-04-23 02:44:17,291 - trainer - INFO -     val_accuracy   : 0.78555
+2024-04-23 02:44:17,291 - trainer - INFO -     val_macro_f    : 0.777508
+2024-04-23 02:44:17,291 - trainer - INFO -     val_precision  : 0.798857
+2024-04-23 02:44:17,291 - trainer - INFO -     val_recall     : 0.78555
+2024-04-23 02:44:17,291 - trainer - INFO -     val_doc_entropy: 3.480406
+2024-04-23 02:44:17,291 - trainer - INFO -     test_loss      : 0.637685
+2024-04-23 02:44:17,291 - trainer - INFO -     test_accuracy  : 0.798052
+2024-04-23 02:44:17,291 - trainer - INFO -     test_macro_f   : 0.791789
+2024-04-23 02:44:17,291 - trainer - INFO -     test_precision : 0.814665
+2024-04-23 02:44:17,291 - trainer - INFO -     test_recall    : 0.798052
+2024-04-23 02:44:17,291 - trainer - INFO -     test_doc_entropy: 3.483669
+2024-04-23 02:45:04,086 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,026,712
+Freeze params: 0
+2024-04-23 02:48:48,892 - trainer - INFO -     epoch          : 1
+2024-04-23 02:48:48,892 - trainer - INFO -     loss           : 0.731838
+2024-04-23 02:48:48,892 - trainer - INFO -     accuracy       : 0.761666
+2024-04-23 02:48:48,892 - trainer - INFO -     macro_f        : 0.744942
+2024-04-23 02:48:48,892 - trainer - INFO -     precision      : 0.764405
+2024-04-23 02:48:48,892 - trainer - INFO -     recall         : 0.761666
+2024-04-23 02:48:48,892 - trainer - INFO -     doc_entropy    : 4.212038
+2024-04-23 02:48:48,892 - trainer - INFO -     val_loss       : 0.620476
+2024-04-23 02:48:48,892 - trainer - INFO -     val_accuracy   : 0.789001
+2024-04-23 02:48:48,892 - trainer - INFO -     val_macro_f    : 0.77973
+2024-04-23 02:48:48,892 - trainer - INFO -     val_precision  : 0.801709
+2024-04-23 02:48:48,892 - trainer - INFO -     val_recall     : 0.789001
+2024-04-23 02:48:48,892 - trainer - INFO -     val_doc_entropy: 4.191743
+2024-04-23 02:48:48,892 - trainer - INFO -     test_loss      : 0.611824
+2024-04-23 02:48:48,892 - trainer - INFO -     test_accuracy  : 0.796364
+2024-04-23 02:48:48,892 - trainer - INFO -     test_macro_f   : 0.787061
+2024-04-23 02:48:48,892 - trainer - INFO -     test_precision : 0.807936
+2024-04-23 02:48:48,892 - trainer - INFO -     test_recall    : 0.796364
+2024-04-23 02:48:48,892 - trainer - INFO -     test_doc_entropy: 4.198512
+2024-04-23 02:52:33,412 - trainer - INFO -     epoch          : 2
+2024-04-23 02:52:33,412 - trainer - INFO -     loss           : 0.528873
+2024-04-23 02:52:33,412 - trainer - INFO -     accuracy       : 0.820334
+2024-04-23 02:52:33,412 - trainer - INFO -     macro_f        : 0.812931
+2024-04-23 02:52:33,412 - trainer - INFO -     precision      : 0.834472
+2024-04-23 02:52:33,412 - trainer - INFO -     recall         : 0.820334
+2024-04-23 02:52:33,412 - trainer - INFO -     doc_entropy    : 4.049911
+2024-04-23 02:52:33,412 - trainer - INFO -     val_loss       : 0.607937
+2024-04-23 02:52:33,412 - trainer - INFO -     val_accuracy   : 0.793527
+2024-04-23 02:52:33,412 - trainer - INFO -     val_macro_f    : 0.780871
+2024-04-23 02:52:33,412 - trainer - INFO -     val_precision  : 0.800986
+2024-04-23 02:52:33,412 - trainer - INFO -     val_recall     : 0.793527
+2024-04-23 02:52:33,412 - trainer - INFO -     val_doc_entropy: 4.003705
+2024-04-23 02:52:33,412 - trainer - INFO -     test_loss      : 0.602372
+2024-04-23 02:52:33,412 - trainer - INFO -     test_accuracy  : 0.799509
+2024-04-23 02:52:33,412 - trainer - INFO -     test_macro_f   : 0.787956
+2024-04-23 02:52:33,412 - trainer - INFO -     test_precision : 0.808317
+2024-04-23 02:52:33,412 - trainer - INFO -     test_recall    : 0.799509
+2024-04-23 02:52:33,412 - trainer - INFO -     test_doc_entropy: 4.008509
+2024-04-23 02:56:17,597 - trainer - INFO -     epoch          : 3
+2024-04-23 02:56:17,597 - trainer - INFO -     loss           : 0.40245
+2024-04-23 02:56:17,597 - trainer - INFO -     accuracy       : 0.861485
+2024-04-23 02:56:17,597 - trainer - INFO -     macro_f        : 0.856687
+2024-04-23 02:56:17,597 - trainer - INFO -     precision      : 0.875068
+2024-04-23 02:56:17,597 - trainer - INFO -     recall         : 0.861485
+2024-04-23 02:56:17,597 - trainer - INFO -     doc_entropy    : 3.815625
+2024-04-23 02:56:17,597 - trainer - INFO -     val_loss       : 0.655022
+2024-04-23 02:56:17,597 - trainer - INFO -     val_accuracy   : 0.788925
+2024-04-23 02:56:17,597 - trainer - INFO -     val_macro_f    : 0.783696
+2024-04-23 02:56:17,597 - trainer - INFO -     val_precision  : 0.809606
+2024-04-23 02:56:17,597 - trainer - INFO -     val_recall     : 0.788925
+2024-04-23 02:56:17,597 - trainer - INFO -     val_doc_entropy: 3.814114
+2024-04-23 02:56:17,597 - trainer - INFO -     test_loss      : 0.639847
+2024-04-23 02:56:17,597 - trainer - INFO -     test_accuracy  : 0.798435
+2024-04-23 02:56:17,597 - trainer - INFO -     test_macro_f   : 0.794722
+2024-04-23 02:56:17,597 - trainer - INFO -     test_precision : 0.820816
+2024-04-23 02:56:17,597 - trainer - INFO -     test_recall    : 0.798435
+2024-04-23 02:56:17,597 - trainer - INFO -     test_doc_entropy: 3.818464
+2024-04-23 02:57:01,801 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 70,026,712
+Freeze params: 0
+2024-04-23 03:00:47,186 - trainer - INFO -     epoch          : 1
+2024-04-23 03:00:47,186 - trainer - INFO -     loss           : 0.732407
+2024-04-23 03:00:47,186 - trainer - INFO -     accuracy       : 0.76111
+2024-04-23 03:00:47,186 - trainer - INFO -     macro_f        : 0.743445
+2024-04-23 03:00:47,186 - trainer - INFO -     precision      : 0.761004
+2024-04-23 03:00:47,186 - trainer - INFO -     recall         : 0.76111
+2024-04-23 03:00:47,186 - trainer - INFO -     doc_entropy    : 4.160328
+2024-04-23 03:00:47,186 - trainer - INFO -     val_loss       : 0.631383
+2024-04-23 03:00:47,186 - trainer - INFO -     val_accuracy   : 0.784706
+2024-04-23 03:00:47,186 - trainer - INFO -     val_macro_f    : 0.777016
+2024-04-23 03:00:47,186 - trainer - INFO -     val_precision  : 0.800472
+2024-04-23 03:00:47,186 - trainer - INFO -     val_recall     : 0.784706
+2024-04-23 03:00:47,201 - trainer - INFO -     val_doc_entropy: 3.869165
+2024-04-23 03:00:47,201 - trainer - INFO -     test_loss      : 0.623103
+2024-04-23 03:00:47,201 - trainer - INFO -     test_accuracy  : 0.791993
+2024-04-23 03:00:47,201 - trainer - INFO -     test_macro_f   : 0.788461
+2024-04-23 03:00:47,201 - trainer - INFO -     test_precision : 0.815113
+2024-04-23 03:00:47,201 - trainer - INFO -     test_recall    : 0.791993
+2024-04-23 03:00:47,201 - trainer - INFO -     test_doc_entropy: 3.872994
+2024-04-23 03:04:32,335 - trainer - INFO -     epoch          : 2
+2024-04-23 03:04:32,335 - trainer - INFO -     loss           : 0.529213
+2024-04-23 03:04:32,335 - trainer - INFO -     accuracy       : 0.819519
+2024-04-23 03:04:32,335 - trainer - INFO -     macro_f        : 0.812325
+2024-04-23 03:04:32,335 - trainer - INFO -     precision      : 0.833962
+2024-04-23 03:04:32,335 - trainer - INFO -     recall         : 0.819519
+2024-04-23 03:04:32,335 - trainer - INFO -     doc_entropy    : 4.095561
+2024-04-23 03:04:32,335 - trainer - INFO -     val_loss       : 0.610007
+2024-04-23 03:04:32,347 - trainer - INFO -     val_accuracy   : 0.793066
+2024-04-23 03:04:32,347 - trainer - INFO -     val_macro_f    : 0.783422
+2024-04-23 03:04:32,347 - trainer - INFO -     val_precision  : 0.803907
+2024-04-23 03:04:32,347 - trainer - INFO -     val_recall     : 0.793066
+2024-04-23 03:04:32,347 - trainer - INFO -     val_doc_entropy: 4.18055
+2024-04-23 03:04:32,347 - trainer - INFO -     test_loss      : 0.6049
+2024-04-23 03:04:32,347 - trainer - INFO -     test_accuracy  : 0.80273
+2024-04-23 03:04:32,347 - trainer - INFO -     test_macro_f   : 0.791671
+2024-04-23 03:04:32,347 - trainer - INFO -     test_precision : 0.809846
+2024-04-23 03:04:32,347 - trainer - INFO -     test_recall    : 0.80273
+2024-04-23 03:04:32,347 - trainer - INFO -     test_doc_entropy: 4.18666
+2024-04-23 03:08:15,211 - trainer - INFO -     epoch          : 3
+2024-04-23 03:08:15,211 - trainer - INFO -     loss           : 0.400295
+2024-04-23 03:08:15,211 - trainer - INFO -     accuracy       : 0.862281
+2024-04-23 03:08:15,211 - trainer - INFO -     macro_f        : 0.857632
+2024-04-23 03:08:15,211 - trainer - INFO -     precision      : 0.876279
+2024-04-23 03:08:15,211 - trainer - INFO -     recall         : 0.862281
+2024-04-23 03:08:15,211 - trainer - INFO -     doc_entropy    : 3.965507
+2024-04-23 03:08:15,211 - trainer - INFO -     val_loss       : 0.663478
+2024-04-23 03:08:15,220 - trainer - INFO -     val_accuracy   : 0.789385
+2024-04-23 03:08:15,220 - trainer - INFO -     val_macro_f    : 0.783351
+2024-04-23 03:08:15,220 - trainer - INFO -     val_precision  : 0.807515
+2024-04-23 03:08:15,220 - trainer - INFO -     val_recall     : 0.789385
+2024-04-23 03:08:15,220 - trainer - INFO -     val_doc_entropy: 3.96767
+2024-04-23 03:08:15,220 - trainer - INFO -     test_loss      : 0.644605
+2024-04-23 03:08:15,220 - trainer - INFO -     test_accuracy  : 0.792223
+2024-04-23 03:08:15,220 - trainer - INFO -     test_macro_f   : 0.787014
+2024-04-23 03:08:15,220 - trainer - INFO -     test_precision : 0.811858
+2024-04-23 03:08:15,220 - trainer - INFO -     test_recall    : 0.792223
+2024-04-23 03:08:15,220 - trainer - INFO -     test_doc_entropy: 3.974309
+2024-04-23 19:55:10,758 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True, bidirectional=True)
+  (W_k): Linear(in_features=600, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.2, inplace=False)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 71,146,312
+Freeze params: 0
+2024-04-23 20:02:04,559 - trainer - INFO -     epoch          : 1
+2024-04-23 20:02:04,559 - trainer - INFO -     loss           : 1.25819
+2024-04-23 20:02:04,559 - trainer - INFO -     accuracy       : 0.634848
+2024-04-23 20:02:04,559 - trainer - INFO -     macro_f        : 0.559674
+2024-04-23 20:02:04,559 - trainer - INFO -     precision      : 0.537196
+2024-04-23 20:02:04,559 - trainer - INFO -     recall         : 0.634848
+2024-04-23 20:02:04,559 - trainer - INFO -     doc_entropy    : 3.60489
+2024-04-23 20:02:04,559 - trainer - INFO -     val_loss       : 0.947231
+2024-04-23 20:02:04,559 - trainer - INFO -     val_accuracy   : 0.693281
+2024-04-23 20:02:04,559 - trainer - INFO -     val_macro_f    : 0.650806
+2024-04-23 20:02:04,559 - trainer - INFO -     val_precision  : 0.660509
+2024-04-23 20:02:04,559 - trainer - INFO -     val_recall     : 0.693281
+2024-04-23 20:02:04,559 - trainer - INFO -     val_doc_entropy: 4.130149
+2024-04-23 20:02:04,559 - trainer - INFO -     test_loss      : 0.92992
+2024-04-23 20:02:04,559 - trainer - INFO -     test_accuracy  : 0.705553
+2024-04-23 20:02:04,559 - trainer - INFO -     test_macro_f   : 0.663904
+2024-04-23 20:02:04,559 - trainer - INFO -     test_precision : 0.672597
+2024-04-23 20:02:04,559 - trainer - INFO -     test_recall    : 0.705553
+2024-04-23 20:02:04,559 - trainer - INFO -     test_doc_entropy: 4.12703
+2024-04-23 20:02:52,096 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True, bidirectional=True)
+  (W_k): Linear(in_features=600, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.2, inplace=False)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 71,146,312
+Freeze params: 0
+2024-04-23 20:09:50,662 - trainer - INFO -     epoch          : 1
+2024-04-23 20:09:50,662 - trainer - INFO -     loss           : 0.714144
+2024-04-23 20:09:50,662 - trainer - INFO -     accuracy       : 0.76507
+2024-04-23 20:09:50,662 - trainer - INFO -     macro_f        : 0.749475
+2024-04-23 20:09:50,662 - trainer - INFO -     precision      : 0.768316
+2024-04-23 20:09:50,662 - trainer - INFO -     recall         : 0.76507
+2024-04-23 20:09:50,662 - trainer - INFO -     doc_entropy    : 3.936706
+2024-04-23 20:09:50,662 - trainer - INFO -     val_loss       : 0.606989
+2024-04-23 20:09:50,662 - trainer - INFO -     val_accuracy   : 0.786394
+2024-04-23 20:09:50,662 - trainer - INFO -     val_macro_f    : 0.772693
+2024-04-23 20:09:50,662 - trainer - INFO -     val_precision  : 0.793203
+2024-04-23 20:09:50,662 - trainer - INFO -     val_recall     : 0.786394
+2024-04-23 20:09:50,662 - trainer - INFO -     val_doc_entropy: 4.253031
+2024-04-23 20:09:50,662 - trainer - INFO -     test_loss      : 0.599392
+2024-04-23 20:09:50,662 - trainer - INFO -     test_accuracy  : 0.793833
+2024-04-23 20:09:50,662 - trainer - INFO -     test_macro_f   : 0.78026
+2024-04-23 20:09:50,662 - trainer - INFO -     test_precision : 0.800999
+2024-04-23 20:09:50,662 - trainer - INFO -     test_recall    : 0.793833
+2024-04-23 20:09:50,662 - trainer - INFO -     test_doc_entropy: 4.258275
+2024-04-23 20:16:50,589 - trainer - INFO -     epoch          : 2
+2024-04-23 20:16:50,589 - trainer - INFO -     loss           : 0.490808
+2024-04-23 20:16:50,589 - trainer - INFO -     accuracy       : 0.830564
+2024-04-23 20:16:50,589 - trainer - INFO -     macro_f        : 0.82427
+2024-04-23 20:16:50,589 - trainer - INFO -     precision      : 0.84503
+2024-04-23 20:16:50,589 - trainer - INFO -     recall         : 0.830564
+2024-04-23 20:16:50,589 - trainer - INFO -     doc_entropy    : 3.463896
+2024-04-23 20:16:50,589 - trainer - INFO -     val_loss       : 0.578929
+2024-04-23 20:16:50,589 - trainer - INFO -     val_accuracy   : 0.800046
+2024-04-23 20:16:50,589 - trainer - INFO -     val_macro_f    : 0.791954
+2024-04-23 20:16:50,589 - trainer - INFO -     val_precision  : 0.814803
+2024-04-23 20:16:50,589 - trainer - INFO -     val_recall     : 0.800046
+2024-04-23 20:16:50,589 - trainer - INFO -     val_doc_entropy: 4.073044
+2024-04-23 20:16:50,589 - trainer - INFO -     test_loss      : 0.564195
+2024-04-23 20:16:50,589 - trainer - INFO -     test_accuracy  : 0.806489
+2024-04-23 20:16:50,589 - trainer - INFO -     test_macro_f   : 0.798744
+2024-04-23 20:16:50,589 - trainer - INFO -     test_precision : 0.819426
+2024-04-23 20:16:50,589 - trainer - INFO -     test_recall    : 0.806489
+2024-04-23 20:16:50,589 - trainer - INFO -     test_doc_entropy: 4.077896
+2024-04-23 20:17:50,014 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True, bidirectional=True)
+  (W_k): Linear(in_features=600, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.2, inplace=False)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 71,146,312
+Freeze params: 0
+2024-04-24 01:16:36,061 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (rnn): GRU(300, 300, batch_first=True, bidirectional=True)
+  (W_k): Linear(in_features=600, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.5, inplace=False)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 71,146,312
+Freeze params: 0
+2024-04-24 01:23:33,090 - trainer - INFO -     epoch          : 1
+2024-04-24 01:23:33,090 - trainer - INFO -     loss           : 0.723923
+2024-04-24 01:23:33,090 - trainer - INFO -     accuracy       : 0.762347
+2024-04-24 01:23:33,090 - trainer - INFO -     macro_f        : 0.746081
+2024-04-24 01:23:33,090 - trainer - INFO -     precision      : 0.764766
+2024-04-24 01:23:33,090 - trainer - INFO -     recall         : 0.762347
+2024-04-24 01:23:33,090 - trainer - INFO -     doc_entropy    : 3.157499
+2024-04-24 01:23:33,090 - trainer - INFO -     val_loss       : 0.659158
+2024-04-24 01:23:33,090 - trainer - INFO -     val_accuracy   : 0.775579
+2024-04-24 01:23:33,090 - trainer - INFO -     val_macro_f    : 0.755414
+2024-04-24 01:23:33,090 - trainer - INFO -     val_precision  : 0.775841
+2024-04-24 01:23:33,090 - trainer - INFO -     val_recall     : 0.775579
+2024-04-24 01:23:33,090 - trainer - INFO -     val_doc_entropy: 4.661159
+2024-04-24 01:23:33,090 - trainer - INFO -     test_loss      : 0.655499
+2024-04-24 01:23:33,090 - trainer - INFO -     test_accuracy  : 0.77811
+2024-04-24 01:23:33,090 - trainer - INFO -     test_macro_f   : 0.758376
+2024-04-24 01:23:33,090 - trainer - INFO -     test_precision : 0.778283
+2024-04-24 01:23:33,090 - trainer - INFO -     test_recall    : 0.77811
+2024-04-24 01:23:33,090 - trainer - INFO -     test_doc_entropy: 4.666518
+2024-04-24 01:30:38,274 - trainer - INFO -     epoch          : 2
+2024-04-24 01:30:38,274 - trainer - INFO -     loss           : 0.505296
+2024-04-24 01:30:38,274 - trainer - INFO -     accuracy       : 0.826211
+2024-04-24 01:30:38,274 - trainer - INFO -     macro_f        : 0.819489
+2024-04-24 01:30:38,274 - trainer - INFO -     precision      : 0.840638
+2024-04-24 01:30:38,274 - trainer - INFO -     recall         : 0.826211
+2024-04-24 01:30:38,274 - trainer - INFO -     doc_entropy    : 2.843308
+2024-04-24 01:30:38,274 - trainer - INFO -     val_loss       : 0.59069
+2024-04-24 01:30:38,274 - trainer - INFO -     val_accuracy   : 0.794064
+2024-04-24 01:30:38,274 - trainer - INFO -     val_macro_f    : 0.782666
+2024-04-24 01:30:38,274 - trainer - INFO -     val_precision  : 0.803114
+2024-04-24 01:30:38,274 - trainer - INFO -     val_recall     : 0.794064
+2024-04-24 01:30:38,274 - trainer - INFO -     val_doc_entropy: 4.499276
+2024-04-24 01:30:38,274 - trainer - INFO -     test_loss      : 0.584009
+2024-04-24 01:30:38,274 - trainer - INFO -     test_accuracy  : 0.795674
+2024-04-24 01:30:38,274 - trainer - INFO -     test_macro_f   : 0.78508
+2024-04-24 01:30:38,274 - trainer - INFO -     test_precision : 0.8045
+2024-04-24 01:30:38,274 - trainer - INFO -     test_recall    : 0.795674
+2024-04-24 01:30:38,274 - trainer - INFO -     test_doc_entropy: 4.505042
+2024-04-24 01:56:22,469 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (rnn): GRU(300, 300, batch_first=True, bidirectional=True)
+  (W_k): Linear(in_features=600, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.2, inplace=False)
+  (pooling): AvgPool1d(kernel_size=(3,), stride=(1,), padding=(1,))
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 71,146,312
+Freeze params: 0
+2024-04-24 02:03:16,830 - trainer - INFO -     epoch          : 1
+2024-04-24 02:03:16,830 - trainer - INFO -     loss           : 1.055992
+2024-04-24 02:03:16,830 - trainer - INFO -     accuracy       : 0.670313
+2024-04-24 02:03:16,830 - trainer - INFO -     macro_f        : 0.636608
+2024-04-24 02:03:16,830 - trainer - INFO -     precision      : 0.647288
+2024-04-24 02:03:16,830 - trainer - INFO -     recall         : 0.670313
+2024-04-24 02:03:16,830 - trainer - INFO -     doc_entropy    : 1.105087
+2024-04-24 02:03:16,830 - trainer - INFO -     val_loss       : 1.20105
+2024-04-24 02:03:16,846 - trainer - INFO -     val_accuracy   : 0.644731
+2024-04-24 02:03:16,846 - trainer - INFO -     val_macro_f    : 0.635004
+2024-04-24 02:03:16,846 - trainer - INFO -     val_precision  : 0.661295
+2024-04-24 02:03:16,846 - trainer - INFO -     val_recall     : 0.644731
+2024-04-24 02:03:16,846 - trainer - INFO -     val_doc_entropy: 0.646097
+2024-04-24 02:03:16,846 - trainer - INFO -     test_loss      : 1.210864
+2024-04-24 02:03:16,846 - trainer - INFO -     test_accuracy  : 0.647492
+2024-04-24 02:03:16,846 - trainer - INFO -     test_macro_f   : 0.638547
+2024-04-24 02:03:16,846 - trainer - INFO -     test_precision : 0.665134
+2024-04-24 02:03:16,846 - trainer - INFO -     test_recall    : 0.647492
+2024-04-24 02:03:16,846 - trainer - INFO -     test_doc_entropy: 0.646348
+2024-04-25 16:24:56,958 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (rnn): GRU(300, 300, batch_first=True)
+  (W_k): Linear(in_features=300, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (W_v): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.2, inplace=False)
+  (pooling): MaxPool1d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+  (add_norm1): AddNorm(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (ln): LayerNorm((256, 300), eps=1e-05, elementwise_affine=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 40, kernel_size=(1, 300), stride=(1, 1))
+  )
+  (add_norm2): AddNorm(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (ln): LayerNorm((256, 600), eps=1e-05, elementwise_affine=True)
+  )
+)
+Trainable params: 71,077,352
+Freeze params: 0
+2024-04-25 16:32:49,336 - trainer - INFO -     epoch          : 1
+2024-04-25 16:32:49,336 - trainer - INFO -     loss           : 0.731903
+2024-04-25 16:32:49,336 - trainer - INFO -     accuracy       : 0.759662
+2024-04-25 16:32:49,336 - trainer - INFO -     macro_f        : 0.746232
+2024-04-25 16:32:49,352 - trainer - INFO -     precision      : 0.768245
+2024-04-25 16:32:49,352 - trainer - INFO -     recall         : 0.759662
+2024-04-25 16:32:49,352 - trainer - INFO -     doc_entropy    : 3.899183
+2024-04-25 16:32:49,352 - trainer - INFO -     val_loss       : 0.621288
+2024-04-25 16:32:49,352 - trainer - INFO -     val_accuracy   : 0.782865
+2024-04-25 16:32:49,352 - trainer - INFO -     val_macro_f    : 0.782946
+2024-04-25 16:32:49,352 - trainer - INFO -     val_precision  : 0.814506
+2024-04-25 16:32:49,352 - trainer - INFO -     val_recall     : 0.782865
+2024-04-25 16:32:49,352 - trainer - INFO -     val_doc_entropy: 3.818521
+2024-04-25 16:32:49,352 - trainer - INFO -     test_loss      : 0.619603
+2024-04-25 16:32:49,352 - trainer - INFO -     test_accuracy  : 0.787774
+2024-04-25 16:32:49,352 - trainer - INFO -     test_macro_f   : 0.789004
+2024-04-25 16:32:49,352 - trainer - INFO -     test_precision : 0.82
+2024-04-25 16:32:49,352 - trainer - INFO -     test_recall    : 0.787774
+2024-04-25 16:32:49,352 - trainer - INFO -     test_doc_entropy: 3.821708
+2024-04-25 16:40:36,808 - trainer - INFO -     epoch          : 2
+2024-04-25 16:40:36,808 - trainer - INFO -     loss           : 0.524689
+2024-04-25 16:40:36,808 - trainer - INFO -     accuracy       : 0.818205
+2024-04-25 16:40:36,808 - trainer - INFO -     macro_f        : 0.812306
+2024-04-25 16:40:36,808 - trainer - INFO -     precision      : 0.835758
+2024-04-25 16:40:36,808 - trainer - INFO -     recall         : 0.818205
+2024-04-25 16:40:36,808 - trainer - INFO -     doc_entropy    : 3.81981
+2024-04-25 16:40:36,808 - trainer - INFO -     val_loss       : 0.611377
+2024-04-25 16:40:36,808 - trainer - INFO -     val_accuracy   : 0.789845
+2024-04-25 16:40:36,808 - trainer - INFO -     val_macro_f    : 0.772218
+2024-04-25 16:40:36,808 - trainer - INFO -     val_precision  : 0.790315
+2024-04-25 16:40:36,808 - trainer - INFO -     val_recall     : 0.789845
+2024-04-25 16:40:36,808 - trainer - INFO -     val_doc_entropy: 3.990144
+2024-04-25 16:40:36,808 - trainer - INFO -     test_loss      : 0.596542
+2024-04-25 16:40:36,808 - trainer - INFO -     test_accuracy  : 0.796364
+2024-04-25 16:40:36,808 - trainer - INFO -     test_macro_f   : 0.779812
+2024-04-25 16:40:36,808 - trainer - INFO -     test_precision : 0.797477
+2024-04-25 16:40:36,808 - trainer - INFO -     test_recall    : 0.796364
+2024-04-25 16:40:36,808 - trainer - INFO -     test_doc_entropy: 3.994046
+2024-04-25 16:48:35,396 - trainer - INFO -     epoch          : 3
+2024-04-25 16:48:35,396 - trainer - INFO -     loss           : 0.390951
+2024-04-25 16:48:35,396 - trainer - INFO -     accuracy       : 0.863249
+2024-04-25 16:48:35,396 - trainer - INFO -     macro_f        : 0.859545
+2024-04-25 16:48:35,396 - trainer - INFO -     precision      : 0.878988
+2024-04-25 16:48:35,396 - trainer - INFO -     recall         : 0.863249
+2024-04-25 16:48:35,396 - trainer - INFO -     doc_entropy    : 3.748817
+2024-04-25 16:48:35,396 - trainer - INFO -     val_loss       : 0.638503
+2024-04-25 16:48:35,396 - trainer - INFO -     val_accuracy   : 0.791149
+2024-04-25 16:48:35,396 - trainer - INFO -     val_macro_f    : 0.790978
+2024-04-25 16:48:35,396 - trainer - INFO -     val_precision  : 0.821575
+2024-04-25 16:48:35,396 - trainer - INFO -     val_recall     : 0.791149
+2024-04-25 16:48:35,396 - trainer - INFO -     val_doc_entropy: 3.864771
+2024-04-25 16:48:35,396 - trainer - INFO -     test_loss      : 0.622945
+2024-04-25 16:48:35,396 - trainer - INFO -     test_accuracy  : 0.800506
+2024-04-25 16:48:35,396 - trainer - INFO -     test_macro_f   : 0.801186
+2024-04-25 16:48:35,396 - trainer - INFO -     test_precision : 0.828546
+2024-04-25 16:48:35,396 - trainer - INFO -     test_recall    : 0.800506
+2024-04-25 16:48:35,396 - trainer - INFO -     test_doc_entropy: 3.865844
+2024-04-25 16:56:31,980 - trainer - INFO -     epoch          : 4
+2024-04-25 16:56:31,980 - trainer - INFO -     loss           : 0.280222
+2024-04-25 16:56:31,980 - trainer - INFO -     accuracy       : 0.901524
+2024-04-25 16:56:31,980 - trainer - INFO -     macro_f        : 0.899632
+2024-04-25 16:56:31,980 - trainer - INFO -     precision      : 0.915687
+2024-04-25 16:56:31,980 - trainer - INFO -     recall         : 0.901524
+2024-04-25 16:56:31,980 - trainer - INFO -     doc_entropy    : 3.720751
+2024-04-25 16:56:31,980 - trainer - INFO -     val_loss       : 0.729596
+2024-04-25 16:56:31,980 - trainer - INFO -     val_accuracy   : 0.782712
+2024-04-25 16:56:31,980 - trainer - INFO -     val_macro_f    : 0.783305
+2024-04-25 16:56:31,980 - trainer - INFO -     val_precision  : 0.813696
+2024-04-25 16:56:31,980 - trainer - INFO -     val_recall     : 0.782712
+2024-04-25 16:56:31,980 - trainer - INFO -     val_doc_entropy: 3.861777
+2024-04-25 16:56:31,980 - trainer - INFO -     test_loss      : 0.723885
+2024-04-25 16:56:31,980 - trainer - INFO -     test_accuracy  : 0.788234
+2024-04-25 16:56:31,980 - trainer - INFO -     test_macro_f   : 0.787806
+2024-04-25 16:56:31,980 - trainer - INFO -     test_precision : 0.817171
+2024-04-25 16:56:31,980 - trainer - INFO -     test_recall    : 0.788234
+2024-04-25 16:56:31,980 - trainer - INFO -     test_doc_entropy: 3.863195
+2024-04-25 16:57:26,467 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=300, out_features=15, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (rnn): GRU(300, 300, batch_first=True)
+  (W_k): Linear(in_features=300, out_features=40, bias=False)
+  (W_q): Linear(in_features=300, out_features=40, bias=False)
+  (W_v): Linear(in_features=300, out_features=40, bias=False)
+  (droputout): Dropout(p=0.2, inplace=False)
+  (pooling): MaxPool1d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+  (add_norm1): AddNorm(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (ln): LayerNorm((256, 300), eps=1e-05, elementwise_affine=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 40, kernel_size=(1, 300), stride=(1, 1))
+  )
+  (add_norm2): AddNorm(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (ln): LayerNorm((256, 600), eps=1e-05, elementwise_affine=True)
+  )
+)
+Trainable params: 71,077,352
+Freeze params: 0

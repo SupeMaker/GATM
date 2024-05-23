@@ -1,0 +1,15 @@
+,arch_type,seed,base,variant_name,val_loss,val_accuracy,val_macro_f,val_precision,val_recall,val_doc_entropy,test_loss,test_accuracy,test_macro_f,test_precision,test_recall,test_doc_entropy,dropout_rate,embedding_type,max_length,head_num,calculate_entropy,with_gru,run_id
+0,BiAttentionClassifyModel,42.0,0.0,base,0.637791,0.789692,0.789436,0.819673,0.789692,3.862439,0.623939,0.799279,0.799412,0.829456,0.799279,3.864197,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel
+1,BiAttentionClassifyModel,42.0,0.0,base,0.578787,0.798742,0.791304,0.815025,0.798742,4.072875,0.564753,0.804955,0.796905,0.818482,0.804955,4.078288,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel
+2,,,,,,,,,,,,,,,,,,,,,,,
+3,BiAttentionClassifyModel,4.0,0.0,base,0.608905,0.791839,0.781435,0.801782,0.791839,4.180997,0.60645,0.803881,0.792912,0.811765,0.803881,4.185837,0.2,glove,256.0,40.0,1.0,,New_MIND15/keep_all/BiAttentionClassifyModel
+4,BiAttentionClassifyModel,25.0,0.0,base,0.605181,0.793833,0.781796,0.802121,0.793833,4.003599,0.602725,0.800353,0.789166,0.808935,0.800353,4.009228,0.2,glove,256.0,40.0,1.0,,New_MIND15/keep_all/BiAttentionClassifyModel
+5,BiAttentionClassifyModel,2021.0,0.0,base,0.603266,0.791916,0.787965,0.815131,0.791916,3.713357,0.595119,0.80089,0.797428,0.822064,0.80089,3.717649,0.2,glove,256.0,40.0,1.0,,New_MIND15/keep_all/BiAttentionClassifyModel
+6,BiAttentionClassifyModel,2020.0,0.0,base,0.608298,0.795061,0.789981,0.813995,0.795061,4.049317,0.607654,0.80135,0.797332,0.821931,0.80135,4.054921,0.2,glove,256.0,40.0,1.0,,New_MIND15/keep_all/BiAttentionClassifyModel
+7,BiAttentionClassifyModel,42.0,0.0,base,0.628201,0.791686,0.789823,0.816634,0.791686,4.13923,0.607262,0.802961,0.800995,0.825088,0.802961,4.144921,0.2,glove,256.0,40.0,1.0,,New_MIND15/keep_all/BiAttentionClassifyModel
+8,,,,,,,,,,,,,,,,,,,,,,,
+9,BiAttentionClassifyModel,4.0,0.0,base,0.601677,0.796058,0.794039,0.822759,0.796058,3.049142,0.596067,0.799432,0.798658,0.826698,0.799432,3.047289,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel
+10,BiAttentionClassifyModel,25.0,0.0,base,0.586328,0.796901,0.791069,0.813851,0.796901,3.175302,0.578196,0.803958,0.799553,0.823403,0.803958,3.176732,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel
+11,BiAttentionClassifyModel,2021.0,0.0,base,0.623259,0.790075,0.777596,0.796906,0.790075,3.076547,0.608789,0.795904,0.785509,0.806695,0.795904,3.077009,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel
+12,BiAttentionClassifyModel,2020.0,0.0,base,0.591237,0.796441,0.794268,0.823139,0.796441,3.239619,0.580106,0.805031,0.801388,0.824785,0.805031,3.244145,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel
+13,BiAttentionClassifyModel,42.0,0.0,base,0.595714,0.798129,0.789469,0.810999,0.798129,2.996683,0.591316,0.800736,0.794285,0.817222,0.800736,2.997952,0.2,glove,256.0,40.0,1.0,gru,New_MIND15/keep_all/BiAttentionClassifyModel

@@ -1,0 +1,1298 @@
+2024-03-02 12:49:30,129 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-02 13:12:40,202 - trainer - INFO -     epoch          : 1
+2024-03-02 13:12:40,202 - trainer - INFO -     loss           : 0.939644
+2024-03-02 13:12:40,202 - trainer - INFO -     accuracy       : 0.700611
+2024-03-02 13:12:40,202 - trainer - INFO -     macro_f        : 0.462227
+2024-03-02 13:12:40,202 - trainer - INFO -     val_loss       : 0.727442
+2024-03-02 13:12:40,202 - trainer - INFO -     val_accuracy   : 0.757095
+2024-03-02 13:12:40,202 - trainer - INFO -     val_macro_f    : 0.562245
+2024-03-02 13:18:44,907 - trainer - INFO -     epoch          : 2
+2024-03-02 13:18:44,907 - trainer - INFO -     loss           : 0.630136
+2024-03-02 13:18:44,907 - trainer - INFO -     accuracy       : 0.787313
+2024-03-02 13:18:44,907 - trainer - INFO -     macro_f        : 0.606987
+2024-03-02 13:18:44,907 - trainer - INFO -     val_loss       : 0.760077
+2024-03-02 13:18:44,907 - trainer - INFO -     val_accuracy   : 0.753336
+2024-03-02 13:18:44,907 - trainer - INFO -     val_macro_f    : 0.562242
+2024-03-02 13:24:56,292 - trainer - INFO -     epoch          : 3
+2024-03-02 13:24:56,294 - trainer - INFO -     loss           : 0.477439
+2024-03-02 13:24:56,294 - trainer - INFO -     accuracy       : 0.83391
+2024-03-02 13:24:56,294 - trainer - INFO -     macro_f        : 0.689491
+2024-03-02 13:24:56,294 - trainer - INFO -     val_loss       : 0.762255
+2024-03-02 13:24:56,294 - trainer - INFO -     val_accuracy   : 0.761697
+2024-03-02 13:24:56,294 - trainer - INFO -     val_macro_f    : 0.568257
+2024-03-02 13:31:06,645 - trainer - INFO -     epoch          : 4
+2024-03-02 13:31:06,645 - trainer - INFO -     loss           : 0.370227
+2024-03-02 13:31:06,645 - trainer - INFO -     accuracy       : 0.870267
+2024-03-02 13:31:06,645 - trainer - INFO -     macro_f        : 0.755929
+2024-03-02 13:31:06,645 - trainer - INFO -     val_loss       : 0.820468
+2024-03-02 13:31:06,645 - trainer - INFO -     val_accuracy   : 0.759856
+2024-03-02 13:31:06,650 - trainer - INFO -     val_macro_f    : 0.571517
+2024-03-02 13:37:17,921 - trainer - INFO -     epoch          : 5
+2024-03-02 13:37:17,923 - trainer - INFO -     loss           : 0.280397
+2024-03-02 13:37:17,923 - trainer - INFO -     accuracy       : 0.900872
+2024-03-02 13:37:17,923 - trainer - INFO -     macro_f        : 0.814806
+2024-03-02 13:37:17,923 - trainer - INFO -     val_loss       : 0.973136
+2024-03-02 13:37:17,923 - trainer - INFO -     val_accuracy   : 0.746127
+2024-03-02 13:37:17,924 - trainer - INFO -     val_macro_f    : 0.544411
+2024-03-02 14:00:27,690 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,525,647
+Freeze params: 0
+2024-03-02 14:06:13,599 - trainer - INFO -     epoch          : 1
+2024-03-02 14:06:13,599 - trainer - INFO -     loss           : 0.884844
+2024-03-02 14:06:13,599 - trainer - INFO -     accuracy       : 0.716095
+2024-03-02 14:06:13,599 - trainer - INFO -     macro_f        : 0.482622
+2024-03-02 14:06:13,599 - trainer - INFO -     val_loss       : 0.741124
+2024-03-02 14:06:13,599 - trainer - INFO -     val_accuracy   : 0.746357
+2024-03-02 14:06:13,599 - trainer - INFO -     val_macro_f    : 0.558087
+2024-03-02 14:11:57,906 - trainer - INFO -     epoch          : 2
+2024-03-02 14:11:57,908 - trainer - INFO -     loss           : 0.604488
+2024-03-02 14:11:57,908 - trainer - INFO -     accuracy       : 0.797889
+2024-03-02 14:11:57,908 - trainer - INFO -     macro_f        : 0.621375
+2024-03-02 14:11:57,908 - trainer - INFO -     val_loss       : 0.712843
+2024-03-02 14:11:57,908 - trainer - INFO -     val_accuracy   : 0.76254
+2024-03-02 14:11:57,908 - trainer - INFO -     val_macro_f    : 0.577795
+2024-03-02 14:17:45,643 - trainer - INFO -     epoch          : 3
+2024-03-02 14:17:45,645 - trainer - INFO -     loss           : 0.460052
+2024-03-02 14:17:45,645 - trainer - INFO -     accuracy       : 0.842252
+2024-03-02 14:17:45,645 - trainer - INFO -     macro_f        : 0.701964
+2024-03-02 14:17:45,645 - trainer - INFO -     val_loss       : 0.836139
+2024-03-02 14:17:45,645 - trainer - INFO -     val_accuracy   : 0.738457
+2024-03-02 14:17:45,645 - trainer - INFO -     val_macro_f    : 0.549566
+2024-03-02 14:19:02,706 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,525,647
+Freeze params: 0
+2024-03-02 14:24:54,301 - trainer - INFO -     epoch          : 1
+2024-03-02 14:24:54,301 - trainer - INFO -     loss           : 0.894717
+2024-03-02 14:24:54,301 - trainer - INFO -     accuracy       : 0.711205
+2024-03-02 14:24:54,301 - trainer - INFO -     macro_f        : 0.472941
+2024-03-02 14:24:54,301 - trainer - INFO -     val_loss       : 0.759
+2024-03-02 14:24:54,301 - trainer - INFO -     val_accuracy   : 0.753873
+2024-03-02 14:24:54,301 - trainer - INFO -     val_macro_f    : 0.557995
+2024-03-02 14:30:39,815 - trainer - INFO -     epoch          : 2
+2024-03-02 14:30:39,815 - trainer - INFO -     loss           : 0.617179
+2024-03-02 14:30:39,815 - trainer - INFO -     accuracy       : 0.793833
+2024-03-02 14:30:39,815 - trainer - INFO -     macro_f        : 0.611837
+2024-03-02 14:30:39,815 - trainer - INFO -     val_loss       : 0.729677
+2024-03-02 14:30:39,815 - trainer - INFO -     val_accuracy   : 0.758705
+2024-03-02 14:30:39,815 - trainer - INFO -     val_macro_f    : 0.571814
+2024-03-02 14:36:27,204 - trainer - INFO -     epoch          : 3
+2024-03-02 14:36:27,204 - trainer - INFO -     loss           : 0.485829
+2024-03-02 14:36:27,205 - trainer - INFO -     accuracy       : 0.832884
+2024-03-02 14:36:27,205 - trainer - INFO -     macro_f        : 0.682359
+2024-03-02 14:36:27,205 - trainer - INFO -     val_loss       : 0.841313
+2024-03-02 14:36:27,205 - trainer - INFO -     val_accuracy   : 0.758552
+2024-03-02 14:36:27,205 - trainer - INFO -     val_macro_f    : 0.561331
+2024-03-02 14:37:35,303 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,525,647
+Freeze params: 0
+2024-03-02 14:43:25,204 - trainer - INFO -     epoch          : 1
+2024-03-02 14:43:25,205 - trainer - INFO -     loss           : 0.895642
+2024-03-02 14:43:25,205 - trainer - INFO -     accuracy       : 0.713506
+2024-03-02 14:43:25,205 - trainer - INFO -     macro_f        : 0.477474
+2024-03-02 14:43:25,205 - trainer - INFO -     val_loss       : 0.798216
+2024-03-02 14:43:25,205 - trainer - INFO -     val_accuracy   : 0.732781
+2024-03-02 14:43:25,206 - trainer - INFO -     val_macro_f    : 0.52146
+2024-03-02 14:49:20,310 - trainer - INFO -     epoch          : 2
+2024-03-02 14:49:20,310 - trainer - INFO -     loss           : 0.614663
+2024-03-02 14:49:20,310 - trainer - INFO -     accuracy       : 0.795703
+2024-03-02 14:49:20,310 - trainer - INFO -     macro_f        : 0.619139
+2024-03-02 14:49:20,310 - trainer - INFO -     val_loss       : 0.727021
+2024-03-02 14:49:20,310 - trainer - INFO -     val_accuracy   : 0.76208
+2024-03-02 14:49:20,310 - trainer - INFO -     val_macro_f    : 0.562706
+2024-03-02 14:55:07,618 - trainer - INFO -     epoch          : 3
+2024-03-02 14:55:07,618 - trainer - INFO -     loss           : 0.470278
+2024-03-02 14:55:07,618 - trainer - INFO -     accuracy       : 0.839672
+2024-03-02 14:55:07,618 - trainer - INFO -     macro_f        : 0.698269
+2024-03-02 14:55:07,618 - trainer - INFO -     val_loss       : 0.842433
+2024-03-02 14:55:07,618 - trainer - INFO -     val_accuracy   : 0.756174
+2024-03-02 14:55:07,618 - trainer - INFO -     val_macro_f    : 0.566864
+2024-03-02 14:56:16,043 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,525,647
+Freeze params: 0
+2024-03-02 15:02:03,895 - trainer - INFO -     epoch          : 1
+2024-03-02 15:02:03,895 - trainer - INFO -     loss           : 0.862761
+2024-03-02 15:02:03,895 - trainer - INFO -     accuracy       : 0.720659
+2024-03-02 15:02:03,895 - trainer - INFO -     macro_f        : 0.492525
+2024-03-02 15:02:03,895 - trainer - INFO -     val_loss       : 0.726055
+2024-03-02 15:02:03,895 - trainer - INFO -     val_accuracy   : 0.7551
+2024-03-02 15:02:03,895 - trainer - INFO -     val_macro_f    : 0.567194
+2024-03-02 15:07:53,614 - trainer - INFO -     epoch          : 2
+2024-03-02 15:07:53,614 - trainer - INFO -     loss           : 0.592407
+2024-03-02 15:07:53,614 - trainer - INFO -     accuracy       : 0.800094
+2024-03-02 15:07:53,614 - trainer - INFO -     macro_f        : 0.627752
+2024-03-02 15:07:53,614 - trainer - INFO -     val_loss       : 0.758402
+2024-03-02 15:07:53,614 - trainer - INFO -     val_accuracy   : 0.761697
+2024-03-02 15:07:53,614 - trainer - INFO -     val_macro_f    : 0.561159
+2024-03-02 15:13:37,552 - trainer - INFO -     epoch          : 3
+2024-03-02 15:13:37,552 - trainer - INFO -     loss           : 0.452971
+2024-03-02 15:13:37,552 - trainer - INFO -     accuracy       : 0.844198
+2024-03-02 15:13:37,552 - trainer - INFO -     macro_f        : 0.707998
+2024-03-02 15:13:37,552 - trainer - INFO -     val_loss       : 0.838679
+2024-03-02 15:13:37,552 - trainer - INFO -     val_accuracy   : 0.753873
+2024-03-02 15:13:37,552 - trainer - INFO -     val_macro_f    : 0.553949
+2024-03-02 15:14:43,292 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,525,647
+Freeze params: 0
+2024-03-02 15:20:33,492 - trainer - INFO -     epoch          : 1
+2024-03-02 15:20:33,493 - trainer - INFO -     loss           : 0.910993
+2024-03-02 15:20:33,493 - trainer - INFO -     accuracy       : 0.70878
+2024-03-02 15:20:33,493 - trainer - INFO -     macro_f        : 0.46422
+2024-03-02 15:20:33,493 - trainer - INFO -     val_loss       : 0.732439
+2024-03-02 15:20:33,494 - trainer - INFO -     val_accuracy   : 0.757862
+2024-03-02 15:20:33,494 - trainer - INFO -     val_macro_f    : 0.562241
+2024-03-02 15:26:19,031 - trainer - INFO -     epoch          : 2
+2024-03-02 15:26:19,031 - trainer - INFO -     loss           : 0.627928
+2024-03-02 15:26:19,031 - trainer - INFO -     accuracy       : 0.791446
+2024-03-02 15:26:19,031 - trainer - INFO -     macro_f        : 0.607601
+2024-03-02 15:26:19,031 - trainer - INFO -     val_loss       : 0.723947
+2024-03-02 15:26:19,031 - trainer - INFO -     val_accuracy   : 0.76116
+2024-03-02 15:26:19,031 - trainer - INFO -     val_macro_f    : 0.570438
+2024-03-02 15:32:06,609 - trainer - INFO -     epoch          : 3
+2024-03-02 15:32:06,609 - trainer - INFO -     loss           : 0.489243
+2024-03-02 15:32:06,609 - trainer - INFO -     accuracy       : 0.832146
+2024-03-02 15:32:06,609 - trainer - INFO -     macro_f        : 0.681748
+2024-03-02 15:32:06,609 - trainer - INFO -     val_loss       : 0.810338
+2024-03-02 15:32:06,609 - trainer - INFO -     val_accuracy   : 0.757171
+2024-03-02 15:32:06,609 - trainer - INFO -     val_macro_f    : 0.54753
+2024-03-21 16:29:01,872 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 19:24:58,029 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:24:58,029 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:24:58,954 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:24:59,596 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:24:59,597 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:25:00,545 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:25:00,792 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:25:00,792 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:25:02,347 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:25:03,885 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 19:29:51,369 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:29:51,369 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:29:53,327 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:29:53,688 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:29:53,689 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:29:54,230 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:29:54,441 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:29:54,441 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:29:54,959 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:29:56,398 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 19:38:25,055 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:38:25,055 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:38:26,440 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:38:26,835 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:38:26,840 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:38:27,370 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:38:27,589 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:38:27,589 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:38:28,105 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:38:29,520 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 19:42:30,014 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:42:30,014 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:42:31,104 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:42:31,580 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:42:31,580 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:42:32,114 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:42:32,329 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:42:32,329 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:42:32,838 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:42:34,275 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 19:51:42,646 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:51:42,646 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:51:44,717 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:51:45,247 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:51:45,247 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:51:45,792 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:51:46,012 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 19:51:46,012 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 19:51:46,522 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 19:52:03,760 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:00:28,543 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:03:32,354 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:03:32,354 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:03:34,256 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:03:34,641 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:03:34,641 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:03:36,131 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:03:36,341 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:03:36,341 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:03:37,229 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:03:38,636 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:04:55,316 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:04:55,316 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:04:57,286 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:04:57,676 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:04:57,676 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:04:58,208 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:04:58,442 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:04:58,442 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:04:58,927 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:05:00,395 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:08:20,633 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:08:20,633 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:08:22,665 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:08:23,087 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:08:23,087 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:08:23,619 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:08:23,838 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:08:23,838 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:08:24,323 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:08:25,776 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:09:51,867 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:09:51,867 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:09:52,805 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:09:53,227 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:09:53,227 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:09:53,728 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:09:53,931 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:09:53,931 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:09:54,431 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:09:55,854 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:12:12,335 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:12:12,336 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:12:13,335 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:12:13,772 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:12:13,772 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:12:14,319 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:12:14,522 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:12:14,522 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:12:15,022 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:12:16,430 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:18:04,555 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:18:04,555 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:18:06,541 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:18:10,500 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:18:10,500 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:18:11,126 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:18:16,509 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:18:16,509 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:18:17,041 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:18:54,143 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:18:54,143 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:18:55,179 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:18:55,522 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:18:55,522 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:18:56,008 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:18:56,195 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:18:56,195 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:18:56,616 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:18:58,040 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 20:21:06,433 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:21:06,433 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:21:07,552 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:21:07,912 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:21:07,912 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:21:08,397 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:21:08,600 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 20:21:08,600 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 20:21:09,022 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 20:21:10,414 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 22:02:39,051 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 22:02:39,051 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 22:02:41,021 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 22:02:41,490 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 22:02:41,490 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 22:02:42,005 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 22:02:42,193 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 22:02:42,209 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 22:02:42,679 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 22:02:44,117 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0
+2024-03-21 22:04:24,319 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 22:04:24,319 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 22:04:25,288 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 22:04:25,710 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 22:04:25,710 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 22:04:26,195 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 22:04:26,398 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: D:\AI\model\roberta-base
+2024-03-21 22:04:26,398 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name D:\AI\model\roberta-base. Creating a new one with MEAN pooling.
+2024-03-21 22:04:26,930 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda
+2024-03-21 22:04:28,337 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=15, bias=True)
+  )
+)
+Trainable params: 31,527,183
+Freeze params: 0

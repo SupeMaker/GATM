@@ -1,0 +1,3 @@
+,arch_type,seed,base,variant_name,val_loss,val_accuracy,val_macro_f,val_precision,val_recall,test_loss,test_accuracy,test_macro_f,test_precision,test_recall,dropout_rate,embedding_type,max_length,run_id
+0,PretrainedBaseline,42,0,,0.917874,0.710538,0.685615,0.698434,0.710538,0.91513,0.709925,0.687812,0.704084,0.709925,0.2,bert-base-uncased,100,MIND15-Roberta-3/keep_all/PretrainedBaseline
+1,PretrainedBaseline,42,0,,0.890411,0.710615,0.701831,0.729596,0.710615,0.886463,0.713836,0.704514,0.731425,0.713836,0.2,roberta-base,100,MIND15-Roberta-3/keep_all/PretrainedBaseline

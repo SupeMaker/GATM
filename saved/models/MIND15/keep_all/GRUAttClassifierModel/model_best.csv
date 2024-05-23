@@ -1,0 +1,5 @@
+,epoch,loss,accuracy,macro_f,val_loss,val_accuracy,val_macro_f,split,seed,dropout_rate,embedding_type,max_length,arch_type,run_id
+0,3,0.314485,0.892607,0.787422,0.741908,0.775886,0.596216,valid,42,0.2,glove,100,GRUAttClassifierModel,MIND15/keep_all/GRUAttClassifierModel
+1,2,0.496157,0.830401,0.679646,0.64671,0.782022,0.607624,valid,42,0.2,glove,100,GRUAttClassifierModel,MIND15/keep_all/GRUAttClassifierModel
+2,1,0.750179,0.750688,0.537463,0.638668,0.782942,0.606122,valid,42,0.2,glove,100,GRUAttClassifierModel,MIND15/keep_all/GRUAttClassifierModel
+3,1,0.750179,0.750688,0.537463,0.638668,0.782942,0.606122,valid,42,0.2,glove,100,GRUAttClassifierModel,MIND15/keep_all/GRUAttClassifierModel

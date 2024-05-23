@@ -1,0 +1,63 @@
+2024-04-25 00:28:55,439 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 69,682,015
+Freeze params: 0
+2024-04-25 00:38:17,453 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 69,682,015
+Freeze params: 0
+2024-04-25 00:46:40,568 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 69,682,015
+Freeze params: 0
+2024-04-25 00:49:59,351 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 69,682,015
+Freeze params: 0
+2024-04-25 01:13:07,737 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 69,682,015
+Freeze params: 0
+2024-04-25 01:14:12,220 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(3, 300), stride=(1, 1), padding=(1, 1))
+  )
+)
+Trainable params: 69,712,015
+Freeze params: 0
+2024-04-25 01:20:02,753 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(232068, 300)
+  (classifier): Linear(in_features=100, out_features=15, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(3, 300), stride=(1, 1), padding=(1, 0))
+  )
+)
+Trainable params: 69,712,015
+Freeze params: 0

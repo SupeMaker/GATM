@@ -1,0 +1,8 @@
+python experiment/runner/nc_baseline.py -at=BiAttentionClassifyModel -hn=30 -ce=1 -et=distilbert-base-uncased -na=News26/keep_all
+,arch_type,seed,base,variant_name,val_loss,val_accuracy,val_macro_f,val_doc_entropy,test_loss,test_accuracy,test_macro_f,test_doc_entropy,dropout_rate,embedding_type,max_length,head_num,calculate_entropy,run_id
+0,BiAttentionClassifyModel,4,0,base,1.13854,0.67903,0.526752,2.971219,1.133402,0.679877,0.530987,2.973719,0.2,distilbert-base-uncased,100,30,1,News26/keep_all/BiAttentionClassifyModel
+1,BiAttentionClassifyModel,25,0,base,1.172976,0.676441,0.522255,3.228161,1.174243,0.674599,0.525607,3.231856,0.2,distilbert-base-uncased,100,30,1,News26/keep_all/BiAttentionClassifyModel
+2,BiAttentionClassifyModel,2021,0,base,1.159616,0.673902,0.523679,3.080041,1.172086,0.670567,0.521171,3.085773,0.2,distilbert-base-uncased,100,30,1,News26/keep_all/BiAttentionClassifyModel
+3,BiAttentionClassifyModel,2020,0,base,1.14585,0.6745,0.516771,3.012256,1.141611,0.675446,0.525244,3.017076,0.2,distilbert-base-uncased,100,30,1,News26/keep_all/BiAttentionClassifyModel
+4,BiAttentionClassifyModel,42,0,base,1.146506,0.674798,0.523368,3.041705,1.147855,0.67201,0.527603,3.046534,0.2,distilbert-base-uncased,100,30,1,News26/keep_all/BiAttentionClassifyModel
+

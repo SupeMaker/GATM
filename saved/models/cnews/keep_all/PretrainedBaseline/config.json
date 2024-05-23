@@ -1,0 +1,61 @@
+{
+    "n_gpu": 1,
+    "embedding_type": "roberta-wwm",
+    "max_length": 256,
+    "loss": "cross_entropy",
+    "metrics": [
+        "accuracy",
+        "macro_f",
+        "precision",
+        "recall"
+    ],
+    "save_model": false,
+    "resume": null,
+    "project_name": "nc_base",
+    "project_root": ".",
+    "data_root": ".\\dataset",
+    "save_dir": ".\\saved",
+    "seed": 42,
+    "sub_configs": [
+        "arch_config",
+        "data_config",
+        "trainer_config",
+        "optimizer_config",
+        "scheduler_config"
+    ],
+    "arch_config": {
+        "type": "PretrainedBaseline",
+        "dropout_rate": 0.2,
+        "embedding_type": "roberta-wwm",
+        "max_length": 256,
+        "n_layers": 1,
+        "arch_type": "PretrainedBaseline"
+    },
+    "data_config": {
+        "type": "NewsDataLoader",
+        "batch_size": 32,
+        "num_workers": 1,
+        "name": "cnews/keep_all",
+        "max_length": 256,
+        "data_root": ".\\dataset",
+        "embedding_type": "roberta-wwm"
+    },
+    "run_name": "cnews/keep_all/PretrainedBaseline",
+    "optimizer_config": {
+        "type": "Adam",
+        "lr": 5e-05,
+        "weight_decay": 1e-05
+    },
+    "scheduler_config": {
+        "type": "StepLR",
+        "step_size": 50,
+        "gamma": 0.1
+    },
+    "trainer_config": {
+        "epochs": 3,
+        "early_stop": 3,
+        "monitor": "max val_accuracy",
+        "verbosity": 2,
+        "tensorboard": false
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "n_gpu": 1,
+    "embedding_type": "glove",
+    "max_length": 256,
+    "loss": "cross_entropy",
+    "metrics": [
+        "accuracy",
+        "macro_f",
+        "precision",
+        "recall"
+    ],
+    "save_model": false,
+    "resume": null,
+    "project_name": "nc_base",
+    "project_root": ".",
+    "data_root": ".\\dataset",
+    "save_dir": ".\\saved",
+    "seed": 42,
+    "sub_configs": [
+        "arch_config",
+        "data_config",
+        "trainer_config",
+        "optimizer_config",
+        "scheduler_config"
+    ],
+    "arch_config": {
+        "type": "TextCNNClassifyModel",
+        "dropout_rate": 0.2,
+        "embedding_type": "glove",
+        "max_length": 256,
+        "num_filters": 100,
+        "filter_sizes": [
+            2
+        ],
+        "arch_type": "TextCNNClassifyModel"
+    },
+    "data_config": {
+        "type": "NewsDataLoader",
+        "batch_size": 32,
+        "num_workers": 1,
+        "name": "MIND15/keep_all",
+        "max_length": 256,
+        "data_root": ".\\dataset",
+        "embedding_type": "glove"
+    },
+    "run_name": "MIND15/keep_all/TextCNNClassifyModel",
+    "optimizer_config": {
+        "type": "Adam",
+        "lr": 0.001,
+        "weight_decay": 1e-05
+    },
+    "scheduler_config": {
+        "type": "StepLR",
+        "step_size": 50,
+        "gamma": 0.1
+    },
+    "trainer_config": {
+        "epochs": 3,
+        "early_stop": 3,
+        "monitor": "max val_accuracy",
+        "verbosity": 2,
+        "tensorboard": false
+    }
+}

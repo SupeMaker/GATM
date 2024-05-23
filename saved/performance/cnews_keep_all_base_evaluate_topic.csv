@@ -1,0 +1,2 @@
+,arch_type,seed,base,variant_name,val_loss,val_accuracy,val_macro_f,val_precision,val_recall,val_doc_entropy,test_loss,test_accuracy,test_macro_f,test_precision,test_recall,test_doc_entropy,NPMI,CV,token_entropy,dropout_rate,embedding_type,max_length,head_num,calculate_entropy,run_id
+0,BiAttentionClassifyModel,42,0,base,0.147128,0.9594,0.959722,0.972465,0.9594,3.370378,0.1492,0.9593,0.958889,0.969208,0.9593,3.359049,-0.36008089011714517,0.20373889503660295,7.5880150404773445,0.2,bert-base-chinese,256,40,1,cnews/keep_all/BiAttentionClassifyModel

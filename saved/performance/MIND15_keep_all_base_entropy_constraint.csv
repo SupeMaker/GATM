@@ -1,0 +1,2 @@
+,arch_type,seed,base,variant_name,val_loss,val_accuracy,val_macro_f,val_precision,val_recall,val_doc_entropy,test_loss,test_accuracy,test_macro_f,test_precision,test_recall,test_doc_entropy,dropout_rate,embedding_type,max_length,head_num,entropy_constraint,calculate_entropy,with_gru,run_id
+0,BiAttentionClassifyModel,2021,0,base,0.567812,0.803497,0.797833,0.82178,0.803497,0.000291,0.554468,0.807869,0.800944,0.820274,0.807869,0.000291,0.2,glove,256,40,1,1,gru,MIND15/keep_all/BiAttentionClassifyModel

@@ -1,0 +1,35 @@
+python experiment/runner/nc_base.py --arch_type=BiAttentionClassifyModel -hn=180 -ce=1
+GRUAttClassifierModel 运行时将 configuration.py中的 self.data_config中的num_workers设置为0，默认为1
+python experiment/runner/nc_base.py --arch_type=PretrainedBaseline -et=bert-base-uncased
+longformer-base-4096 在pretrain中的这个模型，也要设置num_workers为0
+
+python experiment/runner/nc_baseline.py --arch_type=BiAttentionClassifyModel -et=distilbert-base-uncased --head_num=32 -ce=1 -lr=0.00005 -vn=combined_mha -hd=24
+python experiment/runner/nc_baseline.py --arch_type=BiAttentionClassifyModel -et=distilbert-base-uncased --head_num=32 -ce=1 -lr=0.00005 -vn=combined_mha -hd=24 -ep=5 -dr=0.5
+
+
+glove
+python experiment/runner/nc_baseline.py --arch_type=BiAttentionClassifyModel -et=glove --head_num=15 -ce=1 -lr=0.00005 -vn=combined_mha -hd=20 -ep=5 -dr=0.5
+
+
+
+python experiment/runner/nc_baseline.py --arch_type=BiAttentionClassifyModel -et=distilbert-base-uncased -ext=paraphrase-MiniLM-L6-v2 -ce=1 -lr=0.001 -ep=3 -dr=0.2 -hn=8
+
+
+0.8188
+python experiment/runner/nc_baseline.py -at=BiAttentionClassifyModel -hn=40 -ce=1 -ep=5 -dr=0.2 -et=distilbert-base-uncased -ml=512 -lr=0.00005
+
+
+python experiment/runner/nc_baseline.py -at=BiAttentionClassifyModel  -hn=60 -ce=1 -ep=3 -dr=0.2 -et=bert-base-chinese -na=toutiao_news/keep_all
+
+
+
+
+
+-at=BiAttentionClassifyModel -ce=1 -ep=3 -na=MIND15/keep_all -hn=40 -et=glove -lr=0.001 -ml=256 -wg=gru
+
+
+
+python experiment/runner/nc_baseline.py -at=PretrainedBaseline -ml=256 -lr=0.00005 -et=roberta-base -na=MIND15/keep_all
+
+
+python experiment/runner/nc_baseline.py -at=BiAttentionClassifyModel -hn=40 -ce=1 -na=MIND15/keep_all -lr=0.001 -et=glove -ml=256 -ep=3 -wg=gru

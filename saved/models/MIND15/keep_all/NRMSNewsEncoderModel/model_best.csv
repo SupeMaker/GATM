@@ -1,0 +1,4 @@
+,epoch,loss,accuracy,macro_f,val_loss,val_accuracy,val_macro_f,split,seed,dropout_rate,embedding_type,max_length,arch_type,run_id
+0,3,0.323701,0.888311,0.781846,0.796167,0.763767,0.579922,valid,42,0.2,glove,100,NRMSNewsEncoderModel,MIND15/keep_all/NRMSNewsEncoderModel
+1,2,0.506701,0.827074,0.671365,0.679684,0.779337,0.596652,valid,42,0.2,glove,100,NRMSNewsEncoderModel,MIND15/keep_all/NRMSNewsEncoderModel
+2,1,0.744589,0.751608,0.546834,0.660304,0.774505,0.597392,valid,42,0.2,glove,100,NRMSNewsEncoderModel,MIND15/keep_all/NRMSNewsEncoderModel

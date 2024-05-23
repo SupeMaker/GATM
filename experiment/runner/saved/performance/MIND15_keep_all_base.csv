@@ -1,0 +1,8 @@
+,arch_type,seed,base,variant_name,val_loss,val_accuracy,val_macro_f,val_doc_entropy,test_loss,test_accuracy,test_macro_f,test_doc_entropy,dropout_rate,embedding_type,max_length,head_num,head_dim,calculate_entropy,run_id
+0,BiAttentionClassifyModel,42,0,combined_mha,0.633685,0.781638,0.589092,4.497749,0.63356,0.785397,0.594923,4.504719,0.5,distilbert-base-uncased,100,32.0,24.0,1.0,MIND15/keep_all/BiAttentionClassifyModel
+1,BiAttentionClassifyModel,42,0,combined_mha,0.607042,0.791916,0.632728,4.426039,0.603102,0.796595,0.632188,4.433008,0.2,distilbert-base-uncased,100,32.0,24.0,1.0,MIND15/keep_all/BiAttentionClassifyModel
+2,PretrainedBaseline,4,0,,0.723947,0.76116,0.568223,,0.718097,0.76093,0.564579,,0.2,distilbert-base-uncased,100,,,,MIND15/keep_all/PretrainedBaseline
+3,PretrainedBaseline,25,0,,0.758402,0.761697,0.564417,,0.748274,0.763537,0.560401,,0.2,distilbert-base-uncased,100,,,,MIND15/keep_all/PretrainedBaseline
+4,PretrainedBaseline,2021,0,,0.727021,0.76208,0.563061,,0.719239,0.76929,0.579685,,0.2,distilbert-base-uncased,100,,,,MIND15/keep_all/PretrainedBaseline
+5,PretrainedBaseline,2020,0,,0.729677,0.758705,0.576594,,0.715863,0.759626,0.575286,,0.2,distilbert-base-uncased,100,,,,MIND15/keep_all/PretrainedBaseline
+6,PretrainedBaseline,42,0,,0.712843,0.76254,0.572602,,0.710224,0.765685,0.575727,,0.2,distilbert-base-uncased,100,,,,MIND15/keep_all/PretrainedBaseline

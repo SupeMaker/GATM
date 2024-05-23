@@ -1,0 +1,515 @@
+2024-04-09 10:30:37,806 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 10:33:26,510 - trainer - INFO -     epoch          : 1
+2024-04-09 10:33:26,510 - trainer - INFO -     loss           : 1.414521
+2024-04-09 10:33:26,510 - trainer - INFO -     accuracy       : 0.608635
+2024-04-09 10:33:26,510 - trainer - INFO -     macro_f        : 0.581418
+2024-04-09 10:33:26,510 - trainer - INFO -     precision      : 0.607479
+2024-04-09 10:33:26,510 - trainer - INFO -     recall         : 0.608635
+2024-04-09 10:33:26,510 - trainer - INFO -     val_loss       : 1.257515
+2024-04-09 10:33:26,510 - trainer - INFO -     val_accuracy   : 0.647068
+2024-04-09 10:33:26,510 - trainer - INFO -     val_macro_f    : 0.627684
+2024-04-09 10:33:26,510 - trainer - INFO -     val_precision  : 0.658177
+2024-04-09 10:33:26,510 - trainer - INFO -     val_recall     : 0.647068
+2024-04-09 10:33:26,510 - trainer - INFO -     test_loss      : 1.261981
+2024-04-09 10:33:26,510 - trainer - INFO -     test_accuracy  : 0.64886
+2024-04-09 10:33:26,510 - trainer - INFO -     test_macro_f   : 0.630017
+2024-04-09 10:33:26,510 - trainer - INFO -     test_precision : 0.662426
+2024-04-09 10:33:26,510 - trainer - INFO -     test_recall    : 0.64886
+2024-04-09 10:35:48,454 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 10:38:39,931 - trainer - INFO -     epoch          : 1
+2024-04-09 10:38:39,931 - trainer - INFO -     loss           : 2.256251
+2024-04-09 10:38:39,931 - trainer - INFO -     accuracy       : 0.405929
+2024-04-09 10:38:39,931 - trainer - INFO -     macro_f        : 0.31694
+2024-04-09 10:38:39,931 - trainer - INFO -     precision      : 0.300305
+2024-04-09 10:38:39,931 - trainer - INFO -     recall         : 0.405929
+2024-04-09 10:38:39,931 - trainer - INFO -     val_loss       : 1.776336
+2024-04-09 10:38:39,931 - trainer - INFO -     val_accuracy   : 0.52783
+2024-04-09 10:38:39,931 - trainer - INFO -     val_macro_f    : 0.459894
+2024-04-09 10:38:39,931 - trainer - INFO -     val_precision  : 0.447967
+2024-04-09 10:38:39,931 - trainer - INFO -     val_recall     : 0.52783
+2024-04-09 10:38:39,931 - trainer - INFO -     test_loss      : 1.782745
+2024-04-09 10:38:39,931 - trainer - INFO -     test_accuracy  : 0.52315
+2024-04-09 10:38:39,931 - trainer - INFO -     test_macro_f   : 0.457317
+2024-04-09 10:38:39,931 - trainer - INFO -     test_precision : 0.44756
+2024-04-09 10:38:39,931 - trainer - INFO -     test_recall    : 0.52315
+2024-04-09 10:38:58,295 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 10:39:33,444 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 10:42:24,273 - trainer - INFO -     epoch          : 1
+2024-04-09 10:42:24,273 - trainer - INFO -     loss           : 2.062691
+2024-04-09 10:42:24,273 - trainer - INFO -     accuracy       : 0.48136
+2024-04-09 10:42:24,273 - trainer - INFO -     macro_f        : 0.447423
+2024-04-09 10:42:24,273 - trainer - INFO -     precision      : 0.475214
+2024-04-09 10:42:24,273 - trainer - INFO -     recall         : 0.48136
+2024-04-09 10:42:24,273 - trainer - INFO -     val_loss       : 2.042517
+2024-04-09 10:42:24,273 - trainer - INFO -     val_accuracy   : 0.479438
+2024-04-09 10:42:24,273 - trainer - INFO -     val_macro_f    : 0.443896
+2024-04-09 10:42:24,273 - trainer - INFO -     val_precision  : 0.468618
+2024-04-09 10:42:24,273 - trainer - INFO -     val_recall     : 0.479438
+2024-04-09 10:42:24,273 - trainer - INFO -     test_loss      : 2.048934
+2024-04-09 10:42:24,273 - trainer - INFO -     test_accuracy  : 0.477646
+2024-04-09 10:42:24,273 - trainer - INFO -     test_macro_f   : 0.440506
+2024-04-09 10:42:24,273 - trainer - INFO -     test_precision : 0.464881
+2024-04-09 10:42:24,273 - trainer - INFO -     test_recall    : 0.477646
+2024-04-09 10:45:16,693 - trainer - INFO -     epoch          : 2
+2024-04-09 10:45:16,693 - trainer - INFO -     loss           : 2.037706
+2024-04-09 10:45:16,693 - trainer - INFO -     accuracy       : 0.486395
+2024-04-09 10:45:16,693 - trainer - INFO -     macro_f        : 0.447957
+2024-04-09 10:45:16,693 - trainer - INFO -     precision      : 0.474558
+2024-04-09 10:45:16,693 - trainer - INFO -     recall         : 0.486395
+2024-04-09 10:45:16,693 - trainer - INFO -     val_loss       : 2.059015
+2024-04-09 10:45:16,693 - trainer - INFO -     val_accuracy   : 0.485413
+2024-04-09 10:45:16,693 - trainer - INFO -     val_macro_f    : 0.44164
+2024-04-09 10:45:16,693 - trainer - INFO -     val_precision  : 0.463982
+2024-04-09 10:45:16,693 - trainer - INFO -     val_recall     : 0.485413
+2024-04-09 10:45:16,693 - trainer - INFO -     test_loss      : 2.089011
+2024-04-09 10:45:16,693 - trainer - INFO -     test_accuracy  : 0.478293
+2024-04-09 10:45:16,693 - trainer - INFO -     test_macro_f   : 0.434257
+2024-04-09 10:45:16,693 - trainer - INFO -     test_precision : 0.458489
+2024-04-09 10:45:16,693 - trainer - INFO -     test_recall    : 0.478293
+2024-04-09 10:48:09,822 - trainer - INFO -     epoch          : 3
+2024-04-09 10:48:09,822 - trainer - INFO -     loss           : 2.030099
+2024-04-09 10:48:09,822 - trainer - INFO -     accuracy       : 0.488163
+2024-04-09 10:48:09,822 - trainer - INFO -     macro_f        : 0.447043
+2024-04-09 10:48:09,822 - trainer - INFO -     precision      : 0.47174
+2024-04-09 10:48:09,822 - trainer - INFO -     recall         : 0.488163
+2024-04-09 10:48:09,822 - trainer - INFO -     val_loss       : 2.001211
+2024-04-09 10:48:09,822 - trainer - INFO -     val_accuracy   : 0.489844
+2024-04-09 10:48:09,822 - trainer - INFO -     val_macro_f    : 0.449491
+2024-04-09 10:48:09,822 - trainer - INFO -     val_precision  : 0.477264
+2024-04-09 10:48:09,822 - trainer - INFO -     val_recall     : 0.489844
+2024-04-09 10:48:09,822 - trainer - INFO -     test_loss      : 2.003206
+2024-04-09 10:48:09,822 - trainer - INFO -     test_accuracy  : 0.484367
+2024-04-09 10:48:09,822 - trainer - INFO -     test_macro_f   : 0.444902
+2024-04-09 10:48:09,822 - trainer - INFO -     test_precision : 0.474414
+2024-04-09 10:48:09,822 - trainer - INFO -     test_recall    : 0.484367
+2024-04-09 10:48:43,817 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 10:51:35,188 - trainer - INFO -     epoch          : 1
+2024-04-09 10:51:35,188 - trainer - INFO -     loss           : 2.072481
+2024-04-09 10:51:35,188 - trainer - INFO -     accuracy       : 0.479039
+2024-04-09 10:51:35,188 - trainer - INFO -     macro_f        : 0.444188
+2024-04-09 10:51:35,188 - trainer - INFO -     precision      : 0.471502
+2024-04-09 10:51:35,188 - trainer - INFO -     recall         : 0.479039
+2024-04-09 10:51:35,188 - trainer - INFO -     val_loss       : 2.043054
+2024-04-09 10:51:35,188 - trainer - INFO -     val_accuracy   : 0.480086
+2024-04-09 10:51:35,188 - trainer - INFO -     val_macro_f    : 0.442779
+2024-04-09 10:51:35,188 - trainer - INFO -     val_precision  : 0.472257
+2024-04-09 10:51:35,188 - trainer - INFO -     val_recall     : 0.480086
+2024-04-09 10:51:35,188 - trainer - INFO -     test_loss      : 2.053967
+2024-04-09 10:51:35,188 - trainer - INFO -     test_accuracy  : 0.479936
+2024-04-09 10:51:35,188 - trainer - INFO -     test_macro_f   : 0.441361
+2024-04-09 10:51:35,188 - trainer - INFO -     test_precision : 0.469167
+2024-04-09 10:51:35,188 - trainer - INFO -     test_recall    : 0.479936
+2024-04-09 10:54:27,886 - trainer - INFO -     epoch          : 2
+2024-04-09 10:54:27,886 - trainer - INFO -     loss           : 2.031682
+2024-04-09 10:54:27,886 - trainer - INFO -     accuracy       : 0.489382
+2024-04-09 10:54:27,886 - trainer - INFO -     macro_f        : 0.451709
+2024-04-09 10:54:27,886 - trainer - INFO -     precision      : 0.479171
+2024-04-09 10:54:27,886 - trainer - INFO -     recall         : 0.489382
+2024-04-09 10:54:27,886 - trainer - INFO -     val_loss       : 2.033008
+2024-04-09 10:54:27,886 - trainer - INFO -     val_accuracy   : 0.487653
+2024-04-09 10:54:27,886 - trainer - INFO -     val_macro_f    : 0.448107
+2024-04-09 10:54:27,886 - trainer - INFO -     val_precision  : 0.474576
+2024-04-09 10:54:27,886 - trainer - INFO -     val_recall     : 0.487653
+2024-04-09 10:54:27,886 - trainer - INFO -     test_loss      : 2.071321
+2024-04-09 10:54:27,886 - trainer - INFO -     test_accuracy  : 0.482475
+2024-04-09 10:54:27,886 - trainer - INFO -     test_macro_f   : 0.440039
+2024-04-09 10:54:27,886 - trainer - INFO -     test_precision : 0.463719
+2024-04-09 10:54:27,886 - trainer - INFO -     test_recall    : 0.482475
+2024-04-09 10:57:20,673 - trainer - INFO -     epoch          : 3
+2024-04-09 10:57:20,673 - trainer - INFO -     loss           : 2.022074
+2024-04-09 10:57:20,673 - trainer - INFO -     accuracy       : 0.489277
+2024-04-09 10:57:20,673 - trainer - INFO -     macro_f        : 0.449316
+2024-04-09 10:57:20,673 - trainer - INFO -     precision      : 0.475033
+2024-04-09 10:57:20,673 - trainer - INFO -     recall         : 0.489277
+2024-04-09 10:57:20,673 - trainer - INFO -     val_loss       : 1.992906
+2024-04-09 10:57:20,673 - trainer - INFO -     val_accuracy   : 0.484915
+2024-04-09 10:57:20,673 - trainer - INFO -     val_macro_f    : 0.448938
+2024-04-09 10:57:20,673 - trainer - INFO -     val_precision  : 0.487315
+2024-04-09 10:57:20,673 - trainer - INFO -     val_recall     : 0.484915
+2024-04-09 10:57:20,673 - trainer - INFO -     test_loss      : 2.014415
+2024-04-09 10:57:20,673 - trainer - INFO -     test_accuracy  : 0.481778
+2024-04-09 10:57:20,673 - trainer - INFO -     test_macro_f   : 0.445446
+2024-04-09 10:57:20,673 - trainer - INFO -     test_precision : 0.483054
+2024-04-09 10:57:20,673 - trainer - INFO -     test_recall    : 0.481778
+2024-04-09 10:57:54,667 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 11:00:45,290 - trainer - INFO -     epoch          : 1
+2024-04-09 11:00:45,290 - trainer - INFO -     loss           : 2.06614
+2024-04-09 11:00:45,290 - trainer - INFO -     accuracy       : 0.480209
+2024-04-09 11:00:45,290 - trainer - INFO -     macro_f        : 0.446847
+2024-04-09 11:00:45,290 - trainer - INFO -     precision      : 0.474734
+2024-04-09 11:00:45,290 - trainer - INFO -     recall         : 0.480209
+2024-04-09 11:00:45,290 - trainer - INFO -     val_loss       : 2.030548
+2024-04-09 11:00:45,290 - trainer - INFO -     val_accuracy   : 0.496166
+2024-04-09 11:00:45,290 - trainer - INFO -     val_macro_f    : 0.460157
+2024-04-09 11:00:45,290 - trainer - INFO -     val_precision  : 0.489297
+2024-04-09 11:00:45,290 - trainer - INFO -     val_recall     : 0.496166
+2024-04-09 11:00:45,290 - trainer - INFO -     test_loss      : 2.061728
+2024-04-09 11:00:45,290 - trainer - INFO -     test_accuracy  : 0.489196
+2024-04-09 11:00:45,290 - trainer - INFO -     test_macro_f   : 0.452656
+2024-04-09 11:00:45,290 - trainer - INFO -     test_precision : 0.48091
+2024-04-09 11:00:45,290 - trainer - INFO -     test_recall    : 0.489196
+2024-04-09 11:03:38,159 - trainer - INFO -     epoch          : 2
+2024-04-09 11:03:38,159 - trainer - INFO -     loss           : 2.039384
+2024-04-09 11:03:38,159 - trainer - INFO -     accuracy       : 0.487858
+2024-04-09 11:03:38,159 - trainer - INFO -     macro_f        : 0.450429
+2024-04-09 11:03:38,159 - trainer - INFO -     precision      : 0.477791
+2024-04-09 11:03:38,159 - trainer - INFO -     recall         : 0.487858
+2024-04-09 11:03:38,159 - trainer - INFO -     val_loss       : 2.056069
+2024-04-09 11:03:38,159 - trainer - INFO -     val_accuracy   : 0.485363
+2024-04-09 11:03:38,159 - trainer - INFO -     val_macro_f    : 0.447859
+2024-04-09 11:03:38,159 - trainer - INFO -     val_precision  : 0.470887
+2024-04-09 11:03:38,159 - trainer - INFO -     val_recall     : 0.485363
+2024-04-09 11:03:38,159 - trainer - INFO -     test_loss      : 2.082957
+2024-04-09 11:03:38,159 - trainer - INFO -     test_accuracy  : 0.479438
+2024-04-09 11:03:38,159 - trainer - INFO -     test_macro_f   : 0.446347
+2024-04-09 11:03:38,159 - trainer - INFO -     test_precision : 0.474101
+2024-04-09 11:03:38,159 - trainer - INFO -     test_recall    : 0.479438
+2024-04-09 11:06:30,863 - trainer - INFO -     epoch          : 3
+2024-04-09 11:06:30,863 - trainer - INFO -     loss           : 2.03159
+2024-04-09 11:06:30,863 - trainer - INFO -     accuracy       : 0.489258
+2024-04-09 11:06:30,863 - trainer - INFO -     macro_f        : 0.449691
+2024-04-09 11:06:30,863 - trainer - INFO -     precision      : 0.477299
+2024-04-09 11:06:30,863 - trainer - INFO -     recall         : 0.489258
+2024-04-09 11:06:30,863 - trainer - INFO -     val_loss       : 2.036723
+2024-04-09 11:06:30,863 - trainer - INFO -     val_accuracy   : 0.488699
+2024-04-09 11:06:30,863 - trainer - INFO -     val_macro_f    : 0.453449
+2024-04-09 11:06:30,863 - trainer - INFO -     val_precision  : 0.479646
+2024-04-09 11:06:30,863 - trainer - INFO -     val_recall     : 0.488699
+2024-04-09 11:06:30,863 - trainer - INFO -     test_loss      : 2.076298
+2024-04-09 11:06:30,863 - trainer - INFO -     test_accuracy  : 0.477995
+2024-04-09 11:06:30,863 - trainer - INFO -     test_macro_f   : 0.444629
+2024-04-09 11:06:30,863 - trainer - INFO -     test_precision : 0.467548
+2024-04-09 11:06:30,863 - trainer - INFO -     test_recall    : 0.477995
+2024-04-09 11:07:11,846 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 11:10:04,735 - trainer - INFO -     epoch          : 1
+2024-04-09 11:10:04,735 - trainer - INFO -     loss           : 1.414521
+2024-04-09 11:10:04,735 - trainer - INFO -     accuracy       : 0.608635
+2024-04-09 11:10:04,735 - trainer - INFO -     macro_f        : 0.581418
+2024-04-09 11:10:04,735 - trainer - INFO -     precision      : 0.607479
+2024-04-09 11:10:04,735 - trainer - INFO -     recall         : 0.608635
+2024-04-09 11:10:04,735 - trainer - INFO -     val_loss       : 1.257515
+2024-04-09 11:10:04,735 - trainer - INFO -     val_accuracy   : 0.647068
+2024-04-09 11:10:04,735 - trainer - INFO -     val_macro_f    : 0.627684
+2024-04-09 11:10:04,735 - trainer - INFO -     val_precision  : 0.658177
+2024-04-09 11:10:04,751 - trainer - INFO -     val_recall     : 0.647068
+2024-04-09 11:10:04,751 - trainer - INFO -     test_loss      : 1.261981
+2024-04-09 11:10:04,751 - trainer - INFO -     test_accuracy  : 0.64886
+2024-04-09 11:10:04,751 - trainer - INFO -     test_macro_f   : 0.630017
+2024-04-09 11:10:04,751 - trainer - INFO -     test_precision : 0.662426
+2024-04-09 11:10:04,751 - trainer - INFO -     test_recall    : 0.64886
+2024-04-09 11:12:57,220 - trainer - INFO -     epoch          : 2
+2024-04-09 11:12:57,220 - trainer - INFO -     loss           : 1.157182
+2024-04-09 11:12:57,220 - trainer - INFO -     accuracy       : 0.673841
+2024-04-09 11:12:57,220 - trainer - INFO -     macro_f        : 0.657743
+2024-04-09 11:12:57,220 - trainer - INFO -     precision      : 0.69049
+2024-04-09 11:12:57,220 - trainer - INFO -     recall         : 0.673841
+2024-04-09 11:12:57,220 - trainer - INFO -     val_loss       : 1.219648
+2024-04-09 11:12:57,220 - trainer - INFO -     val_accuracy   : 0.658269
+2024-04-09 11:12:57,220 - trainer - INFO -     val_macro_f    : 0.642012
+2024-04-09 11:12:57,220 - trainer - INFO -     val_precision  : 0.675117
+2024-04-09 11:12:57,220 - trainer - INFO -     val_recall     : 0.658269
+2024-04-09 11:12:57,220 - trainer - INFO -     test_loss      : 1.22991
+2024-04-09 11:12:57,220 - trainer - INFO -     test_accuracy  : 0.656975
+2024-04-09 11:12:57,220 - trainer - INFO -     test_macro_f   : 0.641645
+2024-04-09 11:12:57,220 - trainer - INFO -     test_precision : 0.676631
+2024-04-09 11:12:57,220 - trainer - INFO -     test_recall    : 0.656975
+2024-04-09 11:15:50,224 - trainer - INFO -     epoch          : 3
+2024-04-09 11:15:50,224 - trainer - INFO -     loss           : 1.054138
+2024-04-09 11:15:50,224 - trainer - INFO -     accuracy       : 0.697049
+2024-04-09 11:15:50,224 - trainer - INFO -     macro_f        : 0.683055
+2024-04-09 11:15:50,224 - trainer - INFO -     precision      : 0.716006
+2024-04-09 11:15:50,224 - trainer - INFO -     recall         : 0.697049
+2024-04-09 11:15:50,224 - trainer - INFO -     val_loss       : 1.222205
+2024-04-09 11:15:50,224 - trainer - INFO -     val_accuracy   : 0.659713
+2024-04-09 11:15:50,224 - trainer - INFO -     val_macro_f    : 0.648096
+2024-04-09 11:15:50,224 - trainer - INFO -     val_precision  : 0.686602
+2024-04-09 11:15:50,224 - trainer - INFO -     val_recall     : 0.659713
+2024-04-09 11:15:50,224 - trainer - INFO -     test_loss      : 1.216475
+2024-04-09 11:15:50,224 - trainer - INFO -     test_accuracy  : 0.658817
+2024-04-09 11:15:50,224 - trainer - INFO -     test_macro_f   : 0.646037
+2024-04-09 11:15:50,224 - trainer - INFO -     test_precision : 0.682248
+2024-04-09 11:15:50,224 - trainer - INFO -     test_recall    : 0.658817
+2024-04-09 11:16:24,423 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 11:19:15,274 - trainer - INFO -     epoch          : 1
+2024-04-09 11:19:15,274 - trainer - INFO -     loss           : 1.416251
+2024-04-09 11:19:15,274 - trainer - INFO -     accuracy       : 0.608523
+2024-04-09 11:19:15,274 - trainer - INFO -     macro_f        : 0.580563
+2024-04-09 11:19:15,274 - trainer - INFO -     precision      : 0.605662
+2024-04-09 11:19:15,290 - trainer - INFO -     recall         : 0.608523
+2024-04-09 11:19:15,290 - trainer - INFO -     val_loss       : 1.257912
+2024-04-09 11:19:15,290 - trainer - INFO -     val_accuracy   : 0.648262
+2024-04-09 11:19:15,290 - trainer - INFO -     val_macro_f    : 0.630752
+2024-04-09 11:19:15,290 - trainer - INFO -     val_precision  : 0.661923
+2024-04-09 11:19:15,290 - trainer - INFO -     val_recall     : 0.648262
+2024-04-09 11:19:15,290 - trainer - INFO -     test_loss      : 1.259995
+2024-04-09 11:19:15,290 - trainer - INFO -     test_accuracy  : 0.647018
+2024-04-09 11:19:15,290 - trainer - INFO -     test_macro_f   : 0.630848
+2024-04-09 11:19:15,290 - trainer - INFO -     test_precision : 0.664914
+2024-04-09 11:19:15,290 - trainer - INFO -     test_recall    : 0.647018
+2024-04-09 11:22:08,030 - trainer - INFO -     epoch          : 2
+2024-04-09 11:22:08,030 - trainer - INFO -     loss           : 1.15859
+2024-04-09 11:22:08,030 - trainer - INFO -     accuracy       : 0.673442
+2024-04-09 11:22:08,030 - trainer - INFO -     macro_f        : 0.657859
+2024-04-09 11:22:08,030 - trainer - INFO -     precision      : 0.691573
+2024-04-09 11:22:08,030 - trainer - INFO -     recall         : 0.673442
+2024-04-09 11:22:08,030 - trainer - INFO -     val_loss       : 1.220653
+2024-04-09 11:22:08,030 - trainer - INFO -     val_accuracy   : 0.657572
+2024-04-09 11:22:08,030 - trainer - INFO -     val_macro_f    : 0.643574
+2024-04-09 11:22:08,030 - trainer - INFO -     val_precision  : 0.679476
+2024-04-09 11:22:08,030 - trainer - INFO -     val_recall     : 0.657572
+2024-04-09 11:22:08,030 - trainer - INFO -     test_loss      : 1.219092
+2024-04-09 11:22:08,030 - trainer - INFO -     test_accuracy  : 0.659116
+2024-04-09 11:22:08,030 - trainer - INFO -     test_macro_f   : 0.644364
+2024-04-09 11:22:08,030 - trainer - INFO -     test_precision : 0.680394
+2024-04-09 11:22:08,030 - trainer - INFO -     test_recall    : 0.659116
+2024-04-09 11:25:01,606 - trainer - INFO -     epoch          : 3
+2024-04-09 11:25:01,606 - trainer - INFO -     loss           : 1.057462
+2024-04-09 11:25:01,606 - trainer - INFO -     accuracy       : 0.69871
+2024-04-09 11:25:01,606 - trainer - INFO -     macro_f        : 0.684643
+2024-04-09 11:25:01,606 - trainer - INFO -     precision      : 0.717947
+2024-04-09 11:25:01,606 - trainer - INFO -     recall         : 0.69871
+2024-04-09 11:25:01,606 - trainer - INFO -     val_loss       : 1.223249
+2024-04-09 11:25:01,606 - trainer - INFO -     val_accuracy   : 0.656925
+2024-04-09 11:25:01,606 - trainer - INFO -     val_macro_f    : 0.64442
+2024-04-09 11:25:01,606 - trainer - INFO -     val_precision  : 0.681274
+2024-04-09 11:25:01,606 - trainer - INFO -     val_recall     : 0.656925
+2024-04-09 11:25:01,606 - trainer - INFO -     test_loss      : 1.226255
+2024-04-09 11:25:01,606 - trainer - INFO -     test_accuracy  : 0.657324
+2024-04-09 11:25:01,606 - trainer - INFO -     test_macro_f   : 0.644571
+2024-04-09 11:25:01,606 - trainer - INFO -     test_precision : 0.682963
+2024-04-09 11:25:01,606 - trainer - INFO -     test_recall    : 0.657324
+2024-04-09 11:25:35,580 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 11:28:26,184 - trainer - INFO -     epoch          : 1
+2024-04-09 11:28:26,184 - trainer - INFO -     loss           : 1.411957
+2024-04-09 11:28:26,184 - trainer - INFO -     accuracy       : 0.609164
+2024-04-09 11:28:26,184 - trainer - INFO -     macro_f        : 0.580762
+2024-04-09 11:28:26,184 - trainer - INFO -     precision      : 0.605447
+2024-04-09 11:28:26,184 - trainer - INFO -     recall         : 0.609164
+2024-04-09 11:28:26,184 - trainer - INFO -     val_loss       : 1.254386
+2024-04-09 11:28:26,184 - trainer - INFO -     val_accuracy   : 0.647765
+2024-04-09 11:28:26,184 - trainer - INFO -     val_macro_f    : 0.628273
+2024-04-09 11:28:26,184 - trainer - INFO -     val_precision  : 0.660577
+2024-04-09 11:28:26,184 - trainer - INFO -     val_recall     : 0.647765
+2024-04-09 11:28:26,184 - trainer - INFO -     test_loss      : 1.260087
+2024-04-09 11:28:26,184 - trainer - INFO -     test_accuracy  : 0.646371
+2024-04-09 11:28:26,184 - trainer - INFO -     test_macro_f   : 0.626019
+2024-04-09 11:28:26,184 - trainer - INFO -     test_precision : 0.658697
+2024-04-09 11:28:26,184 - trainer - INFO -     test_recall    : 0.646371
+2024-04-09 11:31:19,340 - trainer - INFO -     epoch          : 2
+2024-04-09 11:31:19,340 - trainer - INFO -     loss           : 1.157694
+2024-04-09 11:31:19,340 - trainer - INFO -     accuracy       : 0.672863
+2024-04-09 11:31:19,340 - trainer - INFO -     macro_f        : 0.657118
+2024-04-09 11:31:19,340 - trainer - INFO -     precision      : 0.690432
+2024-04-09 11:31:19,340 - trainer - INFO -     recall         : 0.672863
+2024-04-09 11:31:19,340 - trainer - INFO -     val_loss       : 1.217855
+2024-04-09 11:31:19,340 - trainer - INFO -     val_accuracy   : 0.658319
+2024-04-09 11:31:19,340 - trainer - INFO -     val_macro_f    : 0.64474
+2024-04-09 11:31:19,340 - trainer - INFO -     val_precision  : 0.679224
+2024-04-09 11:31:19,340 - trainer - INFO -     val_recall     : 0.658319
+2024-04-09 11:31:19,340 - trainer - INFO -     test_loss      : 1.220855
+2024-04-09 11:31:19,340 - trainer - INFO -     test_accuracy  : 0.658718
+2024-04-09 11:31:19,340 - trainer - INFO -     test_macro_f   : 0.646703
+2024-04-09 11:31:19,340 - trainer - INFO -     test_precision : 0.684623
+2024-04-09 11:31:19,340 - trainer - INFO -     test_recall    : 0.658718
+2024-04-09 11:34:12,029 - trainer - INFO -     epoch          : 3
+2024-04-09 11:34:12,029 - trainer - INFO -     loss           : 1.061961
+2024-04-09 11:34:12,029 - trainer - INFO -     accuracy       : 0.696252
+2024-04-09 11:34:12,029 - trainer - INFO -     macro_f        : 0.682478
+2024-04-09 11:34:12,029 - trainer - INFO -     precision      : 0.715865
+2024-04-09 11:34:12,029 - trainer - INFO -     recall         : 0.696252
+2024-04-09 11:34:12,029 - trainer - INFO -     val_loss       : 1.224097
+2024-04-09 11:34:12,029 - trainer - INFO -     val_accuracy   : 0.659713
+2024-04-09 11:34:12,029 - trainer - INFO -     val_macro_f    : 0.643996
+2024-04-09 11:34:12,029 - trainer - INFO -     val_precision  : 0.678578
+2024-04-09 11:34:12,029 - trainer - INFO -     val_recall     : 0.659713
+2024-04-09 11:34:12,029 - trainer - INFO -     test_loss      : 1.227704
+2024-04-09 11:34:12,029 - trainer - INFO -     test_accuracy  : 0.659514
+2024-04-09 11:34:12,029 - trainer - INFO -     test_macro_f   : 0.643918
+2024-04-09 11:34:12,029 - trainer - INFO -     test_precision : 0.677901
+2024-04-09 11:34:12,029 - trainer - INFO -     test_recall    : 0.659514
+2024-04-09 11:34:46,097 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 11:37:36,668 - trainer - INFO -     epoch          : 1
+2024-04-09 11:37:36,668 - trainer - INFO -     loss           : 1.417035
+2024-04-09 11:37:36,668 - trainer - INFO -     accuracy       : 0.607913
+2024-04-09 11:37:36,668 - trainer - INFO -     macro_f        : 0.580167
+2024-04-09 11:37:36,668 - trainer - INFO -     precision      : 0.605653
+2024-04-09 11:37:36,668 - trainer - INFO -     recall         : 0.607913
+2024-04-09 11:37:36,668 - trainer - INFO -     val_loss       : 1.254189
+2024-04-09 11:37:36,668 - trainer - INFO -     val_accuracy   : 0.648561
+2024-04-09 11:37:36,668 - trainer - INFO -     val_macro_f    : 0.631255
+2024-04-09 11:37:36,668 - trainer - INFO -     val_precision  : 0.663682
+2024-04-09 11:37:36,668 - trainer - INFO -     val_recall     : 0.648561
+2024-04-09 11:37:36,668 - trainer - INFO -     test_loss      : 1.249863
+2024-04-09 11:37:36,668 - trainer - INFO -     test_accuracy  : 0.648063
+2024-04-09 11:37:36,668 - trainer - INFO -     test_macro_f   : 0.632142
+2024-04-09 11:37:36,668 - trainer - INFO -     test_precision : 0.667166
+2024-04-09 11:37:36,668 - trainer - INFO -     test_recall    : 0.648063
+2024-04-09 11:40:29,163 - trainer - INFO -     epoch          : 2
+2024-04-09 11:40:29,163 - trainer - INFO -     loss           : 1.158927
+2024-04-09 11:40:29,163 - trainer - INFO -     accuracy       : 0.671812
+2024-04-09 11:40:29,163 - trainer - INFO -     macro_f        : 0.656356
+2024-04-09 11:40:29,163 - trainer - INFO -     precision      : 0.690412
+2024-04-09 11:40:29,163 - trainer - INFO -     recall         : 0.671812
+2024-04-09 11:40:29,163 - trainer - INFO -     val_loss       : 1.215008
+2024-04-09 11:40:29,163 - trainer - INFO -     val_accuracy   : 0.657622
+2024-04-09 11:40:29,163 - trainer - INFO -     val_macro_f    : 0.643996
+2024-04-09 11:40:29,163 - trainer - INFO -     val_precision  : 0.678243
+2024-04-09 11:40:29,163 - trainer - INFO -     val_recall     : 0.657622
+2024-04-09 11:40:29,163 - trainer - INFO -     test_loss      : 1.205286
+2024-04-09 11:40:29,163 - trainer - INFO -     test_accuracy  : 0.658419
+2024-04-09 11:40:29,163 - trainer - INFO -     test_macro_f   : 0.647545
+2024-04-09 11:40:29,163 - trainer - INFO -     test_precision : 0.6868
+2024-04-09 11:40:29,163 - trainer - INFO -     test_recall    : 0.658419
+2024-04-09 11:43:21,681 - trainer - INFO -     epoch          : 3
+2024-04-09 11:43:21,681 - trainer - INFO -     loss           : 1.054698
+2024-04-09 11:43:21,681 - trainer - INFO -     accuracy       : 0.698138
+2024-04-09 11:43:21,681 - trainer - INFO -     macro_f        : 0.684353
+2024-04-09 11:43:21,681 - trainer - INFO -     precision      : 0.717529
+2024-04-09 11:43:21,681 - trainer - INFO -     recall         : 0.698138
+2024-04-09 11:43:21,681 - trainer - INFO -     val_loss       : 1.212477
+2024-04-09 11:43:21,681 - trainer - INFO -     val_accuracy   : 0.662053
+2024-04-09 11:43:21,681 - trainer - INFO -     val_macro_f    : 0.647031
+2024-04-09 11:43:21,681 - trainer - INFO -     val_precision  : 0.68147
+2024-04-09 11:43:21,681 - trainer - INFO -     val_recall     : 0.662053
+2024-04-09 11:43:21,681 - trainer - INFO -     test_loss      : 1.222994
+2024-04-09 11:43:21,681 - trainer - INFO -     test_accuracy  : 0.657174
+2024-04-09 11:43:21,681 - trainer - INFO -     test_macro_f   : 0.641533
+2024-04-09 11:43:21,681 - trainer - INFO -     test_precision : 0.675102
+2024-04-09 11:43:21,681 - trainer - INFO -     test_recall    : 0.657174
+2024-04-09 11:43:55,896 - train - INFO - TextCNNClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=100, out_features=26, bias=True)
+  (conv_layers): ModuleList(
+    (0): Conv2d(1, 100, kernel_size=(2, 300), stride=(1, 1))
+  )
+)
+Trainable params: 25,413,626
+Freeze params: 0
+2024-04-09 11:46:46,713 - trainer - INFO -     epoch          : 1
+2024-04-09 11:46:46,713 - trainer - INFO -     loss           : 1.41315
+2024-04-09 11:46:46,713 - trainer - INFO -     accuracy       : 0.609475
+2024-04-09 11:46:46,713 - trainer - INFO -     macro_f        : 0.581264
+2024-04-09 11:46:46,713 - trainer - INFO -     precision      : 0.606009
+2024-04-09 11:46:46,713 - trainer - INFO -     recall         : 0.609475
+2024-04-09 11:46:46,713 - trainer - INFO -     val_loss       : 1.240456
+2024-04-09 11:46:46,713 - trainer - INFO -     val_accuracy   : 0.65344
+2024-04-09 11:46:46,713 - trainer - INFO -     val_macro_f    : 0.634092
+2024-04-09 11:46:46,713 - trainer - INFO -     val_precision  : 0.664334
+2024-04-09 11:46:46,713 - trainer - INFO -     val_recall     : 0.65344
+2024-04-09 11:46:46,713 - trainer - INFO -     test_loss      : 1.246524
+2024-04-09 11:46:46,713 - trainer - INFO -     test_accuracy  : 0.648611
+2024-04-09 11:46:46,713 - trainer - INFO -     test_macro_f   : 0.632255
+2024-04-09 11:46:46,713 - trainer - INFO -     test_precision : 0.666467
+2024-04-09 11:46:46,713 - trainer - INFO -     test_recall    : 0.648611
+2024-04-09 11:49:39,470 - trainer - INFO -     epoch          : 2
+2024-04-09 11:49:39,470 - trainer - INFO -     loss           : 1.15893
+2024-04-09 11:49:39,470 - trainer - INFO -     accuracy       : 0.672782
+2024-04-09 11:49:39,470 - trainer - INFO -     macro_f        : 0.657244
+2024-04-09 11:49:39,470 - trainer - INFO -     precision      : 0.691491
+2024-04-09 11:49:39,470 - trainer - INFO -     recall         : 0.672782
+2024-04-09 11:49:39,470 - trainer - INFO -     val_loss       : 1.216857
+2024-04-09 11:49:39,470 - trainer - INFO -     val_accuracy   : 0.659663
+2024-04-09 11:49:39,470 - trainer - INFO -     val_macro_f    : 0.648462
+2024-04-09 11:49:39,470 - trainer - INFO -     val_precision  : 0.687307
+2024-04-09 11:49:39,470 - trainer - INFO -     val_recall     : 0.659663
+2024-04-09 11:49:39,470 - trainer - INFO -     test_loss      : 1.228966
+2024-04-09 11:49:39,470 - trainer - INFO -     test_accuracy  : 0.655382
+2024-04-09 11:49:39,470 - trainer - INFO -     test_macro_f   : 0.644084
+2024-04-09 11:49:39,470 - trainer - INFO -     test_precision : 0.682901
+2024-04-09 11:49:39,470 - trainer - INFO -     test_recall    : 0.655382
+2024-04-09 11:52:31,995 - trainer - INFO -     epoch          : 3
+2024-04-09 11:52:31,995 - trainer - INFO -     loss           : 1.056288
+2024-04-09 11:52:31,995 - trainer - INFO -     accuracy       : 0.697995
+2024-04-09 11:52:31,995 - trainer - INFO -     macro_f        : 0.684046
+2024-04-09 11:52:31,995 - trainer - INFO -     precision      : 0.717372
+2024-04-09 11:52:31,995 - trainer - INFO -     recall         : 0.697995
+2024-04-09 11:52:31,995 - trainer - INFO -     val_loss       : 1.208258
+2024-04-09 11:52:31,995 - trainer - INFO -     val_accuracy   : 0.663348
+2024-04-09 11:52:31,995 - trainer - INFO -     val_macro_f    : 0.648689
+2024-04-09 11:52:31,995 - trainer - INFO -     val_precision  : 0.683743
+2024-04-09 11:52:31,995 - trainer - INFO -     val_recall     : 0.663348
+2024-04-09 11:52:31,995 - trainer - INFO -     test_loss      : 1.220731
+2024-04-09 11:52:31,995 - trainer - INFO -     test_accuracy  : 0.659663
+2024-04-09 11:52:31,995 - trainer - INFO -     test_macro_f   : 0.646046
+2024-04-09 11:52:32,011 - trainer - INFO -     test_precision : 0.67973
+2024-04-09 11:52:32,011 - trainer - INFO -     test_recall    : 0.659663

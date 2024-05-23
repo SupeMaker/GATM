@@ -1,0 +1,2668 @@
+2024-03-03 15:51:17,188 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-03-03 15:59:50,081 - trainer - INFO -     epoch          : 1
+2024-03-03 15:59:50,081 - trainer - INFO -     loss           : 1.384953
+2024-03-03 15:59:50,081 - trainer - INFO -     accuracy       : 0.615475
+2024-03-03 15:59:50,081 - trainer - INFO -     macro_f        : 0.454954
+2024-03-03 15:59:50,081 - trainer - INFO -     val_loss       : 1.169302
+2024-03-03 15:59:50,081 - trainer - INFO -     val_accuracy   : 0.661804
+2024-03-03 15:59:50,081 - trainer - INFO -     val_macro_f    : 0.511643
+2024-03-03 16:08:28,123 - trainer - INFO -     epoch          : 2
+2024-03-03 16:08:28,123 - trainer - INFO -     loss           : 0.958807
+2024-03-03 16:08:28,123 - trainer - INFO -     accuracy       : 0.716093
+2024-03-03 16:08:28,123 - trainer - INFO -     macro_f        : 0.574356
+2024-03-03 16:08:28,123 - trainer - INFO -     val_loss       : 1.099432
+2024-03-03 16:08:28,123 - trainer - INFO -     val_accuracy   : 0.688788
+2024-03-03 16:08:28,123 - trainer - INFO -     val_macro_f    : 0.541321
+2024-03-03 16:17:05,871 - trainer - INFO -     epoch          : 3
+2024-03-03 16:17:05,871 - trainer - INFO -     loss           : 0.765941
+2024-03-03 16:17:05,871 - trainer - INFO -     accuracy       : 0.766051
+2024-03-03 16:17:05,871 - trainer - INFO -     macro_f        : 0.641415
+2024-03-03 16:17:05,871 - trainer - INFO -     val_loss       : 1.15946
+2024-03-03 16:17:05,871 - trainer - INFO -     val_accuracy   : 0.68376
+2024-03-03 16:17:05,871 - trainer - INFO -     val_macro_f    : 0.53524
+2024-03-03 16:18:04,938 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-03-03 16:26:42,472 - trainer - INFO -     epoch          : 1
+2024-03-03 16:26:42,472 - trainer - INFO -     loss           : 1.365696
+2024-03-03 16:26:42,472 - trainer - INFO -     accuracy       : 0.619003
+2024-03-03 16:26:42,472 - trainer - INFO -     macro_f        : 0.459345
+2024-03-03 16:26:42,472 - trainer - INFO -     val_loss       : 1.155049
+2024-03-03 16:26:42,472 - trainer - INFO -     val_accuracy   : 0.664343
+2024-03-03 16:26:42,472 - trainer - INFO -     val_macro_f    : 0.504575
+2024-03-03 16:35:24,892 - trainer - INFO -     epoch          : 2
+2024-03-03 16:35:24,892 - trainer - INFO -     loss           : 0.948913
+2024-03-03 16:35:24,892 - trainer - INFO -     accuracy       : 0.719068
+2024-03-03 16:35:24,892 - trainer - INFO -     macro_f        : 0.578792
+2024-03-03 16:35:24,892 - trainer - INFO -     val_loss       : 1.109675
+2024-03-03 16:35:24,892 - trainer - INFO -     val_accuracy   : 0.686498
+2024-03-03 16:35:24,892 - trainer - INFO -     val_macro_f    : 0.533848
+2024-03-03 16:44:00,640 - trainer - INFO -     epoch          : 3
+2024-03-03 16:44:00,640 - trainer - INFO -     loss           : 0.75036
+2024-03-03 16:44:00,640 - trainer - INFO -     accuracy       : 0.769505
+2024-03-03 16:44:00,640 - trainer - INFO -     macro_f        : 0.646689
+2024-03-03 16:44:00,640 - trainer - INFO -     val_loss       : 1.216084
+2024-03-03 16:44:00,640 - trainer - INFO -     val_accuracy   : 0.667679
+2024-03-03 16:44:00,640 - trainer - INFO -     val_macro_f    : 0.51759
+2024-03-03 16:45:02,362 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-03-03 16:53:43,267 - trainer - INFO -     epoch          : 1
+2024-03-03 16:53:43,267 - trainer - INFO -     loss           : 1.401364
+2024-03-03 16:53:43,267 - trainer - INFO -     accuracy       : 0.611523
+2024-03-03 16:53:43,267 - trainer - INFO -     macro_f        : 0.450901
+2024-03-03 16:53:43,267 - trainer - INFO -     val_loss       : 1.153954
+2024-03-03 16:53:43,267 - trainer - INFO -     val_accuracy   : 0.669372
+2024-03-03 16:53:43,267 - trainer - INFO -     val_macro_f    : 0.51353
+2024-03-03 17:02:20,608 - trainer - INFO -     epoch          : 2
+2024-03-03 17:02:20,608 - trainer - INFO -     loss           : 0.97158
+2024-03-03 17:02:20,608 - trainer - INFO -     accuracy       : 0.712073
+2024-03-03 17:02:20,608 - trainer - INFO -     macro_f        : 0.570356
+2024-03-03 17:02:20,608 - trainer - INFO -     val_loss       : 1.113542
+2024-03-03 17:02:20,608 - trainer - INFO -     val_accuracy   : 0.686
+2024-03-03 17:02:20,608 - trainer - INFO -     val_macro_f    : 0.534256
+2024-03-03 17:10:59,545 - trainer - INFO -     epoch          : 3
+2024-03-03 17:10:59,545 - trainer - INFO -     loss           : 0.773206
+2024-03-03 17:10:59,545 - trainer - INFO -     accuracy       : 0.763369
+2024-03-03 17:10:59,545 - trainer - INFO -     macro_f        : 0.637312
+2024-03-03 17:10:59,545 - trainer - INFO -     val_loss       : 1.198411
+2024-03-03 17:10:59,545 - trainer - INFO -     val_accuracy   : 0.674002
+2024-03-03 17:10:59,545 - trainer - INFO -     val_macro_f    : 0.526594
+2024-03-03 17:11:59,390 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-03-03 17:20:37,939 - trainer - INFO -     epoch          : 1
+2024-03-03 17:20:37,939 - trainer - INFO -     loss           : 1.4014
+2024-03-03 17:20:37,939 - trainer - INFO -     accuracy       : 0.612058
+2024-03-03 17:20:37,939 - trainer - INFO -     macro_f        : 0.450999
+2024-03-03 17:20:37,939 - trainer - INFO -     val_loss       : 1.129407
+2024-03-03 17:20:37,939 - trainer - INFO -     val_accuracy   : 0.674151
+2024-03-03 17:20:37,939 - trainer - INFO -     val_macro_f    : 0.519442
+2024-03-03 17:29:15,154 - trainer - INFO -     epoch          : 2
+2024-03-03 17:29:15,154 - trainer - INFO -     loss           : 0.968829
+2024-03-03 17:29:15,154 - trainer - INFO -     accuracy       : 0.714133
+2024-03-03 17:29:15,154 - trainer - INFO -     macro_f        : 0.572575
+2024-03-03 17:29:15,154 - trainer - INFO -     val_loss       : 1.090408
+2024-03-03 17:29:15,154 - trainer - INFO -     val_accuracy   : 0.684307
+2024-03-03 17:29:15,154 - trainer - INFO -     val_macro_f    : 0.538434
+2024-03-03 17:37:48,696 - trainer - INFO -     epoch          : 3
+2024-03-03 17:37:48,696 - trainer - INFO -     loss           : 0.768714
+2024-03-03 17:37:48,708 - trainer - INFO -     accuracy       : 0.765229
+2024-03-03 17:37:48,708 - trainer - INFO -     macro_f        : 0.640183
+2024-03-03 17:37:48,709 - trainer - INFO -     val_loss       : 1.170089
+2024-03-03 17:37:48,709 - trainer - INFO -     val_accuracy   : 0.675097
+2024-03-03 17:37:48,709 - trainer - INFO -     val_macro_f    : 0.528051
+2024-03-03 17:38:50,080 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-03-03 17:47:30,161 - trainer - INFO -     epoch          : 1
+2024-03-03 17:47:30,176 - trainer - INFO -     loss           : 1.454994
+2024-03-03 17:47:30,176 - trainer - INFO -     accuracy       : 0.600656
+2024-03-03 17:47:30,176 - trainer - INFO -     macro_f        : 0.438733
+2024-03-03 17:47:30,176 - trainer - INFO -     val_loss       : 1.170268
+2024-03-03 17:47:30,176 - trainer - INFO -     val_accuracy   : 0.667779
+2024-03-03 17:47:30,176 - trainer - INFO -     val_macro_f    : 0.516386
+2024-03-03 17:56:05,303 - trainer - INFO -     epoch          : 2
+2024-03-03 17:56:05,318 - trainer - INFO -     loss           : 0.997378
+2024-03-03 17:56:05,318 - trainer - INFO -     accuracy       : 0.707461
+2024-03-03 17:56:05,318 - trainer - INFO -     macro_f        : 0.562653
+2024-03-03 17:56:05,318 - trainer - INFO -     val_loss       : 1.130113
+2024-03-03 17:56:05,318 - trainer - INFO -     val_accuracy   : 0.676392
+2024-03-03 17:56:05,318 - trainer - INFO -     val_macro_f    : 0.527585
+2024-03-03 18:04:42,824 - trainer - INFO -     epoch          : 3
+2024-03-03 18:04:42,824 - trainer - INFO -     loss           : 0.787699
+2024-03-03 18:04:42,824 - trainer - INFO -     accuracy       : 0.760643
+2024-03-03 18:04:42,824 - trainer - INFO -     macro_f        : 0.632301
+2024-03-03 18:04:42,824 - trainer - INFO -     val_loss       : 1.167632
+2024-03-03 18:04:42,824 - trainer - INFO -     val_accuracy   : 0.673106
+2024-03-03 18:04:42,824 - trainer - INFO -     val_macro_f    : 0.520296
+2024-04-01 17:26:09,386 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,534,106
+Freeze params: 0
+2024-04-06 19:05:19,633 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 19:16:00,831 - trainer - INFO -     epoch          : 1
+2024-04-06 19:16:00,831 - trainer - INFO -     loss           : 1.420479
+2024-04-06 19:16:00,831 - trainer - INFO -     accuracy       : 0.610253
+2024-04-06 19:16:00,831 - trainer - INFO -     macro_f        : 0.587527
+2024-04-06 19:16:00,831 - trainer - INFO -     precision      : 0.620396
+2024-04-06 19:16:00,831 - trainer - INFO -     recall         : 0.610253
+2024-04-06 19:16:00,831 - trainer - INFO -     val_loss       : 1.232488
+2024-04-06 19:16:00,831 - trainer - INFO -     val_accuracy   : 0.655432
+2024-04-06 19:16:00,831 - trainer - INFO -     val_macro_f    : 0.643302
+2024-04-06 19:16:00,831 - trainer - INFO -     val_precision  : 0.683097
+2024-04-06 19:16:00,831 - trainer - INFO -     val_recall     : 0.655432
+2024-04-06 19:16:00,831 - trainer - INFO -     test_loss      : 1.242917
+2024-04-06 19:16:00,831 - trainer - INFO -     test_accuracy  : 0.650802
+2024-04-06 19:16:00,831 - trainer - INFO -     test_macro_f   : 0.638376
+2024-04-06 19:16:00,831 - trainer - INFO -     test_precision : 0.679406
+2024-04-06 19:16:00,831 - trainer - INFO -     test_recall    : 0.650802
+2024-04-06 19:26:48,453 - trainer - INFO -     epoch          : 2
+2024-04-06 19:26:48,453 - trainer - INFO -     loss           : 1.045496
+2024-04-06 19:26:48,453 - trainer - INFO -     accuracy       : 0.701356
+2024-04-06 19:26:48,453 - trainer - INFO -     macro_f        : 0.689514
+2024-04-06 19:26:48,453 - trainer - INFO -     precision      : 0.725904
+2024-04-06 19:26:48,453 - trainer - INFO -     recall         : 0.701356
+2024-04-06 19:26:48,453 - trainer - INFO -     val_loss       : 1.192849
+2024-04-06 19:26:48,453 - trainer - INFO -     val_accuracy   : 0.667082
+2024-04-06 19:26:48,453 - trainer - INFO -     val_macro_f    : 0.656668
+2024-04-06 19:26:48,453 - trainer - INFO -     val_precision  : 0.695577
+2024-04-06 19:26:48,453 - trainer - INFO -     val_recall     : 0.667082
+2024-04-06 19:26:48,453 - trainer - INFO -     test_loss      : 1.20696
+2024-04-06 19:26:48,453 - trainer - INFO -     test_accuracy  : 0.659215
+2024-04-06 19:26:48,453 - trainer - INFO -     test_macro_f   : 0.650485
+2024-04-06 19:26:48,453 - trainer - INFO -     test_precision : 0.694205
+2024-04-06 19:26:48,453 - trainer - INFO -     test_recall    : 0.659215
+2024-04-06 19:37:32,200 - trainer - INFO -     epoch          : 3
+2024-04-06 19:37:32,200 - trainer - INFO -     loss           : 0.874612
+2024-04-06 19:37:32,200 - trainer - INFO -     accuracy       : 0.743652
+2024-04-06 19:37:32,200 - trainer - INFO -     macro_f        : 0.7348
+2024-04-06 19:37:32,200 - trainer - INFO -     precision      : 0.769793
+2024-04-06 19:37:32,200 - trainer - INFO -     recall         : 0.743652
+2024-04-06 19:37:32,200 - trainer - INFO -     val_loss       : 1.187903
+2024-04-06 19:37:32,200 - trainer - INFO -     val_accuracy   : 0.66987
+2024-04-06 19:37:32,200 - trainer - INFO -     val_macro_f    : 0.659026
+2024-04-06 19:37:32,200 - trainer - INFO -     val_precision  : 0.697719
+2024-04-06 19:37:32,200 - trainer - INFO -     val_recall     : 0.66987
+2024-04-06 19:37:32,200 - trainer - INFO -     test_loss      : 1.186806
+2024-04-06 19:37:32,200 - trainer - INFO -     test_accuracy  : 0.668924
+2024-04-06 19:37:32,200 - trainer - INFO -     test_macro_f   : 0.656162
+2024-04-06 19:37:32,200 - trainer - INFO -     test_precision : 0.692382
+2024-04-06 19:37:32,200 - trainer - INFO -     test_recall    : 0.668924
+2024-04-06 19:38:44,261 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 19:49:31,655 - trainer - INFO -     epoch          : 1
+2024-04-06 19:49:31,657 - trainer - INFO -     loss           : 1.40472
+2024-04-06 19:49:31,657 - trainer - INFO -     accuracy       : 0.613415
+2024-04-06 19:49:31,657 - trainer - INFO -     macro_f        : 0.592213
+2024-04-06 19:49:31,657 - trainer - INFO -     precision      : 0.626252
+2024-04-06 19:49:31,657 - trainer - INFO -     recall         : 0.613415
+2024-04-06 19:49:31,657 - trainer - INFO -     val_loss       : 1.234449
+2024-04-06 19:49:31,658 - trainer - INFO -     val_accuracy   : 0.65349
+2024-04-06 19:49:31,658 - trainer - INFO -     val_macro_f    : 0.63574
+2024-04-06 19:49:31,658 - trainer - INFO -     val_precision  : 0.66846
+2024-04-06 19:49:31,658 - trainer - INFO -     val_recall     : 0.65349
+2024-04-06 19:49:31,658 - trainer - INFO -     test_loss      : 1.239878
+2024-04-06 19:49:31,659 - trainer - INFO -     test_accuracy  : 0.651847
+2024-04-06 19:49:31,659 - trainer - INFO -     test_macro_f   : 0.635064
+2024-04-06 19:49:31,659 - trainer - INFO -     test_precision : 0.668158
+2024-04-06 19:49:31,659 - trainer - INFO -     test_recall    : 0.651847
+2024-04-06 20:00:20,355 - trainer - INFO -     epoch          : 2
+2024-04-06 20:00:20,370 - trainer - INFO -     loss           : 1.035918
+2024-04-06 20:00:20,370 - trainer - INFO -     accuracy       : 0.703167
+2024-04-06 20:00:20,370 - trainer - INFO -     macro_f        : 0.69186
+2024-04-06 20:00:20,370 - trainer - INFO -     precision      : 0.728725
+2024-04-06 20:00:20,370 - trainer - INFO -     recall         : 0.703167
+2024-04-06 20:00:20,370 - trainer - INFO -     val_loss       : 1.183251
+2024-04-06 20:00:20,370 - trainer - INFO -     val_accuracy   : 0.662999
+2024-04-06 20:00:20,370 - trainer - INFO -     val_macro_f    : 0.659586
+2024-04-06 20:00:20,370 - trainer - INFO -     val_precision  : 0.709245
+2024-04-06 20:00:20,370 - trainer - INFO -     val_recall     : 0.662999
+2024-04-06 20:00:20,370 - trainer - INFO -     test_loss      : 1.207521
+2024-04-06 20:00:20,370 - trainer - INFO -     test_accuracy  : 0.659315
+2024-04-06 20:00:20,370 - trainer - INFO -     test_macro_f   : 0.65669
+2024-04-06 20:00:20,370 - trainer - INFO -     test_precision : 0.708379
+2024-04-06 20:00:20,370 - trainer - INFO -     test_recall    : 0.659315
+2024-04-06 20:11:09,649 - trainer - INFO -     epoch          : 3
+2024-04-06 20:11:09,649 - trainer - INFO -     loss           : 0.86136
+2024-04-06 20:11:09,649 - trainer - INFO -     accuracy       : 0.747436
+2024-04-06 20:11:09,649 - trainer - INFO -     macro_f        : 0.738886
+2024-04-06 20:11:09,649 - trainer - INFO -     precision      : 0.773891
+2024-04-06 20:11:09,649 - trainer - INFO -     recall         : 0.747436
+2024-04-06 20:11:09,649 - trainer - INFO -     val_loss       : 1.173193
+2024-04-06 20:11:09,649 - trainer - INFO -     val_accuracy   : 0.669073
+2024-04-06 20:11:09,649 - trainer - INFO -     val_macro_f    : 0.656121
+2024-04-06 20:11:09,649 - trainer - INFO -     val_precision  : 0.691162
+2024-04-06 20:11:09,649 - trainer - INFO -     val_recall     : 0.669073
+2024-04-06 20:11:09,649 - trainer - INFO -     test_loss      : 1.175342
+2024-04-06 20:11:09,649 - trainer - INFO -     test_accuracy  : 0.670716
+2024-04-06 20:11:09,649 - trainer - INFO -     test_macro_f   : 0.658652
+2024-04-06 20:11:09,649 - trainer - INFO -     test_precision : 0.695126
+2024-04-06 20:11:09,649 - trainer - INFO -     test_recall    : 0.670716
+2024-04-06 20:12:22,851 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 20:23:08,086 - trainer - INFO -     epoch          : 1
+2024-04-06 20:23:08,086 - trainer - INFO -     loss           : 1.402545
+2024-04-06 20:23:08,086 - trainer - INFO -     accuracy       : 0.61385
+2024-04-06 20:23:08,086 - trainer - INFO -     macro_f        : 0.592957
+2024-04-06 20:23:08,086 - trainer - INFO -     precision      : 0.627268
+2024-04-06 20:23:08,086 - trainer - INFO -     recall         : 0.61385
+2024-04-06 20:23:08,086 - trainer - INFO -     val_loss       : 1.195458
+2024-04-06 20:23:08,086 - trainer - INFO -     val_accuracy   : 0.663049
+2024-04-06 20:23:08,086 - trainer - INFO -     val_macro_f    : 0.655266
+2024-04-06 20:23:08,086 - trainer - INFO -     val_precision  : 0.697721
+2024-04-06 20:23:08,086 - trainer - INFO -     val_recall     : 0.663049
+2024-04-06 20:23:08,086 - trainer - INFO -     test_loss      : 1.220536
+2024-04-06 20:23:08,086 - trainer - INFO -     test_accuracy  : 0.657473
+2024-04-06 20:23:08,086 - trainer - INFO -     test_macro_f   : 0.6492
+2024-04-06 20:23:08,086 - trainer - INFO -     test_precision : 0.691662
+2024-04-06 20:23:08,086 - trainer - INFO -     test_recall    : 0.657473
+2024-04-06 20:33:52,824 - trainer - INFO -     epoch          : 2
+2024-04-06 20:33:52,840 - trainer - INFO -     loss           : 1.038522
+2024-04-06 20:33:52,840 - trainer - INFO -     accuracy       : 0.703297
+2024-04-06 20:33:52,840 - trainer - INFO -     macro_f        : 0.691959
+2024-04-06 20:33:52,840 - trainer - INFO -     precision      : 0.728797
+2024-04-06 20:33:52,840 - trainer - INFO -     recall         : 0.703297
+2024-04-06 20:33:52,840 - trainer - INFO -     val_loss       : 1.163964
+2024-04-06 20:33:52,840 - trainer - INFO -     val_accuracy   : 0.672658
+2024-04-06 20:33:52,840 - trainer - INFO -     val_macro_f    : 0.65517
+2024-04-06 20:33:52,840 - trainer - INFO -     val_precision  : 0.685686
+2024-04-06 20:33:52,840 - trainer - INFO -     val_recall     : 0.672658
+2024-04-06 20:33:52,840 - trainer - INFO -     test_loss      : 1.181525
+2024-04-06 20:33:52,840 - trainer - INFO -     test_accuracy  : 0.673006
+2024-04-06 20:33:52,840 - trainer - INFO -     test_macro_f   : 0.657543
+2024-04-06 20:33:52,840 - trainer - INFO -     test_precision : 0.692978
+2024-04-06 20:33:52,840 - trainer - INFO -     test_recall    : 0.673006
+2024-04-06 20:44:36,865 - trainer - INFO -     epoch          : 3
+2024-04-06 20:44:36,865 - trainer - INFO -     loss           : 0.866356
+2024-04-06 20:44:36,865 - trainer - INFO -     accuracy       : 0.745351
+2024-04-06 20:44:36,865 - trainer - INFO -     macro_f        : 0.73665
+2024-04-06 20:44:36,865 - trainer - INFO -     precision      : 0.771921
+2024-04-06 20:44:36,865 - trainer - INFO -     recall         : 0.745351
+2024-04-06 20:44:36,865 - trainer - INFO -     val_loss       : 1.180627
+2024-04-06 20:44:36,865 - trainer - INFO -     val_accuracy   : 0.669372
+2024-04-06 20:44:36,865 - trainer - INFO -     val_macro_f    : 0.659193
+2024-04-06 20:44:36,865 - trainer - INFO -     val_precision  : 0.69904
+2024-04-06 20:44:36,865 - trainer - INFO -     val_recall     : 0.669372
+2024-04-06 20:44:36,865 - trainer - INFO -     test_loss      : 1.186365
+2024-04-06 20:44:36,865 - trainer - INFO -     test_accuracy  : 0.665389
+2024-04-06 20:44:36,865 - trainer - INFO -     test_macro_f   : 0.656968
+2024-04-06 20:44:36,865 - trainer - INFO -     test_precision : 0.698504
+2024-04-06 20:44:36,865 - trainer - INFO -     test_recall    : 0.665389
+2024-04-06 20:45:50,423 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 20:56:39,078 - trainer - INFO -     epoch          : 1
+2024-04-06 20:56:39,078 - trainer - INFO -     loss           : 1.412021
+2024-04-06 20:56:39,078 - trainer - INFO -     accuracy       : 0.610813
+2024-04-06 20:56:39,078 - trainer - INFO -     macro_f        : 0.589075
+2024-04-06 20:56:39,078 - trainer - INFO -     precision      : 0.623462
+2024-04-06 20:56:39,078 - trainer - INFO -     recall         : 0.610813
+2024-04-06 20:56:39,078 - trainer - INFO -     val_loss       : 1.188611
+2024-04-06 20:56:39,078 - trainer - INFO -     val_accuracy   : 0.664642
+2024-04-06 20:56:39,078 - trainer - INFO -     val_macro_f    : 0.645047
+2024-04-06 20:56:39,078 - trainer - INFO -     val_precision  : 0.672292
+2024-04-06 20:56:39,078 - trainer - INFO -     val_recall     : 0.664642
+2024-04-06 20:56:39,078 - trainer - INFO -     test_loss      : 1.197212
+2024-04-06 20:56:39,078 - trainer - INFO -     test_accuracy  : 0.662053
+2024-04-06 20:56:39,078 - trainer - INFO -     test_macro_f   : 0.645187
+2024-04-06 20:56:39,078 - trainer - INFO -     test_precision : 0.675788
+2024-04-06 20:56:39,078 - trainer - INFO -     test_recall    : 0.662053
+2024-04-06 21:07:26,608 - trainer - INFO -     epoch          : 2
+2024-04-06 21:07:26,608 - trainer - INFO -     loss           : 1.043911
+2024-04-06 21:07:26,608 - trainer - INFO -     accuracy       : 0.700907
+2024-04-06 21:07:26,608 - trainer - INFO -     macro_f        : 0.688691
+2024-04-06 21:07:26,608 - trainer - INFO -     precision      : 0.725922
+2024-04-06 21:07:26,608 - trainer - INFO -     recall         : 0.700907
+2024-04-06 21:07:26,608 - trainer - INFO -     val_loss       : 1.167428
+2024-04-06 21:07:26,608 - trainer - INFO -     val_accuracy   : 0.66733
+2024-04-06 21:07:26,608 - trainer - INFO -     val_macro_f    : 0.66095
+2024-04-06 21:07:26,608 - trainer - INFO -     val_precision  : 0.705368
+2024-04-06 21:07:26,608 - trainer - INFO -     val_recall     : 0.66733
+2024-04-06 21:07:26,608 - trainer - INFO -     test_loss      : 1.18206
+2024-04-06 21:07:26,608 - trainer - INFO -     test_accuracy  : 0.668077
+2024-04-06 21:07:26,608 - trainer - INFO -     test_macro_f   : 0.658555
+2024-04-06 21:07:26,608 - trainer - INFO -     test_precision : 0.699175
+2024-04-06 21:07:26,608 - trainer - INFO -     test_recall    : 0.668077
+2024-04-06 21:18:10,697 - trainer - INFO -     epoch          : 3
+2024-04-06 21:18:10,697 - trainer - INFO -     loss           : 0.866417
+2024-04-06 21:18:10,697 - trainer - INFO -     accuracy       : 0.745525
+2024-04-06 21:18:10,697 - trainer - INFO -     macro_f        : 0.736314
+2024-04-06 21:18:10,697 - trainer - INFO -     precision      : 0.770451
+2024-04-06 21:18:10,697 - trainer - INFO -     recall         : 0.745525
+2024-04-06 21:18:10,697 - trainer - INFO -     val_loss       : 1.245448
+2024-04-06 21:18:10,697 - trainer - INFO -     val_accuracy   : 0.66051
+2024-04-06 21:18:10,697 - trainer - INFO -     val_macro_f    : 0.647797
+2024-04-06 21:18:10,697 - trainer - INFO -     val_precision  : 0.691269
+2024-04-06 21:18:10,697 - trainer - INFO -     val_recall     : 0.66051
+2024-04-06 21:18:10,697 - trainer - INFO -     test_loss      : 1.262412
+2024-04-06 21:18:10,697 - trainer - INFO -     test_accuracy  : 0.65573
+2024-04-06 21:18:10,697 - trainer - INFO -     test_macro_f   : 0.643172
+2024-04-06 21:18:10,697 - trainer - INFO -     test_precision : 0.686014
+2024-04-06 21:18:10,697 - trainer - INFO -     test_recall    : 0.65573
+2024-04-06 21:19:24,626 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 21:30:09,407 - trainer - INFO -     epoch          : 1
+2024-04-06 21:30:09,407 - trainer - INFO -     loss           : 1.404014
+2024-04-06 21:30:09,407 - trainer - INFO -     accuracy       : 0.61339
+2024-04-06 21:30:09,407 - trainer - INFO -     macro_f        : 0.592504
+2024-04-06 21:30:09,407 - trainer - INFO -     precision      : 0.627322
+2024-04-06 21:30:09,407 - trainer - INFO -     recall         : 0.61339
+2024-04-06 21:30:09,407 - trainer - INFO -     val_loss       : 1.184564
+2024-04-06 21:30:09,407 - trainer - INFO -     val_accuracy   : 0.662003
+2024-04-06 21:30:09,407 - trainer - INFO -     val_macro_f    : 0.64687
+2024-04-06 21:30:09,422 - trainer - INFO -     val_precision  : 0.680189
+2024-04-06 21:30:09,422 - trainer - INFO -     val_recall     : 0.662003
+2024-04-06 21:30:09,422 - trainer - INFO -     test_loss      : 1.205141
+2024-04-06 21:30:09,422 - trainer - INFO -     test_accuracy  : 0.659713
+2024-04-06 21:30:09,422 - trainer - INFO -     test_macro_f   : 0.645457
+2024-04-06 21:30:09,422 - trainer - INFO -     test_precision : 0.681875
+2024-04-06 21:30:09,422 - trainer - INFO -     test_recall    : 0.659713
+2024-04-06 21:40:53,595 - trainer - INFO -     epoch          : 2
+2024-04-06 21:40:53,595 - trainer - INFO -     loss           : 1.032503
+2024-04-06 21:40:53,595 - trainer - INFO -     accuracy       : 0.703521
+2024-04-06 21:40:53,595 - trainer - INFO -     macro_f        : 0.692159
+2024-04-06 21:40:53,595 - trainer - INFO -     precision      : 0.728789
+2024-04-06 21:40:53,595 - trainer - INFO -     recall         : 0.703521
+2024-04-06 21:40:53,595 - trainer - INFO -     val_loss       : 1.189761
+2024-04-06 21:40:53,595 - trainer - INFO -     val_accuracy   : 0.667281
+2024-04-06 21:40:53,595 - trainer - INFO -     val_macro_f    : 0.658268
+2024-04-06 21:40:53,595 - trainer - INFO -     val_precision  : 0.702215
+2024-04-06 21:40:53,595 - trainer - INFO -     val_recall     : 0.667281
+2024-04-06 21:40:53,595 - trainer - INFO -     test_loss      : 1.196045
+2024-04-06 21:40:53,595 - trainer - INFO -     test_accuracy  : 0.667131
+2024-04-06 21:40:53,595 - trainer - INFO -     test_macro_f   : 0.65919
+2024-04-06 21:40:53,595 - trainer - INFO -     test_precision : 0.705598
+2024-04-06 21:40:53,595 - trainer - INFO -     test_recall    : 0.667131
+2024-04-06 21:51:37,122 - trainer - INFO -     epoch          : 3
+2024-04-06 21:51:37,122 - trainer - INFO -     loss           : 0.857865
+2024-04-06 21:51:37,122 - trainer - INFO -     accuracy       : 0.748513
+2024-04-06 21:51:37,122 - trainer - INFO -     macro_f        : 0.740335
+2024-04-06 21:51:37,122 - trainer - INFO -     precision      : 0.775988
+2024-04-06 21:51:37,122 - trainer - INFO -     recall         : 0.748513
+2024-04-06 21:51:37,122 - trainer - INFO -     val_loss       : 1.236538
+2024-04-06 21:51:37,122 - trainer - INFO -     val_accuracy   : 0.659813
+2024-04-06 21:51:37,122 - trainer - INFO -     val_macro_f    : 0.654453
+2024-04-06 21:51:37,122 - trainer - INFO -     val_precision  : 0.699538
+2024-04-06 21:51:37,122 - trainer - INFO -     val_recall     : 0.659813
+2024-04-06 21:51:37,122 - trainer - INFO -     test_loss      : 1.238006
+2024-04-06 21:51:37,122 - trainer - INFO -     test_accuracy  : 0.66041
+2024-04-06 21:51:37,122 - trainer - INFO -     test_macro_f   : 0.655467
+2024-04-06 21:51:37,122 - trainer - INFO -     test_precision : 0.702893
+2024-04-06 21:51:37,122 - trainer - INFO -     test_recall    : 0.66041
+2024-04-06 21:59:57,030 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 22:10:37,849 - trainer - INFO -     epoch          : 1
+2024-04-06 22:10:37,849 - trainer - INFO -     loss           : 1.291877
+2024-04-06 22:10:37,849 - trainer - INFO -     accuracy       : 0.630934
+2024-04-06 22:10:37,849 - trainer - INFO -     macro_f        : 0.607335
+2024-04-06 22:10:37,849 - trainer - INFO -     precision      : 0.635126
+2024-04-06 22:10:37,849 - trainer - INFO -     recall         : 0.630934
+2024-04-06 22:10:37,849 - trainer - INFO -     val_loss       : 1.030479
+2024-04-06 22:10:37,849 - trainer - INFO -     val_accuracy   : 0.69775
+2024-04-06 22:10:37,849 - trainer - INFO -     val_macro_f    : 0.681386
+2024-04-06 22:10:37,849 - trainer - INFO -     val_precision  : 0.71185
+2024-04-06 22:10:37,849 - trainer - INFO -     val_recall     : 0.69775
+2024-04-06 22:10:37,849 - trainer - INFO -     test_loss      : 1.041416
+2024-04-06 22:10:37,849 - trainer - INFO -     test_accuracy  : 0.691626
+2024-04-06 22:10:37,849 - trainer - INFO -     test_macro_f   : 0.676754
+2024-04-06 22:10:37,849 - trainer - INFO -     test_precision : 0.708836
+2024-04-06 22:10:37,849 - trainer - INFO -     test_recall    : 0.691626
+2024-04-06 22:21:27,274 - trainer - INFO -     epoch          : 2
+2024-04-06 22:21:27,274 - trainer - INFO -     loss           : 0.951643
+2024-04-06 22:21:27,274 - trainer - INFO -     accuracy       : 0.716355
+2024-04-06 22:21:27,274 - trainer - INFO -     macro_f        : 0.706252
+2024-04-06 22:21:27,274 - trainer - INFO -     precision      : 0.741245
+2024-04-06 22:21:27,274 - trainer - INFO -     recall         : 0.716355
+2024-04-06 22:21:27,274 - trainer - INFO -     val_loss       : 0.978602
+2024-04-06 22:21:27,274 - trainer - INFO -     val_accuracy   : 0.710346
+2024-04-06 22:21:27,274 - trainer - INFO -     val_macro_f    : 0.701211
+2024-04-06 22:21:27,274 - trainer - INFO -     val_precision  : 0.735758
+2024-04-06 22:21:27,274 - trainer - INFO -     val_recall     : 0.710346
+2024-04-06 22:21:27,274 - trainer - INFO -     test_loss      : 0.993854
+2024-04-06 22:21:27,274 - trainer - INFO -     test_accuracy  : 0.706761
+2024-04-06 22:21:27,274 - trainer - INFO -     test_macro_f   : 0.697807
+2024-04-06 22:21:27,289 - trainer - INFO -     test_precision : 0.734169
+2024-04-06 22:21:27,289 - trainer - INFO -     test_recall    : 0.706761
+2024-04-06 22:32:15,419 - trainer - INFO -     epoch          : 3
+2024-04-06 22:32:15,419 - trainer - INFO -     loss           : 0.798571
+2024-04-06 22:32:15,419 - trainer - INFO -     accuracy       : 0.757431
+2024-04-06 22:32:15,419 - trainer - INFO -     macro_f        : 0.749353
+2024-04-06 22:32:15,419 - trainer - INFO -     precision      : 0.78249
+2024-04-06 22:32:15,419 - trainer - INFO -     recall         : 0.757431
+2024-04-06 22:32:15,419 - trainer - INFO -     val_loss       : 0.963895
+2024-04-06 22:32:15,419 - trainer - INFO -     val_accuracy   : 0.717863
+2024-04-06 22:32:15,419 - trainer - INFO -     val_macro_f    : 0.708338
+2024-04-06 22:32:15,419 - trainer - INFO -     val_precision  : 0.743269
+2024-04-06 22:32:15,419 - trainer - INFO -     val_recall     : 0.717863
+2024-04-06 22:32:15,419 - trainer - INFO -     test_loss      : 0.976387
+2024-04-06 22:32:15,419 - trainer - INFO -     test_accuracy  : 0.714677
+2024-04-06 22:32:15,419 - trainer - INFO -     test_macro_f   : 0.706356
+2024-04-06 22:32:15,419 - trainer - INFO -     test_precision : 0.742153
+2024-04-06 22:32:15,419 - trainer - INFO -     test_recall    : 0.714677
+2024-04-06 22:33:29,341 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 22:44:18,768 - trainer - INFO -     epoch          : 1
+2024-04-06 22:44:18,768 - trainer - INFO -     loss           : 1.291316
+2024-04-06 22:44:18,768 - trainer - INFO -     accuracy       : 0.630175
+2024-04-06 22:44:18,768 - trainer - INFO -     macro_f        : 0.606727
+2024-04-06 22:44:18,768 - trainer - INFO -     precision      : 0.634646
+2024-04-06 22:44:18,768 - trainer - INFO -     recall         : 0.630175
+2024-04-06 22:44:18,768 - trainer - INFO -     val_loss       : 1.025399
+2024-04-06 22:44:18,768 - trainer - INFO -     val_accuracy   : 0.700737
+2024-04-06 22:44:18,768 - trainer - INFO -     val_macro_f    : 0.690741
+2024-04-06 22:44:18,768 - trainer - INFO -     val_precision  : 0.72746
+2024-04-06 22:44:18,768 - trainer - INFO -     val_recall     : 0.700737
+2024-04-06 22:44:18,768 - trainer - INFO -     test_loss      : 1.037504
+2024-04-06 22:44:18,768 - trainer - INFO -     test_accuracy  : 0.693667
+2024-04-06 22:44:18,768 - trainer - INFO -     test_macro_f   : 0.684527
+2024-04-06 22:44:18,768 - trainer - INFO -     test_precision : 0.722281
+2024-04-06 22:44:18,768 - trainer - INFO -     test_recall    : 0.693667
+2024-04-06 22:55:05,323 - trainer - INFO -     epoch          : 2
+2024-04-06 22:55:05,339 - trainer - INFO -     loss           : 0.95014
+2024-04-06 22:55:05,339 - trainer - INFO -     accuracy       : 0.717363
+2024-04-06 22:55:05,339 - trainer - INFO -     macro_f        : 0.707017
+2024-04-06 22:55:05,339 - trainer - INFO -     precision      : 0.742175
+2024-04-06 22:55:05,339 - trainer - INFO -     recall         : 0.717363
+2024-04-06 22:55:05,339 - trainer - INFO -     val_loss       : 0.985496
+2024-04-06 22:55:05,339 - trainer - INFO -     val_accuracy   : 0.70706
+2024-04-06 22:55:05,339 - trainer - INFO -     val_macro_f    : 0.700851
+2024-04-06 22:55:05,339 - trainer - INFO -     val_precision  : 0.740795
+2024-04-06 22:55:05,339 - trainer - INFO -     val_recall     : 0.70706
+2024-04-06 22:55:05,339 - trainer - INFO -     test_loss      : 0.997333
+2024-04-06 22:55:05,339 - trainer - INFO -     test_accuracy  : 0.705666
+2024-04-06 22:55:05,339 - trainer - INFO -     test_macro_f   : 0.698751
+2024-04-06 22:55:05,339 - trainer - INFO -     test_precision : 0.738418
+2024-04-06 22:55:05,339 - trainer - INFO -     test_recall    : 0.705666
+2024-04-06 23:05:50,857 - trainer - INFO -     epoch          : 3
+2024-04-06 23:05:50,857 - trainer - INFO -     loss           : 0.796486
+2024-04-06 23:05:50,857 - trainer - INFO -     accuracy       : 0.758085
+2024-04-06 23:05:50,857 - trainer - INFO -     macro_f        : 0.75035
+2024-04-06 23:05:50,857 - trainer - INFO -     precision      : 0.783656
+2024-04-06 23:05:50,857 - trainer - INFO -     recall         : 0.758085
+2024-04-06 23:05:50,857 - trainer - INFO -     val_loss       : 0.97851
+2024-04-06 23:05:50,857 - trainer - INFO -     val_accuracy   : 0.712536
+2024-04-06 23:05:50,857 - trainer - INFO -     val_macro_f    : 0.708828
+2024-04-06 23:05:50,857 - trainer - INFO -     val_precision  : 0.750738
+2024-04-06 23:05:50,857 - trainer - INFO -     val_recall     : 0.712536
+2024-04-06 23:05:50,857 - trainer - INFO -     test_loss      : 0.989407
+2024-04-06 23:05:50,857 - trainer - INFO -     test_accuracy  : 0.712287
+2024-04-06 23:05:50,857 - trainer - INFO -     test_macro_f   : 0.707197
+2024-04-06 23:05:50,857 - trainer - INFO -     test_precision : 0.747757
+2024-04-06 23:05:50,857 - trainer - INFO -     test_recall    : 0.712287
+2024-04-06 23:07:03,900 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 23:17:47,873 - trainer - INFO -     epoch          : 1
+2024-04-06 23:17:47,873 - trainer - INFO -     loss           : 1.291338
+2024-04-06 23:17:47,873 - trainer - INFO -     accuracy       : 0.630673
+2024-04-06 23:17:47,873 - trainer - INFO -     macro_f        : 0.607244
+2024-04-06 23:17:47,873 - trainer - INFO -     precision      : 0.63488
+2024-04-06 23:17:47,873 - trainer - INFO -     recall         : 0.630673
+2024-04-06 23:17:47,873 - trainer - INFO -     val_loss       : 1.03221
+2024-04-06 23:17:47,873 - trainer - INFO -     val_accuracy   : 0.69541
+2024-04-06 23:17:47,873 - trainer - INFO -     val_macro_f    : 0.684833
+2024-04-06 23:17:47,873 - trainer - INFO -     val_precision  : 0.720187
+2024-04-06 23:17:47,873 - trainer - INFO -     val_recall     : 0.69541
+2024-04-06 23:17:47,873 - trainer - INFO -     test_loss      : 1.042307
+2024-04-06 23:17:47,888 - trainer - INFO -     test_accuracy  : 0.692124
+2024-04-06 23:17:47,888 - trainer - INFO -     test_macro_f   : 0.680095
+2024-04-06 23:17:47,888 - trainer - INFO -     test_precision : 0.714704
+2024-04-06 23:17:47,888 - trainer - INFO -     test_recall    : 0.692124
+2024-04-06 23:28:32,216 - trainer - INFO -     epoch          : 2
+2024-04-06 23:28:32,216 - trainer - INFO -     loss           : 0.948644
+2024-04-06 23:28:32,216 - trainer - INFO -     accuracy       : 0.717687
+2024-04-06 23:28:32,216 - trainer - INFO -     macro_f        : 0.707315
+2024-04-06 23:28:32,216 - trainer - INFO -     precision      : 0.742117
+2024-04-06 23:28:32,216 - trainer - INFO -     recall         : 0.717687
+2024-04-06 23:28:32,216 - trainer - INFO -     val_loss       : 0.992305
+2024-04-06 23:28:32,216 - trainer - INFO -     val_accuracy   : 0.708802
+2024-04-06 23:28:32,216 - trainer - INFO -     val_macro_f    : 0.695617
+2024-04-06 23:28:32,216 - trainer - INFO -     val_precision  : 0.728426
+2024-04-06 23:28:32,216 - trainer - INFO -     val_recall     : 0.708802
+2024-04-06 23:28:32,216 - trainer - INFO -     test_loss      : 1.001859
+2024-04-06 23:28:32,216 - trainer - INFO -     test_accuracy  : 0.70706
+2024-04-06 23:28:32,216 - trainer - INFO -     test_macro_f   : 0.695816
+2024-04-06 23:28:32,216 - trainer - INFO -     test_precision : 0.731833
+2024-04-06 23:28:32,216 - trainer - INFO -     test_recall    : 0.70706
+2024-04-06 23:39:14,179 - trainer - INFO -     epoch          : 3
+2024-04-06 23:39:14,179 - trainer - INFO -     loss           : 0.795918
+2024-04-06 23:39:14,179 - trainer - INFO -     accuracy       : 0.758116
+2024-04-06 23:39:14,179 - trainer - INFO -     macro_f        : 0.749657
+2024-04-06 23:39:14,179 - trainer - INFO -     precision      : 0.782613
+2024-04-06 23:39:14,179 - trainer - INFO -     recall         : 0.758116
+2024-04-06 23:39:14,179 - trainer - INFO -     val_loss       : 0.985879
+2024-04-06 23:39:14,179 - trainer - INFO -     val_accuracy   : 0.709449
+2024-04-06 23:39:14,179 - trainer - INFO -     val_macro_f    : 0.702267
+2024-04-06 23:39:14,179 - trainer - INFO -     val_precision  : 0.740337
+2024-04-06 23:39:14,179 - trainer - INFO -     val_recall     : 0.709449
+2024-04-06 23:39:14,179 - trainer - INFO -     test_loss      : 0.991088
+2024-04-06 23:39:14,179 - trainer - INFO -     test_accuracy  : 0.708802
+2024-04-06 23:39:14,179 - trainer - INFO -     test_macro_f   : 0.703664
+2024-04-06 23:39:14,179 - trainer - INFO -     test_precision : 0.744432
+2024-04-06 23:39:14,179 - trainer - INFO -     test_recall    : 0.708802
+2024-04-06 23:40:27,374 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-06 23:51:12,465 - trainer - INFO -     epoch          : 1
+2024-04-06 23:51:12,465 - trainer - INFO -     loss           : 1.291472
+2024-04-06 23:51:12,465 - trainer - INFO -     accuracy       : 0.630692
+2024-04-06 23:51:12,465 - trainer - INFO -     macro_f        : 0.607054
+2024-04-06 23:51:12,465 - trainer - INFO -     precision      : 0.634961
+2024-04-06 23:51:12,465 - trainer - INFO -     recall         : 0.630692
+2024-04-06 23:51:12,465 - trainer - INFO -     val_loss       : 1.036668
+2024-04-06 23:51:12,465 - trainer - INFO -     val_accuracy   : 0.69546
+2024-04-06 23:51:12,465 - trainer - INFO -     val_macro_f    : 0.678651
+2024-04-06 23:51:12,465 - trainer - INFO -     val_precision  : 0.709185
+2024-04-06 23:51:12,465 - trainer - INFO -     val_recall     : 0.69546
+2024-04-06 23:51:12,465 - trainer - INFO -     test_loss      : 1.046462
+2024-04-06 23:51:12,465 - trainer - INFO -     test_accuracy  : 0.692821
+2024-04-06 23:51:12,465 - trainer - INFO -     test_macro_f   : 0.677978
+2024-04-06 23:51:12,465 - trainer - INFO -     test_precision : 0.709354
+2024-04-06 23:51:12,465 - trainer - INFO -     test_recall    : 0.692821
+2024-04-07 00:01:55,474 - trainer - INFO -     epoch          : 2
+2024-04-07 00:01:55,474 - trainer - INFO -     loss           : 0.950302
+2024-04-07 00:01:55,474 - trainer - INFO -     accuracy       : 0.715564
+2024-04-07 00:01:55,474 - trainer - INFO -     macro_f        : 0.705484
+2024-04-07 00:01:55,474 - trainer - INFO -     precision      : 0.740928
+2024-04-07 00:01:55,474 - trainer - INFO -     recall         : 0.715564
+2024-04-07 00:01:55,474 - trainer - INFO -     val_loss       : 0.97285
+2024-04-07 00:01:55,474 - trainer - INFO -     val_accuracy   : 0.711988
+2024-04-07 00:01:55,474 - trainer - INFO -     val_macro_f    : 0.704467
+2024-04-07 00:01:55,474 - trainer - INFO -     val_precision  : 0.741966
+2024-04-07 00:01:55,474 - trainer - INFO -     val_recall     : 0.711988
+2024-04-07 00:01:55,474 - trainer - INFO -     test_loss      : 0.980797
+2024-04-07 00:01:55,474 - trainer - INFO -     test_accuracy  : 0.708952
+2024-04-07 00:01:55,474 - trainer - INFO -     test_macro_f   : 0.701506
+2024-04-07 00:01:55,474 - trainer - INFO -     test_precision : 0.739167
+2024-04-07 00:01:55,474 - trainer - INFO -     test_recall    : 0.708952
+2024-04-07 00:12:40,493 - trainer - INFO -     epoch          : 3
+2024-04-07 00:12:40,493 - trainer - INFO -     loss           : 0.797446
+2024-04-07 00:12:40,493 - trainer - INFO -     accuracy       : 0.75745
+2024-04-07 00:12:40,493 - trainer - INFO -     macro_f        : 0.749161
+2024-04-07 00:12:40,493 - trainer - INFO -     precision      : 0.782085
+2024-04-07 00:12:40,493 - trainer - INFO -     recall         : 0.75745
+2024-04-07 00:12:40,493 - trainer - INFO -     val_loss       : 0.974673
+2024-04-07 00:12:40,493 - trainer - INFO -     val_accuracy   : 0.71622
+2024-04-07 00:12:40,493 - trainer - INFO -     val_macro_f    : 0.705608
+2024-04-07 00:12:40,493 - trainer - INFO -     val_precision  : 0.740824
+2024-04-07 00:12:40,493 - trainer - INFO -     val_recall     : 0.71622
+2024-04-07 00:12:40,493 - trainer - INFO -     test_loss      : 0.990153
+2024-04-07 00:12:40,493 - trainer - INFO -     test_accuracy  : 0.710097
+2024-04-07 00:12:40,493 - trainer - INFO -     test_macro_f   : 0.700173
+2024-04-07 00:12:40,493 - trainer - INFO -     test_precision : 0.737225
+2024-04-07 00:12:40,493 - trainer - INFO -     test_recall    : 0.710097
+2024-04-07 00:13:55,364 - train - INFO - PretrainedBaseline(
+  (model): RobertaForSequenceClassification(
+    (roberta): RobertaModel(
+      (embeddings): RobertaEmbeddings(
+        (word_embeddings): Embedding(50265, 768, padding_idx=0)
+        (position_embeddings): Embedding(514, 768, padding_idx=0)
+        (token_type_embeddings): Embedding(1, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): RobertaEncoder(
+        (layer): ModuleList(
+          (0): RobertaLayer(
+            (attention): RobertaAttention(
+              (self): RobertaSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): RobertaSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): RobertaIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): RobertaOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+    )
+    (classifier): RobertaClassificationHead(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=768, out_features=26, bias=True)
+    )
+  )
+)
+Trainable params: 46,699,034
+Freeze params: 0
+2024-04-07 00:24:39,587 - trainer - INFO -     epoch          : 1
+2024-04-07 00:24:39,587 - trainer - INFO -     loss           : 1.294492
+2024-04-07 00:24:39,587 - trainer - INFO -     accuracy       : 0.628557
+2024-04-07 00:24:39,587 - trainer - INFO -     macro_f        : 0.60505
+2024-04-07 00:24:39,587 - trainer - INFO -     precision      : 0.633501
+2024-04-07 00:24:39,587 - trainer - INFO -     recall         : 0.628557
+2024-04-07 00:24:39,587 - trainer - INFO -     val_loss       : 1.035229
+2024-04-07 00:24:39,587 - trainer - INFO -     val_accuracy   : 0.693866
+2024-04-07 00:24:39,587 - trainer - INFO -     val_macro_f    : 0.68512
+2024-04-07 00:24:39,587 - trainer - INFO -     val_precision  : 0.723232
+2024-04-07 00:24:39,587 - trainer - INFO -     val_recall     : 0.693866
+2024-04-07 00:24:39,587 - trainer - INFO -     test_loss      : 1.046519
+2024-04-07 00:24:39,587 - trainer - INFO -     test_accuracy  : 0.693717
+2024-04-07 00:24:39,587 - trainer - INFO -     test_macro_f   : 0.686188
+2024-04-07 00:24:39,587 - trainer - INFO -     test_precision : 0.727075
+2024-04-07 00:24:39,587 - trainer - INFO -     test_recall    : 0.693717
+2024-04-07 00:35:24,613 - trainer - INFO -     epoch          : 2
+2024-04-07 00:35:24,613 - trainer - INFO -     loss           : 0.955421
+2024-04-07 00:35:24,613 - trainer - INFO -     accuracy       : 0.714693
+2024-04-07 00:35:24,613 - trainer - INFO -     macro_f        : 0.704455
+2024-04-07 00:35:24,613 - trainer - INFO -     precision      : 0.740192
+2024-04-07 00:35:24,629 - trainer - INFO -     recall         : 0.714693
+2024-04-07 00:35:24,629 - trainer - INFO -     val_loss       : 0.978788
+2024-04-07 00:35:24,629 - trainer - INFO -     val_accuracy   : 0.709599
+2024-04-07 00:35:24,629 - trainer - INFO -     val_macro_f    : 0.703442
+2024-04-07 00:35:24,629 - trainer - INFO -     val_precision  : 0.742116
+2024-04-07 00:35:24,629 - trainer - INFO -     val_recall     : 0.709599
+2024-04-07 00:35:24,629 - trainer - INFO -     test_loss      : 0.988717
+2024-04-07 00:35:24,629 - trainer - INFO -     test_accuracy  : 0.705765
+2024-04-07 00:35:24,629 - trainer - INFO -     test_macro_f   : 0.700065
+2024-04-07 00:35:24,629 - trainer - INFO -     test_precision : 0.740614
+2024-04-07 00:35:24,629 - trainer - INFO -     test_recall    : 0.705765
+2024-04-07 00:46:09,137 - trainer - INFO -     epoch          : 3
+2024-04-07 00:46:09,137 - trainer - INFO -     loss           : 0.799051
+2024-04-07 00:46:09,137 - trainer - INFO -     accuracy       : 0.757817
+2024-04-07 00:46:09,137 - trainer - INFO -     macro_f        : 0.749933
+2024-04-07 00:46:09,137 - trainer - INFO -     precision      : 0.783546
+2024-04-07 00:46:09,137 - trainer - INFO -     recall         : 0.757817
+2024-04-07 00:46:09,137 - trainer - INFO -     val_loss       : 0.978308
+2024-04-07 00:46:09,137 - trainer - INFO -     val_accuracy   : 0.715125
+2024-04-07 00:46:09,137 - trainer - INFO -     val_macro_f    : 0.705965
+2024-04-07 00:46:09,137 - trainer - INFO -     val_precision  : 0.741886
+2024-04-07 00:46:09,137 - trainer - INFO -     val_recall     : 0.715125
+2024-04-07 00:46:09,137 - trainer - INFO -     test_loss      : 0.990433
+2024-04-07 00:46:09,137 - trainer - INFO -     test_accuracy  : 0.711988
+2024-04-07 00:46:09,137 - trainer - INFO -     test_macro_f   : 0.704332
+2024-04-07 00:46:09,137 - trainer - INFO -     test_precision : 0.742915
+2024-04-07 00:46:09,137 - trainer - INFO -     test_recall    : 0.711988
+2024-04-07 00:48:28,083 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-04-07 00:58:29,699 - trainer - INFO -     epoch          : 1
+2024-04-07 00:58:29,699 - trainer - INFO -     loss           : 1.290141
+2024-04-07 00:58:29,699 - trainer - INFO -     accuracy       : 0.634351
+2024-04-07 00:58:29,699 - trainer - INFO -     macro_f        : 0.612135
+2024-04-07 00:58:29,699 - trainer - INFO -     precision      : 0.641055
+2024-04-07 00:58:29,699 - trainer - INFO -     recall         : 0.634351
+2024-04-07 00:58:29,699 - trainer - INFO -     val_loss       : 1.026182
+2024-04-07 00:58:29,699 - trainer - INFO -     val_accuracy   : 0.69994
+2024-04-07 00:58:29,699 - trainer - INFO -     val_macro_f    : 0.686135
+2024-04-07 00:58:29,699 - trainer - INFO -     val_precision  : 0.718424
+2024-04-07 00:58:29,699 - trainer - INFO -     val_recall     : 0.69994
+2024-04-07 00:58:29,699 - trainer - INFO -     test_loss      : 1.016227
+2024-04-07 00:58:29,699 - trainer - INFO -     test_accuracy  : 0.695509
+2024-04-07 00:58:29,699 - trainer - INFO -     test_macro_f   : 0.68146
+2024-04-07 00:58:29,699 - trainer - INFO -     test_precision : 0.715266
+2024-04-07 00:58:29,699 - trainer - INFO -     test_recall    : 0.695509
+2024-04-07 01:08:32,459 - trainer - INFO -     epoch          : 2
+2024-04-07 01:08:32,459 - trainer - INFO -     loss           : 0.895982
+2024-04-07 01:08:32,459 - trainer - INFO -     accuracy       : 0.732536
+2024-04-07 01:08:32,459 - trainer - INFO -     macro_f        : 0.723118
+2024-04-07 01:08:32,459 - trainer - INFO -     precision      : 0.757606
+2024-04-07 01:08:32,459 - trainer - INFO -     recall         : 0.732536
+2024-04-07 01:08:32,459 - trainer - INFO -     val_loss       : 0.977203
+2024-04-07 01:08:32,459 - trainer - INFO -     val_accuracy   : 0.710545
+2024-04-07 01:08:32,459 - trainer - INFO -     val_macro_f    : 0.701579
+2024-04-07 01:08:32,459 - trainer - INFO -     val_precision  : 0.738663
+2024-04-07 01:08:32,459 - trainer - INFO -     val_recall     : 0.710545
+2024-04-07 01:08:32,459 - trainer - INFO -     test_loss      : 0.968888
+2024-04-07 01:08:32,459 - trainer - INFO -     test_accuracy  : 0.708205
+2024-04-07 01:08:32,459 - trainer - INFO -     test_macro_f   : 0.697659
+2024-04-07 01:08:32,459 - trainer - INFO -     test_precision : 0.732653
+2024-04-07 01:08:32,459 - trainer - INFO -     test_recall    : 0.708205
+2024-04-07 01:18:36,660 - trainer - INFO -     epoch          : 3
+2024-04-07 01:18:36,660 - trainer - INFO -     loss           : 0.713998
+2024-04-07 01:18:36,660 - trainer - INFO -     accuracy       : 0.781455
+2024-04-07 01:18:36,660 - trainer - INFO -     macro_f        : 0.774762
+2024-04-07 01:18:36,660 - trainer - INFO -     precision      : 0.807204
+2024-04-07 01:18:36,660 - trainer - INFO -     recall         : 0.781455
+2024-04-07 01:18:36,660 - trainer - INFO -     val_loss       : 1.023319
+2024-04-07 01:18:36,660 - trainer - INFO -     val_accuracy   : 0.706412
+2024-04-07 01:18:36,660 - trainer - INFO -     val_macro_f    : 0.698141
+2024-04-07 01:18:36,660 - trainer - INFO -     val_precision  : 0.733562
+2024-04-07 01:18:36,660 - trainer - INFO -     val_recall     : 0.706412
+2024-04-07 01:18:36,660 - trainer - INFO -     test_loss      : 1.008007
+2024-04-07 01:18:36,660 - trainer - INFO -     test_accuracy  : 0.708752
+2024-04-07 01:18:36,660 - trainer - INFO -     test_macro_f   : 0.703513
+2024-04-07 01:18:36,660 - trainer - INFO -     test_precision : 0.743278
+2024-04-07 01:18:36,660 - trainer - INFO -     test_recall    : 0.708752
+2024-04-07 01:19:49,654 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-04-07 01:29:54,134 - trainer - INFO -     epoch          : 1
+2024-04-07 01:29:54,134 - trainer - INFO -     loss           : 1.299631
+2024-04-07 01:29:54,134 - trainer - INFO -     accuracy       : 0.632384
+2024-04-07 01:29:54,134 - trainer - INFO -     macro_f        : 0.609392
+2024-04-07 01:29:54,134 - trainer - INFO -     precision      : 0.637538
+2024-04-07 01:29:54,134 - trainer - INFO -     recall         : 0.632384
+2024-04-07 01:29:54,134 - trainer - INFO -     val_loss       : 1.043333
+2024-04-07 01:29:54,134 - trainer - INFO -     val_accuracy   : 0.69531
+2024-04-07 01:29:54,134 - trainer - INFO -     val_macro_f    : 0.67992
+2024-04-07 01:29:54,134 - trainer - INFO -     val_precision  : 0.711493
+2024-04-07 01:29:54,134 - trainer - INFO -     val_recall     : 0.69531
+2024-04-07 01:29:54,134 - trainer - INFO -     test_loss      : 1.034659
+2024-04-07 01:29:54,134 - trainer - INFO -     test_accuracy  : 0.69292
+2024-04-07 01:29:54,134 - trainer - INFO -     test_macro_f   : 0.679283
+2024-04-07 01:29:54,134 - trainer - INFO -     test_precision : 0.714243
+2024-04-07 01:29:54,134 - trainer - INFO -     test_recall    : 0.69292
+2024-04-07 01:39:57,621 - trainer - INFO -     epoch          : 2
+2024-04-07 01:39:57,621 - trainer - INFO -     loss           : 0.901684
+2024-04-07 01:39:57,621 - trainer - INFO -     accuracy       : 0.731142
+2024-04-07 01:39:57,621 - trainer - INFO -     macro_f        : 0.721992
+2024-04-07 01:39:57,621 - trainer - INFO -     precision      : 0.75721
+2024-04-07 01:39:57,621 - trainer - INFO -     recall         : 0.731142
+2024-04-07 01:39:57,621 - trainer - INFO -     val_loss       : 0.984361
+2024-04-07 01:39:57,621 - trainer - INFO -     val_accuracy   : 0.709599
+2024-04-07 01:39:57,621 - trainer - INFO -     val_macro_f    : 0.69921
+2024-04-07 01:39:57,621 - trainer - INFO -     val_precision  : 0.734815
+2024-04-07 01:39:57,621 - trainer - INFO -     val_recall     : 0.709599
+2024-04-07 01:39:57,621 - trainer - INFO -     test_loss      : 0.98098
+2024-04-07 01:39:57,621 - trainer - INFO -     test_accuracy  : 0.708155
+2024-04-07 01:39:57,621 - trainer - INFO -     test_macro_f   : 0.696778
+2024-04-07 01:39:57,621 - trainer - INFO -     test_precision : 0.731366
+2024-04-07 01:39:57,621 - trainer - INFO -     test_recall    : 0.708155
+2024-04-07 01:50:01,883 - trainer - INFO -     epoch          : 3
+2024-04-07 01:50:01,883 - trainer - INFO -     loss           : 0.719445
+2024-04-07 01:50:01,883 - trainer - INFO -     accuracy       : 0.780658
+2024-04-07 01:50:01,883 - trainer - INFO -     macro_f        : 0.774014
+2024-04-07 01:50:01,883 - trainer - INFO -     precision      : 0.806124
+2024-04-07 01:50:01,883 - trainer - INFO -     recall         : 0.780658
+2024-04-07 01:50:01,883 - trainer - INFO -     val_loss       : 1.020115
+2024-04-07 01:50:01,883 - trainer - INFO -     val_accuracy   : 0.706661
+2024-04-07 01:50:01,883 - trainer - INFO -     val_macro_f    : 0.696356
+2024-04-07 01:50:01,883 - trainer - INFO -     val_precision  : 0.731843
+2024-04-07 01:50:01,883 - trainer - INFO -     val_recall     : 0.706661
+2024-04-07 01:50:01,883 - trainer - INFO -     test_loss      : 1.012743
+2024-04-07 01:50:01,883 - trainer - INFO -     test_accuracy  : 0.708902
+2024-04-07 01:50:01,883 - trainer - INFO -     test_macro_f   : 0.700537
+2024-04-07 01:50:01,883 - trainer - INFO -     test_precision : 0.737782
+2024-04-07 01:50:01,898 - trainer - INFO -     test_recall    : 0.708902
+2024-04-07 01:51:14,494 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-04-07 02:01:20,375 - trainer - INFO -     epoch          : 1
+2024-04-07 02:01:20,375 - trainer - INFO -     loss           : 1.296986
+2024-04-07 02:01:20,375 - trainer - INFO -     accuracy       : 0.63236
+2024-04-07 02:01:20,375 - trainer - INFO -     macro_f        : 0.609114
+2024-04-07 02:01:20,375 - trainer - INFO -     precision      : 0.637001
+2024-04-07 02:01:20,375 - trainer - INFO -     recall         : 0.63236
+2024-04-07 02:01:20,375 - trainer - INFO -     val_loss       : 1.027263
+2024-04-07 02:01:20,375 - trainer - INFO -     val_accuracy   : 0.702778
+2024-04-07 02:01:20,375 - trainer - INFO -     val_macro_f    : 0.691268
+2024-04-07 02:01:20,375 - trainer - INFO -     val_precision  : 0.72484
+2024-04-07 02:01:20,375 - trainer - INFO -     val_recall     : 0.702778
+2024-04-07 02:01:20,375 - trainer - INFO -     test_loss      : 1.015557
+2024-04-07 02:01:20,375 - trainer - INFO -     test_accuracy  : 0.697949
+2024-04-07 02:01:20,375 - trainer - INFO -     test_macro_f   : 0.686979
+2024-04-07 02:01:20,375 - trainer - INFO -     test_precision : 0.723962
+2024-04-07 02:01:20,375 - trainer - INFO -     test_recall    : 0.697949
+2024-04-07 02:11:26,577 - trainer - INFO -     epoch          : 2
+2024-04-07 02:11:26,577 - trainer - INFO -     loss           : 0.901115
+2024-04-07 02:11:26,577 - trainer - INFO -     accuracy       : 0.731404
+2024-04-07 02:11:26,577 - trainer - INFO -     macro_f        : 0.722299
+2024-04-07 02:11:26,577 - trainer - INFO -     precision      : 0.757278
+2024-04-07 02:11:26,577 - trainer - INFO -     recall         : 0.731404
+2024-04-07 02:11:26,577 - trainer - INFO -     val_loss       : 0.990065
+2024-04-07 02:11:26,577 - trainer - INFO -     val_accuracy   : 0.708802
+2024-04-07 02:11:26,577 - trainer - INFO -     val_macro_f    : 0.701017
+2024-04-07 02:11:26,577 - trainer - INFO -     val_precision  : 0.738455
+2024-04-07 02:11:26,577 - trainer - INFO -     val_recall     : 0.708802
+2024-04-07 02:11:26,577 - trainer - INFO -     test_loss      : 0.981748
+2024-04-07 02:11:26,577 - trainer - INFO -     test_accuracy  : 0.708553
+2024-04-07 02:11:26,577 - trainer - INFO -     test_macro_f   : 0.700636
+2024-04-07 02:11:26,577 - trainer - INFO -     test_precision : 0.738779
+2024-04-07 02:11:26,577 - trainer - INFO -     test_recall    : 0.708553
+2024-04-07 02:21:31,049 - trainer - INFO -     epoch          : 3
+2024-04-07 02:21:31,049 - trainer - INFO -     loss           : 0.71303
+2024-04-07 02:21:31,049 - trainer - INFO -     accuracy       : 0.782525
+2024-04-07 02:21:31,049 - trainer - INFO -     macro_f        : 0.776062
+2024-04-07 02:21:31,049 - trainer - INFO -     precision      : 0.808037
+2024-04-07 02:21:31,049 - trainer - INFO -     recall         : 0.782525
+2024-04-07 02:21:31,049 - trainer - INFO -     val_loss       : 1.023461
+2024-04-07 02:21:31,049 - trainer - INFO -     val_accuracy   : 0.706363
+2024-04-07 02:21:31,049 - trainer - INFO -     val_macro_f    : 0.692372
+2024-04-07 02:21:31,049 - trainer - INFO -     val_precision  : 0.723572
+2024-04-07 02:21:31,049 - trainer - INFO -     val_recall     : 0.706363
+2024-04-07 02:21:31,049 - trainer - INFO -     test_loss      : 1.01419
+2024-04-07 02:21:31,049 - trainer - INFO -     test_accuracy  : 0.70686
+2024-04-07 02:21:31,049 - trainer - INFO -     test_macro_f   : 0.693434
+2024-04-07 02:21:31,049 - trainer - INFO -     test_precision : 0.726414
+2024-04-07 02:21:31,049 - trainer - INFO -     test_recall    : 0.70686
+2024-04-07 02:22:43,441 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-04-07 02:32:47,221 - trainer - INFO -     epoch          : 1
+2024-04-07 02:32:47,221 - trainer - INFO -     loss           : 1.300203
+2024-04-07 02:32:47,221 - trainer - INFO -     accuracy       : 0.631681
+2024-04-07 02:32:47,221 - trainer - INFO -     macro_f        : 0.608355
+2024-04-07 02:32:47,221 - trainer - INFO -     precision      : 0.636321
+2024-04-07 02:32:47,221 - trainer - INFO -     recall         : 0.631681
+2024-04-07 02:32:47,221 - trainer - INFO -     val_loss       : 1.032704
+2024-04-07 02:32:47,221 - trainer - INFO -     val_accuracy   : 0.697451
+2024-04-07 02:32:47,221 - trainer - INFO -     val_macro_f    : 0.683306
+2024-04-07 02:32:47,221 - trainer - INFO -     val_precision  : 0.715043
+2024-04-07 02:32:47,221 - trainer - INFO -     val_recall     : 0.697451
+2024-04-07 02:32:47,221 - trainer - INFO -     test_loss      : 1.025185
+2024-04-07 02:32:47,236 - trainer - INFO -     test_accuracy  : 0.692721
+2024-04-07 02:32:47,236 - trainer - INFO -     test_macro_f   : 0.681103
+2024-04-07 02:32:47,236 - trainer - INFO -     test_precision : 0.71672
+2024-04-07 02:32:47,236 - trainer - INFO -     test_recall    : 0.692721
+2024-04-07 02:42:51,061 - trainer - INFO -     epoch          : 2
+2024-04-07 02:42:51,061 - trainer - INFO -     loss           : 0.898846
+2024-04-07 02:42:51,061 - trainer - INFO -     accuracy       : 0.732238
+2024-04-07 02:42:51,061 - trainer - INFO -     macro_f        : 0.723134
+2024-04-07 02:42:51,061 - trainer - INFO -     precision      : 0.758037
+2024-04-07 02:42:51,061 - trainer - INFO -     recall         : 0.732238
+2024-04-07 02:42:51,061 - trainer - INFO -     val_loss       : 0.97569
+2024-04-07 02:42:51,061 - trainer - INFO -     val_accuracy   : 0.713283
+2024-04-07 02:42:51,061 - trainer - INFO -     val_macro_f    : 0.702688
+2024-04-07 02:42:51,061 - trainer - INFO -     val_precision  : 0.73742
+2024-04-07 02:42:51,061 - trainer - INFO -     val_recall     : 0.713283
+2024-04-07 02:42:51,061 - trainer - INFO -     test_loss      : 0.970908
+2024-04-07 02:42:51,061 - trainer - INFO -     test_accuracy  : 0.710694
+2024-04-07 02:42:51,061 - trainer - INFO -     test_macro_f   : 0.700247
+2024-04-07 02:42:51,061 - trainer - INFO -     test_precision : 0.733977
+2024-04-07 02:42:51,061 - trainer - INFO -     test_recall    : 0.710694
+2024-04-07 02:52:55,322 - trainer - INFO -     epoch          : 3
+2024-04-07 02:52:55,322 - trainer - INFO -     loss           : 0.716102
+2024-04-07 02:52:55,322 - trainer - INFO -     accuracy       : 0.780708
+2024-04-07 02:52:55,322 - trainer - INFO -     macro_f        : 0.773757
+2024-04-07 02:52:55,322 - trainer - INFO -     precision      : 0.805738
+2024-04-07 02:52:55,322 - trainer - INFO -     recall         : 0.780708
+2024-04-07 02:52:55,322 - trainer - INFO -     val_loss       : 1.016422
+2024-04-07 02:52:55,322 - trainer - INFO -     val_accuracy   : 0.70701
+2024-04-07 02:52:55,322 - trainer - INFO -     val_macro_f    : 0.698684
+2024-04-07 02:52:55,322 - trainer - INFO -     val_precision  : 0.736668
+2024-04-07 02:52:55,322 - trainer - INFO -     val_recall     : 0.70701
+2024-04-07 02:52:55,322 - trainer - INFO -     test_loss      : 1.009604
+2024-04-07 02:52:55,322 - trainer - INFO -     test_accuracy  : 0.707956
+2024-04-07 02:52:55,322 - trainer - INFO -     test_macro_f   : 0.699821
+2024-04-07 02:52:55,322 - trainer - INFO -     test_precision : 0.737919
+2024-04-07 02:52:55,322 - trainer - INFO -     test_recall    : 0.707956
+2024-04-07 02:54:07,633 - train - INFO - PretrainedBaseline(
+  (model): BertForSequenceClassification(
+    (bert): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+              (intermediate_act_fn): GELUActivation()
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 31,535,642
+Freeze params: 0
+2024-04-07 03:04:11,230 - trainer - INFO -     epoch          : 1
+2024-04-07 03:04:11,246 - trainer - INFO -     loss           : 1.301493
+2024-04-07 03:04:11,246 - trainer - INFO -     accuracy       : 0.633206
+2024-04-07 03:04:11,246 - trainer - INFO -     macro_f        : 0.610042
+2024-04-07 03:04:11,246 - trainer - INFO -     precision      : 0.637951
+2024-04-07 03:04:11,246 - trainer - INFO -     recall         : 0.633206
+2024-04-07 03:04:11,246 - trainer - INFO -     val_loss       : 1.032144
+2024-04-07 03:04:11,246 - trainer - INFO -     val_accuracy   : 0.698048
+2024-04-07 03:04:11,246 - trainer - INFO -     val_macro_f    : 0.683657
+2024-04-07 03:04:11,246 - trainer - INFO -     val_precision  : 0.716023
+2024-04-07 03:04:11,246 - trainer - INFO -     val_recall     : 0.698048
+2024-04-07 03:04:11,246 - trainer - INFO -     test_loss      : 1.020427
+2024-04-07 03:04:11,246 - trainer - INFO -     test_accuracy  : 0.696654
+2024-04-07 03:04:11,246 - trainer - INFO -     test_macro_f   : 0.685763
+2024-04-07 03:04:11,246 - trainer - INFO -     test_precision : 0.722497
+2024-04-07 03:04:11,246 - trainer - INFO -     test_recall    : 0.696654
+2024-04-07 03:14:19,036 - trainer - INFO -     epoch          : 2
+2024-04-07 03:14:19,036 - trainer - INFO -     loss           : 0.899686
+2024-04-07 03:14:19,036 - trainer - INFO -     accuracy       : 0.731565
+2024-04-07 03:14:19,036 - trainer - INFO -     macro_f        : 0.722397
+2024-04-07 03:14:19,036 - trainer - INFO -     precision      : 0.757094
+2024-04-07 03:14:19,051 - trainer - INFO -     recall         : 0.731565
+2024-04-07 03:14:19,051 - trainer - INFO -     val_loss       : 0.979361
+2024-04-07 03:14:19,051 - trainer - INFO -     val_accuracy   : 0.711242
+2024-04-07 03:14:19,051 - trainer - INFO -     val_macro_f    : 0.703439
+2024-04-07 03:14:19,051 - trainer - INFO -     val_precision  : 0.741097
+2024-04-07 03:14:19,051 - trainer - INFO -     val_recall     : 0.711242
+2024-04-07 03:14:19,051 - trainer - INFO -     test_loss      : 0.972872
+2024-04-07 03:14:19,051 - trainer - INFO -     test_accuracy  : 0.710744
+2024-04-07 03:14:19,051 - trainer - INFO -     test_macro_f   : 0.702766
+2024-04-07 03:14:19,051 - trainer - INFO -     test_precision : 0.740643
+2024-04-07 03:14:19,051 - trainer - INFO -     test_recall    : 0.710744
+2024-04-07 03:24:23,735 - trainer - INFO -     epoch          : 3
+2024-04-07 03:24:23,735 - trainer - INFO -     loss           : 0.713282
+2024-04-07 03:24:23,735 - trainer - INFO -     accuracy       : 0.78138
+2024-04-07 03:24:23,735 - trainer - INFO -     macro_f        : 0.775235
+2024-04-07 03:24:23,735 - trainer - INFO -     precision      : 0.807479
+2024-04-07 03:24:23,735 - trainer - INFO -     recall         : 0.78138
+2024-04-07 03:24:23,735 - trainer - INFO -     val_loss       : 1.014346
+2024-04-07 03:24:23,735 - trainer - INFO -     val_accuracy   : 0.707806
+2024-04-07 03:24:23,750 - trainer - INFO -     val_macro_f    : 0.701839
+2024-04-07 03:24:23,750 - trainer - INFO -     val_precision  : 0.742367
+2024-04-07 03:24:23,750 - trainer - INFO -     val_recall     : 0.707806
+2024-04-07 03:24:23,750 - trainer - INFO -     test_loss      : 1.003627
+2024-04-07 03:24:23,750 - trainer - INFO -     test_accuracy  : 0.706064
+2024-04-07 03:24:23,750 - trainer - INFO -     test_macro_f   : 0.702246
+2024-04-07 03:24:23,750 - trainer - INFO -     test_precision : 0.74596
+2024-04-07 03:24:23,750 - trainer - INFO -     test_recall    : 0.706064
+2024-04-07 09:08:02,525 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,534,106
+Freeze params: 0
+2024-04-07 09:17:49,807 - trainer - INFO -     epoch          : 1
+2024-04-07 09:17:49,807 - trainer - INFO -     loss           : 1.240606
+2024-04-07 09:17:49,807 - trainer - INFO -     accuracy       : 0.645653
+2024-04-07 09:17:49,807 - trainer - INFO -     macro_f        : 0.626097
+2024-04-07 09:17:49,807 - trainer - INFO -     precision      : 0.657247
+2024-04-07 09:17:49,807 - trainer - INFO -     recall         : 0.645653
+2024-04-07 09:17:49,807 - trainer - INFO -     val_loss       : 0.993624
+2024-04-07 09:17:49,807 - trainer - INFO -     val_accuracy   : 0.7092
+2024-04-07 09:17:49,807 - trainer - INFO -     val_macro_f    : 0.696623
+2024-04-07 09:17:49,807 - trainer - INFO -     val_precision  : 0.730324
+2024-04-07 09:17:49,807 - trainer - INFO -     val_recall     : 0.7092
+2024-04-07 09:17:49,807 - trainer - INFO -     test_loss      : 0.991456
+2024-04-07 09:17:49,807 - trainer - INFO -     test_accuracy  : 0.70243
+2024-04-07 09:17:49,807 - trainer - INFO -     test_macro_f   : 0.689168
+2024-04-07 09:17:49,807 - trainer - INFO -     test_precision : 0.722543
+2024-04-07 09:17:49,807 - trainer - INFO -     test_recall    : 0.70243
+2024-04-07 09:27:45,977 - trainer - INFO -     epoch          : 2
+2024-04-07 09:27:45,977 - trainer - INFO -     loss           : 0.856758
+2024-04-07 09:27:45,977 - trainer - INFO -     accuracy       : 0.742438
+2024-04-07 09:27:45,977 - trainer - INFO -     macro_f        : 0.734149
+2024-04-07 09:27:45,977 - trainer - INFO -     precision      : 0.768483
+2024-04-07 09:27:45,977 - trainer - INFO -     recall         : 0.742438
+2024-04-07 09:27:45,977 - trainer - INFO -     val_loss       : 0.97691
+2024-04-07 09:27:45,977 - trainer - INFO -     val_accuracy   : 0.712785
+2024-04-07 09:27:45,977 - trainer - INFO -     val_macro_f    : 0.704911
+2024-04-07 09:27:45,977 - trainer - INFO -     val_precision  : 0.742126
+2024-04-07 09:27:45,977 - trainer - INFO -     val_recall     : 0.712785
+2024-04-07 09:27:45,977 - trainer - INFO -     test_loss      : 0.970578
+2024-04-07 09:27:45,977 - trainer - INFO -     test_accuracy  : 0.713482
+2024-04-07 09:27:45,977 - trainer - INFO -     test_macro_f   : 0.704646
+2024-04-07 09:27:45,977 - trainer - INFO -     test_precision : 0.742575
+2024-04-07 09:27:45,977 - trainer - INFO -     test_recall    : 0.713482
+2024-04-07 09:37:43,813 - trainer - INFO -     epoch          : 3
+2024-04-07 09:37:43,813 - trainer - INFO -     loss           : 0.659574
+2024-04-07 09:37:43,813 - trainer - INFO -     accuracy       : 0.796267
+2024-04-07 09:37:43,813 - trainer - INFO -     macro_f        : 0.790713
+2024-04-07 09:37:43,813 - trainer - INFO -     precision      : 0.822184
+2024-04-07 09:37:43,813 - trainer - INFO -     recall         : 0.796267
+2024-04-07 09:37:43,813 - trainer - INFO -     val_loss       : 1.026059
+2024-04-07 09:37:43,813 - trainer - INFO -     val_accuracy   : 0.708802
+2024-04-07 09:37:43,813 - trainer - INFO -     val_macro_f    : 0.699215
+2024-04-07 09:37:43,813 - trainer - INFO -     val_precision  : 0.735385
+2024-04-07 09:37:43,813 - trainer - INFO -     val_recall     : 0.708802
+2024-04-07 09:37:43,813 - trainer - INFO -     test_loss      : 1.018549
+2024-04-07 09:37:43,813 - trainer - INFO -     test_accuracy  : 0.709599
+2024-04-07 09:37:43,813 - trainer - INFO -     test_macro_f   : 0.700797
+2024-04-07 09:37:43,813 - trainer - INFO -     test_precision : 0.737479
+2024-04-07 09:37:43,813 - trainer - INFO -     test_recall    : 0.709599
+2024-04-07 09:38:53,864 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,534,106
+Freeze params: 0
+2024-04-07 09:48:51,397 - trainer - INFO -     epoch          : 1
+2024-04-07 09:48:51,397 - trainer - INFO -     loss           : 1.234136
+2024-04-07 09:48:51,397 - trainer - INFO -     accuracy       : 0.647222
+2024-04-07 09:48:51,397 - trainer - INFO -     macro_f        : 0.627646
+2024-04-07 09:48:51,397 - trainer - INFO -     precision      : 0.658941
+2024-04-07 09:48:51,397 - trainer - INFO -     recall         : 0.647222
+2024-04-07 09:48:51,397 - trainer - INFO -     val_loss       : 0.982129
+2024-04-07 09:48:51,397 - trainer - INFO -     val_accuracy   : 0.707806
+2024-04-07 09:48:51,397 - trainer - INFO -     val_macro_f    : 0.69851
+2024-04-07 09:48:51,397 - trainer - INFO -     val_precision  : 0.736244
+2024-04-07 09:48:51,397 - trainer - INFO -     val_recall     : 0.707806
+2024-04-07 09:48:51,397 - trainer - INFO -     test_loss      : 0.980426
+2024-04-07 09:48:51,397 - trainer - INFO -     test_accuracy  : 0.706064
+2024-04-07 09:48:51,397 - trainer - INFO -     test_macro_f   : 0.697914
+2024-04-07 09:48:51,397 - trainer - INFO -     test_precision : 0.736824
+2024-04-07 09:48:51,397 - trainer - INFO -     test_recall    : 0.706064
+2024-04-07 09:58:51,500 - trainer - INFO -     epoch          : 2
+2024-04-07 09:58:51,500 - trainer - INFO -     loss           : 0.852764
+2024-04-07 09:58:51,500 - trainer - INFO -     accuracy       : 0.744486
+2024-04-07 09:58:51,500 - trainer - INFO -     macro_f        : 0.735925
+2024-04-07 09:58:51,500 - trainer - INFO -     precision      : 0.769955
+2024-04-07 09:58:51,500 - trainer - INFO -     recall         : 0.744486
+2024-04-07 09:58:51,500 - trainer - INFO -     val_loss       : 0.976243
+2024-04-07 09:58:51,500 - trainer - INFO -     val_accuracy   : 0.710146
+2024-04-07 09:58:51,500 - trainer - INFO -     val_macro_f    : 0.702951
+2024-04-07 09:58:51,500 - trainer - INFO -     val_precision  : 0.741972
+2024-04-07 09:58:51,500 - trainer - INFO -     val_recall     : 0.710146
+2024-04-07 09:58:51,500 - trainer - INFO -     test_loss      : 0.968507
+2024-04-07 09:58:51,500 - trainer - INFO -     test_accuracy  : 0.711889
+2024-04-07 09:58:51,500 - trainer - INFO -     test_macro_f   : 0.705301
+2024-04-07 09:58:51,500 - trainer - INFO -     test_precision : 0.744451
+2024-04-07 09:58:51,500 - trainer - INFO -     test_recall    : 0.711889
+2024-04-07 10:08:56,086 - trainer - INFO -     epoch          : 3
+2024-04-07 10:08:56,086 - trainer - INFO -     loss           : 0.656004
+2024-04-07 10:08:56,086 - trainer - INFO -     accuracy       : 0.798346
+2024-04-07 10:08:56,102 - trainer - INFO -     macro_f        : 0.79224
+2024-04-07 10:08:56,102 - trainer - INFO -     precision      : 0.822246
+2024-04-07 10:08:56,102 - trainer - INFO -     recall         : 0.798346
+2024-04-07 10:08:56,102 - trainer - INFO -     val_loss       : 1.03837
+2024-04-07 10:08:56,102 - trainer - INFO -     val_accuracy   : 0.706661
+2024-04-07 10:08:56,102 - trainer - INFO -     val_macro_f    : 0.705755
+2024-04-07 10:08:56,102 - trainer - INFO -     val_precision  : 0.751916
+2024-04-07 10:08:56,102 - trainer - INFO -     val_recall     : 0.706661
+2024-04-07 10:08:56,102 - trainer - INFO -     test_loss      : 1.032842
+2024-04-07 10:08:56,102 - trainer - INFO -     test_accuracy  : 0.704321
+2024-04-07 10:08:56,102 - trainer - INFO -     test_macro_f   : 0.703103
+2024-04-07 10:08:56,102 - trainer - INFO -     test_precision : 0.748496
+2024-04-07 10:08:56,102 - trainer - INFO -     test_recall    : 0.704321
+2024-04-07 10:10:08,955 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,534,106
+Freeze params: 0
+2024-04-07 10:20:11,652 - trainer - INFO -     epoch          : 1
+2024-04-07 10:20:11,652 - trainer - INFO -     loss           : 1.232529
+2024-04-07 10:20:11,652 - trainer - INFO -     accuracy       : 0.648597
+2024-04-07 10:20:11,652 - trainer - INFO -     macro_f        : 0.629595
+2024-04-07 10:20:11,652 - trainer - INFO -     precision      : 0.661137
+2024-04-07 10:20:11,652 - trainer - INFO -     recall         : 0.648597
+2024-04-07 10:20:11,652 - trainer - INFO -     val_loss       : 0.988993
+2024-04-07 10:20:11,652 - trainer - INFO -     val_accuracy   : 0.708006
+2024-04-07 10:20:11,652 - trainer - INFO -     val_macro_f    : 0.700024
+2024-04-07 10:20:11,652 - trainer - INFO -     val_precision  : 0.736859
+2024-04-07 10:20:11,652 - trainer - INFO -     val_recall     : 0.708006
+2024-04-07 10:20:11,652 - trainer - INFO -     test_loss      : 0.983592
+2024-04-07 10:20:11,652 - trainer - INFO -     test_accuracy  : 0.705566
+2024-04-07 10:20:11,652 - trainer - INFO -     test_macro_f   : 0.695858
+2024-04-07 10:20:11,652 - trainer - INFO -     test_precision : 0.731361
+2024-04-07 10:20:11,652 - trainer - INFO -     test_recall    : 0.705566
+2024-04-07 10:30:16,923 - trainer - INFO -     epoch          : 2
+2024-04-07 10:30:16,923 - trainer - INFO -     loss           : 0.852801
+2024-04-07 10:30:16,923 - trainer - INFO -     accuracy       : 0.744256
+2024-04-07 10:30:16,923 - trainer - INFO -     macro_f        : 0.735742
+2024-04-07 10:30:16,923 - trainer - INFO -     precision      : 0.76997
+2024-04-07 10:30:16,923 - trainer - INFO -     recall         : 0.744256
+2024-04-07 10:30:16,923 - trainer - INFO -     val_loss       : 0.983616
+2024-04-07 10:30:16,923 - trainer - INFO -     val_accuracy   : 0.711341
+2024-04-07 10:30:16,923 - trainer - INFO -     val_macro_f    : 0.701013
+2024-04-07 10:30:16,923 - trainer - INFO -     val_precision  : 0.736268
+2024-04-07 10:30:16,923 - trainer - INFO -     val_recall     : 0.711341
+2024-04-07 10:30:16,923 - trainer - INFO -     test_loss      : 0.980557
+2024-04-07 10:30:16,923 - trainer - INFO -     test_accuracy  : 0.710744
+2024-04-07 10:30:16,923 - trainer - INFO -     test_macro_f   : 0.701187
+2024-04-07 10:30:16,923 - trainer - INFO -     test_precision : 0.738223
+2024-04-07 10:30:16,923 - trainer - INFO -     test_recall    : 0.710744
+2024-04-07 10:40:25,050 - trainer - INFO -     epoch          : 3
+2024-04-07 10:40:25,065 - trainer - INFO -     loss           : 0.655016
+2024-04-07 10:40:25,065 - trainer - INFO -     accuracy       : 0.799597
+2024-04-07 10:40:25,065 - trainer - INFO -     macro_f        : 0.793291
+2024-04-07 10:40:25,065 - trainer - INFO -     precision      : 0.82329
+2024-04-07 10:40:25,065 - trainer - INFO -     recall         : 0.799597
+2024-04-07 10:40:25,065 - trainer - INFO -     val_loss       : 1.022142
+2024-04-07 10:40:25,065 - trainer - INFO -     val_accuracy   : 0.705018
+2024-04-07 10:40:25,065 - trainer - INFO -     val_macro_f    : 0.701781
+2024-04-07 10:40:25,065 - trainer - INFO -     val_precision  : 0.746011
+2024-04-07 10:40:25,065 - trainer - INFO -     val_recall     : 0.705018
+2024-04-07 10:40:25,065 - trainer - INFO -     test_loss      : 1.019759
+2024-04-07 10:40:25,065 - trainer - INFO -     test_accuracy  : 0.708304
+2024-04-07 10:40:25,065 - trainer - INFO -     test_macro_f   : 0.705606
+2024-04-07 10:40:25,065 - trainer - INFO -     test_precision : 0.749304
+2024-04-07 10:40:25,065 - trainer - INFO -     test_recall    : 0.708304
+2024-04-07 10:41:39,277 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,534,106
+Freeze params: 0
+2024-04-07 10:51:44,099 - trainer - INFO -     epoch          : 1
+2024-04-07 10:51:44,099 - trainer - INFO -     loss           : 1.237142
+2024-04-07 10:51:44,100 - trainer - INFO -     accuracy       : 0.647464
+2024-04-07 10:51:44,100 - trainer - INFO -     macro_f        : 0.627666
+2024-04-07 10:51:44,101 - trainer - INFO -     precision      : 0.659089
+2024-04-07 10:51:44,101 - trainer - INFO -     recall         : 0.647464
+2024-04-07 10:51:44,101 - trainer - INFO -     val_loss       : 0.999888
+2024-04-07 10:51:44,102 - trainer - INFO -     val_accuracy   : 0.707408
+2024-04-07 10:51:44,102 - trainer - INFO -     val_macro_f    : 0.694726
+2024-04-07 10:51:44,102 - trainer - INFO -     val_precision  : 0.727539
+2024-04-07 10:51:44,102 - trainer - INFO -     val_recall     : 0.707408
+2024-04-07 10:51:44,103 - trainer - INFO -     test_loss      : 0.99185
+2024-04-07 10:51:44,103 - trainer - INFO -     test_accuracy  : 0.705666
+2024-04-07 10:51:44,104 - trainer - INFO -     test_macro_f   : 0.692992
+2024-04-07 10:51:44,104 - trainer - INFO -     test_precision : 0.725398
+2024-04-07 10:51:44,105 - trainer - INFO -     test_recall    : 0.705666
+2024-04-07 11:01:49,741 - trainer - INFO -     epoch          : 2
+2024-04-07 11:01:49,741 - trainer - INFO -     loss           : 0.856659
+2024-04-07 11:01:49,741 - trainer - INFO -     accuracy       : 0.744673
+2024-04-07 11:01:49,741 - trainer - INFO -     macro_f        : 0.736566
+2024-04-07 11:01:49,741 - trainer - INFO -     precision      : 0.771649
+2024-04-07 11:01:49,741 - trainer - INFO -     recall         : 0.744673
+2024-04-07 11:01:49,741 - trainer - INFO -     val_loss       : 0.981335
+2024-04-07 11:01:49,741 - trainer - INFO -     val_accuracy   : 0.712287
+2024-04-07 11:01:49,741 - trainer - INFO -     val_macro_f    : 0.708095
+2024-04-07 11:01:49,741 - trainer - INFO -     val_precision  : 0.749937
+2024-04-07 11:01:49,741 - trainer - INFO -     val_recall     : 0.712287
+2024-04-07 11:01:49,741 - trainer - INFO -     test_loss      : 0.978909
+2024-04-07 11:01:49,741 - trainer - INFO -     test_accuracy  : 0.708952
+2024-04-07 11:01:49,741 - trainer - INFO -     test_macro_f   : 0.703898
+2024-04-07 11:01:49,741 - trainer - INFO -     test_precision : 0.744105
+2024-04-07 11:01:49,741 - trainer - INFO -     test_recall    : 0.708952
+2024-04-07 11:12:00,515 - trainer - INFO -     epoch          : 3
+2024-04-07 11:12:00,515 - trainer - INFO -     loss           : 0.657159
+2024-04-07 11:12:00,515 - trainer - INFO -     accuracy       : 0.797792
+2024-04-07 11:12:00,515 - trainer - INFO -     macro_f        : 0.791922
+2024-04-07 11:12:00,515 - trainer - INFO -     precision      : 0.822481
+2024-04-07 11:12:00,515 - trainer - INFO -     recall         : 0.797792
+2024-04-07 11:12:00,515 - trainer - INFO -     val_loss       : 1.039497
+2024-04-07 11:12:00,515 - trainer - INFO -     val_accuracy   : 0.707657
+2024-04-07 11:12:00,515 - trainer - INFO -     val_macro_f    : 0.69838
+2024-04-07 11:12:00,515 - trainer - INFO -     val_precision  : 0.736247
+2024-04-07 11:12:00,515 - trainer - INFO -     val_recall     : 0.707657
+2024-04-07 11:12:00,515 - trainer - INFO -     test_loss      : 1.039509
+2024-04-07 11:12:00,515 - trainer - INFO -     test_accuracy  : 0.705118
+2024-04-07 11:12:00,515 - trainer - INFO -     test_macro_f   : 0.696594
+2024-04-07 11:12:00,515 - trainer - INFO -     test_precision : 0.737098
+2024-04-07 11:12:00,515 - trainer - INFO -     test_recall    : 0.705118
+2024-04-07 11:13:12,924 - train - INFO - PretrainedBaseline(
+  (model): DistilBertForSequenceClassification(
+    (distilbert): DistilBertModel(
+      (embeddings): Embeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (transformer): Transformer(
+        (layer): ModuleList(
+          (0): TransformerBlock(
+            (attention): MultiHeadSelfAttention(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (q_lin): Linear(in_features=768, out_features=768, bias=True)
+              (k_lin): Linear(in_features=768, out_features=768, bias=True)
+              (v_lin): Linear(in_features=768, out_features=768, bias=True)
+              (out_lin): Linear(in_features=768, out_features=768, bias=True)
+            )
+            (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (ffn): FFN(
+              (dropout): Dropout(p=0.1, inplace=False)
+              (lin1): Linear(in_features=768, out_features=3072, bias=True)
+              (lin2): Linear(in_features=3072, out_features=768, bias=True)
+              (activation): GELUActivation()
+            )
+            (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          )
+        )
+      )
+    )
+    (pre_classifier): Linear(in_features=768, out_features=768, bias=True)
+    (classifier): Linear(in_features=768, out_features=26, bias=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+)
+Trainable params: 31,534,106
+Freeze params: 0
+2024-04-07 11:23:13,792 - trainer - INFO -     epoch          : 1
+2024-04-07 11:23:13,792 - trainer - INFO -     loss           : 1.234919
+2024-04-07 11:23:13,792 - trainer - INFO -     accuracy       : 0.646767
+2024-04-07 11:23:13,792 - trainer - INFO -     macro_f        : 0.627101
+2024-04-07 11:23:13,792 - trainer - INFO -     precision      : 0.65766
+2024-04-07 11:23:13,792 - trainer - INFO -     recall         : 0.646767
+2024-04-07 11:23:13,792 - trainer - INFO -     val_loss       : 0.997436
+2024-04-07 11:23:13,792 - trainer - INFO -     val_accuracy   : 0.704172
+2024-04-07 11:23:13,792 - trainer - INFO -     val_macro_f    : 0.69981
+2024-04-07 11:23:13,792 - trainer - INFO -     val_precision  : 0.740878
+2024-04-07 11:23:13,792 - trainer - INFO -     val_recall     : 0.704172
+2024-04-07 11:23:13,792 - trainer - INFO -     test_loss      : 0.992269
+2024-04-07 11:23:13,792 - trainer - INFO -     test_accuracy  : 0.700737
+2024-04-07 11:23:13,792 - trainer - INFO -     test_macro_f   : 0.694329
+2024-04-07 11:23:13,792 - trainer - INFO -     test_precision : 0.735291
+2024-04-07 11:23:13,792 - trainer - INFO -     test_recall    : 0.700737
+2024-04-07 11:33:11,883 - trainer - INFO -     epoch          : 2
+2024-04-07 11:33:11,883 - trainer - INFO -     loss           : 0.853556
+2024-04-07 11:33:11,883 - trainer - INFO -     accuracy       : 0.744411
+2024-04-07 11:33:11,883 - trainer - INFO -     macro_f        : 0.736208
+2024-04-07 11:33:11,883 - trainer - INFO -     precision      : 0.77058
+2024-04-07 11:33:11,883 - trainer - INFO -     recall         : 0.744411
+2024-04-07 11:33:11,883 - trainer - INFO -     val_loss       : 0.96632
+2024-04-07 11:33:11,883 - trainer - INFO -     val_accuracy   : 0.713283
+2024-04-07 11:33:11,883 - trainer - INFO -     val_macro_f    : 0.707535
+2024-04-07 11:33:11,883 - trainer - INFO -     val_precision  : 0.745911
+2024-04-07 11:33:11,883 - trainer - INFO -     val_recall     : 0.713283
+2024-04-07 11:33:11,883 - trainer - INFO -     test_loss      : 0.955891
+2024-04-07 11:33:11,883 - trainer - INFO -     test_accuracy  : 0.716419
+2024-04-07 11:33:11,883 - trainer - INFO -     test_macro_f   : 0.711565
+2024-04-07 11:33:11,883 - trainer - INFO -     test_precision : 0.753281
+2024-04-07 11:33:11,883 - trainer - INFO -     test_recall    : 0.716419
+2024-04-07 11:43:10,321 - trainer - INFO -     epoch          : 3
+2024-04-07 11:43:10,321 - trainer - INFO -     loss           : 0.653626
+2024-04-07 11:43:10,321 - trainer - INFO -     accuracy       : 0.79875
+2024-04-07 11:43:10,321 - trainer - INFO -     macro_f        : 0.793173
+2024-04-07 11:43:10,321 - trainer - INFO -     precision      : 0.824164
+2024-04-07 11:43:10,321 - trainer - INFO -     recall         : 0.79875
+2024-04-07 11:43:10,321 - trainer - INFO -     val_loss       : 1.037831
+2024-04-07 11:43:10,321 - trainer - INFO -     val_accuracy   : 0.707358
+2024-04-07 11:43:10,321 - trainer - INFO -     val_macro_f    : 0.702358
+2024-04-07 11:43:10,321 - trainer - INFO -     val_precision  : 0.743807
+2024-04-07 11:43:10,321 - trainer - INFO -     val_recall     : 0.707358
+2024-04-07 11:43:10,321 - trainer - INFO -     test_loss      : 1.026451
+2024-04-07 11:43:10,321 - trainer - INFO -     test_accuracy  : 0.709449
+2024-04-07 11:43:10,321 - trainer - INFO -     test_macro_f   : 0.704545
+2024-04-07 11:43:10,321 - trainer - INFO -     test_precision : 0.746645
+2024-04-07 11:43:10,336 - trainer - INFO -     test_recall    : 0.709449
+2024-04-07 11:50:12,753 - train - INFO - PretrainedBaseline(
+  (model): XLNetForSequenceClassification(
+    (transformer): XLNetModel(
+      (word_embedding): Embedding(32000, 768)
+      (layer): ModuleList(
+        (0): XLNetLayer(
+          (rel_attn): XLNetRelativeAttention(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ff): XLNetFeedForward(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (layer_1): Linear(in_features=768, out_features=3072, bias=True)
+            (layer_2): Linear(in_features=3072, out_features=768, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation_function): GELUActivation()
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (sequence_summary): SequenceSummary(
+      (summary): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+      (first_dropout): Identity()
+      (last_dropout): Dropout(p=0.1, inplace=False)
+    )
+    (logits_proj): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 32,865,818
+Freeze params: 0
+2024-04-07 12:03:41,341 - trainer - INFO -     epoch          : 1
+2024-04-07 12:03:41,341 - trainer - INFO -     loss           : 1.293563
+2024-04-07 12:03:41,341 - trainer - INFO -     accuracy       : 0.631245
+2024-04-07 12:03:41,341 - trainer - INFO -     macro_f        : 0.608066
+2024-04-07 12:03:41,341 - trainer - INFO -     precision      : 0.63649
+2024-04-07 12:03:41,341 - trainer - INFO -     recall         : 0.631245
+2024-04-07 12:03:41,341 - trainer - INFO -     val_loss       : 1.035201
+2024-04-07 12:03:41,341 - trainer - INFO -     val_accuracy   : 0.69999
+2024-04-07 12:03:41,341 - trainer - INFO -     val_macro_f    : 0.682777
+2024-04-07 12:03:41,341 - trainer - INFO -     val_precision  : 0.712773
+2024-04-07 12:03:41,341 - trainer - INFO -     val_recall     : 0.69999
+2024-04-07 12:03:41,341 - trainer - INFO -     test_loss      : 1.037899
+2024-04-07 12:03:41,341 - trainer - INFO -     test_accuracy  : 0.694265
+2024-04-07 12:03:41,341 - trainer - INFO -     test_macro_f   : 0.67702
+2024-04-07 12:03:41,341 - trainer - INFO -     test_precision : 0.707458
+2024-04-07 12:03:41,341 - trainer - INFO -     test_recall    : 0.694265
+2024-04-07 12:17:21,755 - trainer - INFO -     epoch          : 2
+2024-04-07 12:17:21,755 - trainer - INFO -     loss           : 0.932852
+2024-04-07 12:17:21,755 - trainer - INFO -     accuracy       : 0.722778
+2024-04-07 12:17:21,755 - trainer - INFO -     macro_f        : 0.711885
+2024-04-07 12:17:21,755 - trainer - INFO -     precision      : 0.745493
+2024-04-07 12:17:21,755 - trainer - INFO -     recall         : 0.722778
+2024-04-07 12:17:21,755 - trainer - INFO -     val_loss       : 0.98871
+2024-04-07 12:17:21,755 - trainer - INFO -     val_accuracy   : 0.710246
+2024-04-07 12:17:21,755 - trainer - INFO -     val_macro_f    : 0.699261
+2024-04-07 12:17:21,755 - trainer - INFO -     val_precision  : 0.734228
+2024-04-07 12:17:21,755 - trainer - INFO -     val_recall     : 0.710246
+2024-04-07 12:17:21,755 - trainer - INFO -     test_loss      : 0.997824
+2024-04-07 12:17:21,755 - trainer - INFO -     test_accuracy  : 0.70935
+2024-04-07 12:17:21,755 - trainer - INFO -     test_macro_f   : 0.699376
+2024-04-07 12:17:21,755 - trainer - INFO -     test_precision : 0.734649
+2024-04-07 12:17:21,755 - trainer - INFO -     test_recall    : 0.70935
+2024-04-07 12:30:58,944 - trainer - INFO -     epoch          : 3
+2024-04-07 12:30:58,944 - trainer - INFO -     loss           : 0.756751
+2024-04-07 12:30:58,944 - trainer - INFO -     accuracy       : 0.769542
+2024-04-07 12:30:58,944 - trainer - INFO -     macro_f        : 0.761762
+2024-04-07 12:30:58,944 - trainer - INFO -     precision      : 0.793886
+2024-04-07 12:30:58,944 - trainer - INFO -     recall         : 0.769542
+2024-04-07 12:30:58,944 - trainer - INFO -     val_loss       : 1.006076
+2024-04-07 12:30:58,944 - trainer - INFO -     val_accuracy   : 0.711242
+2024-04-07 12:30:58,944 - trainer - INFO -     val_macro_f    : 0.700564
+2024-04-07 12:30:58,944 - trainer - INFO -     val_precision  : 0.736261
+2024-04-07 12:30:58,960 - trainer - INFO -     val_recall     : 0.711242
+2024-04-07 12:30:58,960 - trainer - INFO -     test_loss      : 1.01075
+2024-04-07 12:30:58,960 - trainer - INFO -     test_accuracy  : 0.710097
+2024-04-07 12:30:58,960 - trainer - INFO -     test_macro_f   : 0.700409
+2024-04-07 12:30:58,960 - trainer - INFO -     test_precision : 0.735136
+2024-04-07 12:30:58,960 - trainer - INFO -     test_recall    : 0.710097
+2024-04-07 12:32:38,843 - train - INFO - PretrainedBaseline(
+  (model): XLNetForSequenceClassification(
+    (transformer): XLNetModel(
+      (word_embedding): Embedding(32000, 768)
+      (layer): ModuleList(
+        (0): XLNetLayer(
+          (rel_attn): XLNetRelativeAttention(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ff): XLNetFeedForward(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (layer_1): Linear(in_features=768, out_features=3072, bias=True)
+            (layer_2): Linear(in_features=3072, out_features=768, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation_function): GELUActivation()
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (sequence_summary): SequenceSummary(
+      (summary): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+      (first_dropout): Identity()
+      (last_dropout): Dropout(p=0.1, inplace=False)
+    )
+    (logits_proj): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 32,865,818
+Freeze params: 0
+2024-04-07 12:46:17,775 - trainer - INFO -     epoch          : 1
+2024-04-07 12:46:17,790 - trainer - INFO -     loss           : 1.289592
+2024-04-07 12:46:17,790 - trainer - INFO -     accuracy       : 0.632708
+2024-04-07 12:46:17,790 - trainer - INFO -     macro_f        : 0.610198
+2024-04-07 12:46:17,790 - trainer - INFO -     precision      : 0.639444
+2024-04-07 12:46:17,790 - trainer - INFO -     recall         : 0.632708
+2024-04-07 12:46:17,790 - trainer - INFO -     val_loss       : 1.032629
+2024-04-07 12:46:17,790 - trainer - INFO -     val_accuracy   : 0.697003
+2024-04-07 12:46:17,790 - trainer - INFO -     val_macro_f    : 0.684745
+2024-04-07 12:46:17,790 - trainer - INFO -     val_precision  : 0.720012
+2024-04-07 12:46:17,790 - trainer - INFO -     val_recall     : 0.697003
+2024-04-07 12:46:17,790 - trainer - INFO -     test_loss      : 1.034589
+2024-04-07 12:46:17,790 - trainer - INFO -     test_accuracy  : 0.693717
+2024-04-07 12:46:17,790 - trainer - INFO -     test_macro_f   : 0.683692
+2024-04-07 12:46:17,790 - trainer - INFO -     test_precision : 0.720059
+2024-04-07 12:46:17,790 - trainer - INFO -     test_recall    : 0.693717
+2024-04-07 12:59:54,741 - trainer - INFO -     epoch          : 2
+2024-04-07 12:59:54,741 - trainer - INFO -     loss           : 0.931571
+2024-04-07 12:59:54,741 - trainer - INFO -     accuracy       : 0.723039
+2024-04-07 12:59:54,741 - trainer - INFO -     macro_f        : 0.71241
+2024-04-07 12:59:54,741 - trainer - INFO -     precision      : 0.746407
+2024-04-07 12:59:54,741 - trainer - INFO -     recall         : 0.723039
+2024-04-07 12:59:54,741 - trainer - INFO -     val_loss       : 0.984313
+2024-04-07 12:59:54,741 - trainer - INFO -     val_accuracy   : 0.712437
+2024-04-07 12:59:54,741 - trainer - INFO -     val_macro_f    : 0.703258
+2024-04-07 12:59:54,741 - trainer - INFO -     val_precision  : 0.738687
+2024-04-07 12:59:54,741 - trainer - INFO -     val_recall     : 0.712437
+2024-04-07 12:59:54,741 - trainer - INFO -     test_loss      : 0.988952
+2024-04-07 12:59:54,741 - trainer - INFO -     test_accuracy  : 0.709549
+2024-04-07 12:59:54,741 - trainer - INFO -     test_macro_f   : 0.699881
+2024-04-07 12:59:54,741 - trainer - INFO -     test_precision : 0.736382
+2024-04-07 12:59:54,741 - trainer - INFO -     test_recall    : 0.709549
+2024-04-07 13:13:32,213 - trainer - INFO -     epoch          : 3
+2024-04-07 13:13:32,213 - trainer - INFO -     loss           : 0.754256
+2024-04-07 13:13:32,213 - trainer - INFO -     accuracy       : 0.770358
+2024-04-07 13:13:32,213 - trainer - INFO -     macro_f        : 0.762941
+2024-04-07 13:13:32,228 - trainer - INFO -     precision      : 0.795261
+2024-04-07 13:13:32,228 - trainer - INFO -     recall         : 0.770358
+2024-04-07 13:13:32,228 - trainer - INFO -     val_loss       : 1.005908
+2024-04-07 13:13:32,228 - trainer - INFO -     val_accuracy   : 0.712088
+2024-04-07 13:13:32,228 - trainer - INFO -     val_macro_f    : 0.707126
+2024-04-07 13:13:32,228 - trainer - INFO -     val_precision  : 0.748255
+2024-04-07 13:13:32,228 - trainer - INFO -     val_recall     : 0.712088
+2024-04-07 13:13:32,228 - trainer - INFO -     test_loss      : 1.009915
+2024-04-07 13:13:32,228 - trainer - INFO -     test_accuracy  : 0.708105
+2024-04-07 13:13:32,228 - trainer - INFO -     test_macro_f   : 0.70212
+2024-04-07 13:13:32,228 - trainer - INFO -     test_precision : 0.742282
+2024-04-07 13:13:32,228 - trainer - INFO -     test_recall    : 0.708105
+2024-04-07 13:15:13,176 - train - INFO - PretrainedBaseline(
+  (model): XLNetForSequenceClassification(
+    (transformer): XLNetModel(
+      (word_embedding): Embedding(32000, 768)
+      (layer): ModuleList(
+        (0): XLNetLayer(
+          (rel_attn): XLNetRelativeAttention(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ff): XLNetFeedForward(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (layer_1): Linear(in_features=768, out_features=3072, bias=True)
+            (layer_2): Linear(in_features=3072, out_features=768, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation_function): GELUActivation()
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (sequence_summary): SequenceSummary(
+      (summary): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+      (first_dropout): Identity()
+      (last_dropout): Dropout(p=0.1, inplace=False)
+    )
+    (logits_proj): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 32,865,818
+Freeze params: 0
+2024-04-07 13:28:48,107 - trainer - INFO -     epoch          : 1
+2024-04-07 13:28:48,107 - trainer - INFO -     loss           : 1.291739
+2024-04-07 13:28:48,107 - trainer - INFO -     accuracy       : 0.633486
+2024-04-07 13:28:48,107 - trainer - INFO -     macro_f        : 0.610813
+2024-04-07 13:28:48,107 - trainer - INFO -     precision      : 0.639045
+2024-04-07 13:28:48,107 - trainer - INFO -     recall         : 0.633486
+2024-04-07 13:28:48,107 - trainer - INFO -     val_loss       : 1.038206
+2024-04-07 13:28:48,107 - trainer - INFO -     val_accuracy   : 0.696505
+2024-04-07 13:28:48,107 - trainer - INFO -     val_macro_f    : 0.685899
+2024-04-07 13:28:48,107 - trainer - INFO -     val_precision  : 0.721367
+2024-04-07 13:28:48,107 - trainer - INFO -     val_recall     : 0.696505
+2024-04-07 13:28:48,107 - trainer - INFO -     test_loss      : 1.039788
+2024-04-07 13:28:48,123 - trainer - INFO -     test_accuracy  : 0.69063
+2024-04-07 13:28:48,123 - trainer - INFO -     test_macro_f   : 0.680247
+2024-04-07 13:28:48,123 - trainer - INFO -     test_precision : 0.715838
+2024-04-07 13:28:48,123 - trainer - INFO -     test_recall    : 0.69063
+2024-04-07 13:42:24,714 - trainer - INFO -     epoch          : 2
+2024-04-07 13:42:24,714 - trainer - INFO -     loss           : 0.933535
+2024-04-07 13:42:24,714 - trainer - INFO -     accuracy       : 0.722361
+2024-04-07 13:42:24,714 - trainer - INFO -     macro_f        : 0.711961
+2024-04-07 13:42:24,714 - trainer - INFO -     precision      : 0.746131
+2024-04-07 13:42:24,714 - trainer - INFO -     recall         : 0.722361
+2024-04-07 13:42:24,714 - trainer - INFO -     val_loss       : 1.005388
+2024-04-07 13:42:24,714 - trainer - INFO -     val_accuracy   : 0.707558
+2024-04-07 13:42:24,714 - trainer - INFO -     val_macro_f    : 0.693497
+2024-04-07 13:42:24,714 - trainer - INFO -     val_precision  : 0.72495
+2024-04-07 13:42:24,714 - trainer - INFO -     val_recall     : 0.707558
+2024-04-07 13:42:24,714 - trainer - INFO -     test_loss      : 1.010486
+2024-04-07 13:42:24,714 - trainer - INFO -     test_accuracy  : 0.704172
+2024-04-07 13:42:24,714 - trainer - INFO -     test_macro_f   : 0.693163
+2024-04-07 13:42:24,714 - trainer - INFO -     test_precision : 0.728771
+2024-04-07 13:42:24,714 - trainer - INFO -     test_recall    : 0.704172
+2024-04-07 13:56:02,711 - trainer - INFO -     epoch          : 3
+2024-04-07 13:56:02,711 - trainer - INFO -     loss           : 0.756996
+2024-04-07 13:56:02,711 - trainer - INFO -     accuracy       : 0.769916
+2024-04-07 13:56:02,711 - trainer - INFO -     macro_f        : 0.762198
+2024-04-07 13:56:02,711 - trainer - INFO -     precision      : 0.794223
+2024-04-07 13:56:02,711 - trainer - INFO -     recall         : 0.769916
+2024-04-07 13:56:02,711 - trainer - INFO -     val_loss       : 1.010786
+2024-04-07 13:56:02,711 - trainer - INFO -     val_accuracy   : 0.710644
+2024-04-07 13:56:02,711 - trainer - INFO -     val_macro_f    : 0.703839
+2024-04-07 13:56:02,711 - trainer - INFO -     val_precision  : 0.74267
+2024-04-07 13:56:02,711 - trainer - INFO -     val_recall     : 0.710644
+2024-04-07 13:56:02,711 - trainer - INFO -     test_loss      : 1.013702
+2024-04-07 13:56:02,711 - trainer - INFO -     test_accuracy  : 0.707109
+2024-04-07 13:56:02,711 - trainer - INFO -     test_macro_f   : 0.701796
+2024-04-07 13:56:02,711 - trainer - INFO -     test_precision : 0.740866
+2024-04-07 13:56:02,711 - trainer - INFO -     test_recall    : 0.707109
+2024-04-07 13:57:44,331 - train - INFO - PretrainedBaseline(
+  (model): XLNetForSequenceClassification(
+    (transformer): XLNetModel(
+      (word_embedding): Embedding(32000, 768)
+      (layer): ModuleList(
+        (0): XLNetLayer(
+          (rel_attn): XLNetRelativeAttention(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ff): XLNetFeedForward(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (layer_1): Linear(in_features=768, out_features=3072, bias=True)
+            (layer_2): Linear(in_features=3072, out_features=768, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation_function): GELUActivation()
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (sequence_summary): SequenceSummary(
+      (summary): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+      (first_dropout): Identity()
+      (last_dropout): Dropout(p=0.1, inplace=False)
+    )
+    (logits_proj): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 32,865,818
+Freeze params: 0
+2024-04-07 14:11:19,912 - trainer - INFO -     epoch          : 1
+2024-04-07 14:11:19,912 - trainer - INFO -     loss           : 1.289057
+2024-04-07 14:11:19,912 - trainer - INFO -     accuracy       : 0.632615
+2024-04-07 14:11:19,927 - trainer - INFO -     macro_f        : 0.609443
+2024-04-07 14:11:19,927 - trainer - INFO -     precision      : 0.637895
+2024-04-07 14:11:19,927 - trainer - INFO -     recall         : 0.632615
+2024-04-07 14:11:19,927 - trainer - INFO -     val_loss       : 1.036167
+2024-04-07 14:11:19,927 - trainer - INFO -     val_accuracy   : 0.69531
+2024-04-07 14:11:19,927 - trainer - INFO -     val_macro_f    : 0.680416
+2024-04-07 14:11:19,927 - trainer - INFO -     val_precision  : 0.711769
+2024-04-07 14:11:19,927 - trainer - INFO -     val_recall     : 0.69531
+2024-04-07 14:11:19,927 - trainer - INFO -     test_loss      : 1.036731
+2024-04-07 14:11:19,927 - trainer - INFO -     test_accuracy  : 0.693468
+2024-04-07 14:11:19,927 - trainer - INFO -     test_macro_f   : 0.680328
+2024-04-07 14:11:19,927 - trainer - INFO -     test_precision : 0.712661
+2024-04-07 14:11:19,927 - trainer - INFO -     test_recall    : 0.693468
+2024-04-07 14:24:58,128 - trainer - INFO -     epoch          : 2
+2024-04-07 14:24:58,128 - trainer - INFO -     loss           : 0.930284
+2024-04-07 14:24:58,128 - trainer - INFO -     accuracy       : 0.723649
+2024-04-07 14:24:58,128 - trainer - INFO -     macro_f        : 0.713095
+2024-04-07 14:24:58,128 - trainer - INFO -     precision      : 0.747296
+2024-04-07 14:24:58,128 - trainer - INFO -     recall         : 0.723649
+2024-04-07 14:24:58,128 - trainer - INFO -     val_loss       : 0.991391
+2024-04-07 14:24:58,128 - trainer - INFO -     val_accuracy   : 0.709001
+2024-04-07 14:24:58,128 - trainer - INFO -     val_macro_f    : 0.7003
+2024-04-07 14:24:58,128 - trainer - INFO -     val_precision  : 0.736404
+2024-04-07 14:24:58,128 - trainer - INFO -     val_recall     : 0.709001
+2024-04-07 14:24:58,128 - trainer - INFO -     test_loss      : 0.997684
+2024-04-07 14:24:58,128 - trainer - INFO -     test_accuracy  : 0.706114
+2024-04-07 14:24:58,128 - trainer - INFO -     test_macro_f   : 0.697272
+2024-04-07 14:24:58,128 - trainer - INFO -     test_precision : 0.735378
+2024-04-07 14:24:58,128 - trainer - INFO -     test_recall    : 0.706114
+2024-04-07 14:38:36,452 - trainer - INFO -     epoch          : 3
+2024-04-07 14:38:36,452 - trainer - INFO -     loss           : 0.753171
+2024-04-07 14:38:36,452 - trainer - INFO -     accuracy       : 0.77009
+2024-04-07 14:38:36,452 - trainer - INFO -     macro_f        : 0.762317
+2024-04-07 14:38:36,452 - trainer - INFO -     precision      : 0.793751
+2024-04-07 14:38:36,452 - trainer - INFO -     recall         : 0.77009
+2024-04-07 14:38:36,452 - trainer - INFO -     val_loss       : 1.005393
+2024-04-07 14:38:36,452 - trainer - INFO -     val_accuracy   : 0.709947
+2024-04-07 14:38:36,452 - trainer - INFO -     val_macro_f    : 0.700145
+2024-04-07 14:38:36,452 - trainer - INFO -     val_precision  : 0.735391
+2024-04-07 14:38:36,452 - trainer - INFO -     val_recall     : 0.709947
+2024-04-07 14:38:36,452 - trainer - INFO -     test_loss      : 1.010091
+2024-04-07 14:38:36,452 - trainer - INFO -     test_accuracy  : 0.708752
+2024-04-07 14:38:36,452 - trainer - INFO -     test_macro_f   : 0.700569
+2024-04-07 14:38:36,452 - trainer - INFO -     test_precision : 0.738153
+2024-04-07 14:38:36,452 - trainer - INFO -     test_recall    : 0.708752
+2024-04-07 14:40:18,598 - train - INFO - PretrainedBaseline(
+  (model): XLNetForSequenceClassification(
+    (transformer): XLNetModel(
+      (word_embedding): Embedding(32000, 768)
+      (layer): ModuleList(
+        (0): XLNetLayer(
+          (rel_attn): XLNetRelativeAttention(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (ff): XLNetFeedForward(
+            (layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (layer_1): Linear(in_features=768, out_features=3072, bias=True)
+            (layer_2): Linear(in_features=3072, out_features=768, bias=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+            (activation_function): GELUActivation()
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (sequence_summary): SequenceSummary(
+      (summary): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+      (first_dropout): Identity()
+      (last_dropout): Dropout(p=0.1, inplace=False)
+    )
+    (logits_proj): Linear(in_features=768, out_features=26, bias=True)
+  )
+)
+Trainable params: 32,865,818
+Freeze params: 0
+2024-04-07 14:53:55,493 - trainer - INFO -     epoch          : 1
+2024-04-07 14:53:55,493 - trainer - INFO -     loss           : 1.291301
+2024-04-07 14:53:55,493 - trainer - INFO -     accuracy       : 0.631781
+2024-04-07 14:53:55,493 - trainer - INFO -     macro_f        : 0.609106
+2024-04-07 14:53:55,493 - trainer - INFO -     precision      : 0.637881
+2024-04-07 14:53:55,493 - trainer - INFO -     recall         : 0.631781
+2024-04-07 14:53:55,493 - trainer - INFO -     val_loss       : 1.03248
+2024-04-07 14:53:55,493 - trainer - INFO -     val_accuracy   : 0.698994
+2024-04-07 14:53:55,493 - trainer - INFO -     val_macro_f    : 0.688492
+2024-04-07 14:53:55,493 - trainer - INFO -     val_precision  : 0.723892
+2024-04-07 14:53:55,493 - trainer - INFO -     val_recall     : 0.698994
+2024-04-07 14:53:55,493 - trainer - INFO -     test_loss      : 1.040119
+2024-04-07 14:53:55,493 - trainer - INFO -     test_accuracy  : 0.692871
+2024-04-07 14:53:55,493 - trainer - INFO -     test_macro_f   : 0.683883
+2024-04-07 14:53:55,493 - trainer - INFO -     test_precision : 0.723283
+2024-04-07 14:53:55,493 - trainer - INFO -     test_recall    : 0.692871
+2024-04-07 15:07:34,855 - trainer - INFO -     epoch          : 2
+2024-04-07 15:07:34,855 - trainer - INFO -     loss           : 0.934502
+2024-04-07 15:07:34,855 - trainer - INFO -     accuracy       : 0.72152
+2024-04-07 15:07:34,855 - trainer - INFO -     macro_f        : 0.710916
+2024-04-07 15:07:34,855 - trainer - INFO -     precision      : 0.745137
+2024-04-07 15:07:34,855 - trainer - INFO -     recall         : 0.72152
+2024-04-07 15:07:34,855 - trainer - INFO -     val_loss       : 0.981673
+2024-04-07 15:07:34,855 - trainer - INFO -     val_accuracy   : 0.713532
+2024-04-07 15:07:34,855 - trainer - INFO -     val_macro_f    : 0.706193
+2024-04-07 15:07:34,855 - trainer - INFO -     val_precision  : 0.744218
+2024-04-07 15:07:34,855 - trainer - INFO -     val_recall     : 0.713532
+2024-04-07 15:07:34,855 - trainer - INFO -     test_loss      : 0.98667
+2024-04-07 15:07:34,855 - trainer - INFO -     test_accuracy  : 0.709499
+2024-04-07 15:07:34,855 - trainer - INFO -     test_macro_f   : 0.703927
+2024-04-07 15:07:34,855 - trainer - INFO -     test_precision : 0.744562
+2024-04-07 15:07:34,855 - trainer - INFO -     test_recall    : 0.709499
+2024-04-07 15:21:13,816 - trainer - INFO -     epoch          : 3
+2024-04-07 15:21:13,816 - trainer - INFO -     loss           : 0.755576
+2024-04-07 15:21:13,816 - trainer - INFO -     accuracy       : 0.769959
+2024-04-07 15:21:13,816 - trainer - INFO -     macro_f        : 0.762076
+2024-04-07 15:21:13,816 - trainer - INFO -     precision      : 0.793468
+2024-04-07 15:21:13,816 - trainer - INFO -     recall         : 0.769959
+2024-04-07 15:21:13,816 - trainer - INFO -     val_loss       : 1.013308
+2024-04-07 15:21:13,816 - trainer - INFO -     val_accuracy   : 0.708852
+2024-04-07 15:21:13,816 - trainer - INFO -     val_macro_f    : 0.702103
+2024-04-07 15:21:13,816 - trainer - INFO -     val_precision  : 0.740054
+2024-04-07 15:21:13,816 - trainer - INFO -     val_recall     : 0.708852
+2024-04-07 15:21:13,816 - trainer - INFO -     test_loss      : 1.018164
+2024-04-07 15:21:13,816 - trainer - INFO -     test_accuracy  : 0.708653
+2024-04-07 15:21:13,816 - trainer - INFO -     test_macro_f   : 0.703118
+2024-04-07 15:21:13,816 - trainer - INFO -     test_precision : 0.745038
+2024-04-07 15:21:13,816 - trainer - INFO -     test_recall    : 0.708653

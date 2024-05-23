@@ -1,0 +1,86 @@
+2024-04-09 22:04:09,870 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=300, out_features=26, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 25,760,523
+Freeze params: 0
+2024-04-23 03:19:13,644 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=300, out_features=26, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 25,760,523
+Freeze params: 0
+2024-04-23 03:20:29,515 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=300, out_features=26, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 26,302,323
+Freeze params: 0
+2024-04-23 03:29:26,461 - train - INFO - BiAttentionClassifyModel(
+  (embedding): Embedding(84503, 300)
+  (classifier): Linear(in_features=300, out_features=26, bias=True)
+  (final): Linear(in_features=300, out_features=300, bias=True)
+  (topic_layer): Sequential(
+    (0): Linear(in_features=300, out_features=800, bias=True)
+    (1): Tanh()
+    (2): Linear(in_features=800, out_features=40, bias=True)
+  )
+  (gru): GRU(300, 300, batch_first=True)
+  (projection): AttLayer(
+    (attention): Sequential(
+      (0): Linear(in_features=300, out_features=128, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=128, out_features=1, bias=True)
+      (3): Flatten(start_dim=1, end_dim=-1)
+      (4): Softmax(dim=-1)
+    )
+  )
+)
+Trainable params: 26,302,323
+Freeze params: 0
